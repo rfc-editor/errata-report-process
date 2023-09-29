@@ -12,7 +12,7 @@ abbrev: Handling Errata Reports
 lang: en
 keyword:
   - errata system
-  - 
+
 pi: [toc, sortrefs, symrefs]
 
 author:
@@ -30,7 +30,7 @@ author:
   name: Jean Mahoney
   org: RFC Production Center
   email: jmahoney@amsl.com
-  
+
 informative:
   RFC4844:
   ERRATA_PAGE:
