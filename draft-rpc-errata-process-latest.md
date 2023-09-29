@@ -178,7 +178,7 @@ record includes the following fields:
 This information is requested from the reporter:
 
    * RFC #
-   * Type [editorial, technical]
+   * Type: editorial, technical
    * Reporter name
    * Reporter email address (Note that the address is provided for communication purposes with the relevant SSPs and authors, but it is not displayed in the online errata report.)
    * Section #
