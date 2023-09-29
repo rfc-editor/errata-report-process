@@ -19,12 +19,12 @@
 # Change the file extension to match the format (.xml for XML, etc...)
 #
 ###
-title: "TODO - Your title"
-abbrev: "TODO - Abbreviation"
+title: Current Process for Handling RFC Errata Reports
+abbrev: Handling Errata Reports
 category: info
 
-docname: draft-todo-yourname-protocol-latest
-submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
+docname: draft-rpc-errata-process-latest
+submissiontype: editorial
 number:
 date:
 consensus: true
