@@ -70,10 +70,10 @@ the tasks for verifying and posting errata.
 
 The errata process assumes the organization of RFC publication into
 four document streams {{RFC4844}}: (1) the IETF stream, which includes
-both working group and individual submissions plus all RFCs that were 
+both working group and individual submissions plus all RFCs that were
 published before the concept of streams existed (known as legacy RFCs), (2) the IAB stream,
 (3) the IRTF stream, (4) the Independent Submission stream, and
-(5) the Editorial stream.  
+(5) the Editorial stream.
 Personnel representing each stream, called the stream-specific party (SSP), are responsible for
 verifying the erratum reports for that stream's RFCs.
 
