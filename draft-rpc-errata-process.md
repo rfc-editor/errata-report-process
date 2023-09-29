@@ -4,17 +4,13 @@ ipr: trust200902
 cat: info
 submissiontype: IETF
 wg: RSWG
-
 docname: draft-rpc-errata-process-latest
-
 title: Current Process for Handling RFC Errata Reports
 abbrev: Handling Errata Reports
 lang: en
 keyword:
   - errata system
-
 pi: [toc, sortrefs, symrefs]
-
 author:
   ins: A. Russo
   name: Alice Russo
@@ -30,7 +26,6 @@ author:
   name: Jean Mahoney
   org: RFC Production Center
   email: jmahoney@amsl.com
-
 informative:
   RFC4844:
   ERRATA_PAGE:
