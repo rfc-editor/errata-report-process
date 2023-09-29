@@ -11,7 +11,7 @@ docname: draft-rpc-errata-process-latest
 title: Current Process for Handling RFC Errata Reports
 abbrev: Handling Errata Reports
 lang: en
-keyword: 
+keyword:
   - errata system
 
 pi: [toc, sortrefs, symrefs]
@@ -26,7 +26,7 @@ author:
   name: Sandy Ginoza
   org: RFC Production Center
   email: sginoza@amsl.com
-author: 
+author:
   ins: J. Mahoney
   name: Jean Mahoney
   org: RFC Production Center
@@ -44,7 +44,7 @@ informative:
     title: How to Report Errata
     author:
     - org: RFC Editor
-  IESG-Err-Proc:  
+  IESG-Err-Proc:
     target: https://www.ietf.org/about/groups/iesg/statements/processing-errata-ietf-stream/
     title: IESG Processing of RFC Errata for the IETF Stream
     author:
