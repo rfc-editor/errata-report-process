@@ -5,7 +5,7 @@ cat: info
 submissiontype: IETF
 wg: RSWG
 
-docname: draft-rpc-errata-process-latest-latest
+docname: draft-rpc-errata-process-latest
 
 title: Current Process for Handling RFC Errata Reports
 abbrev: Handling Errata Reports
