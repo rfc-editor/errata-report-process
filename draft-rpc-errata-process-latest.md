@@ -179,7 +179,7 @@ record includes the following fields:
 This information is requested from the reporter:
 
    * RFC #
-   * Type [editorial, technical]
+   * Type (editorial, technical)
    * Reporter name
    * Reporter email address (Note that the address is provided for communication purposes with the relevant SSPs and authors, but it is not displayed in the online errata report.)
    * Section #
@@ -378,8 +378,7 @@ There are no IANA considerations for this document.
 
             "There are no errata to this document yet."
 
-       Similarly, a URL could be added to all (future) RFCs pointing to
-       where the relevant errata are posted.
+       Similarly, a URL could be added to all (future) RFCs pointing to where the relevant errata are posted.
 
    2.  Another possibility would be to add new errata files to the RFC repository, e.g., with names of the form: rfcnnnn.err.txt.  Such a file would contain all the errata for the corresponding RFC.
    3.  As mentioned in Section 2.4, there are HTML versions of RFCs with errata links; these are currently hosted by tools.ietf.org, but they could be made available on the RFC Editor Web site as well.
@@ -401,7 +400,7 @@ posting process prior to the deployment of the Web portal in November
    *  Figure out how to post when reporters/authors do not submit errata in the original/new format.  This is often a problem when reporters submit email claiming an error, but do not offer corrective text.
    *  Post verified errata and discard rejected errata.
 
-   There were three possible states for processing an erratum:
+There were three possible states for processing an erratum:
 
    1.  Reported - the erratum has been reported but is unverified.
    2.  Verified - the erratum has been edited as necessary and verified.
