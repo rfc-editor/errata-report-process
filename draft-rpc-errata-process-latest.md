@@ -6,7 +6,7 @@ submissiontype: IETF
 area: general
 wg: RSWG
 
-docname: draft-rpc-errata-process-latest
+docname: draft-rpc-errata-process-latest-latest
 
 title: Current Process for Handling RFC Errata Reports
 abbrev: Handling Errata Reports
