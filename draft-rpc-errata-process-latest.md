@@ -3,7 +3,6 @@ stand_alone: true
 ipr: trust200902
 cat: info
 submissiontype: IETF
-# area: general
 wg: RSWG
 
 docname: draft-rpc-errata-process-latest-latest
