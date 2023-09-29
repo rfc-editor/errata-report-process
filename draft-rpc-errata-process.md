@@ -51,45 +51,42 @@ informative:
 
 --- abstract
 
-This document describes a web-based process for handling the
+This document describes the current web-based process for handling the
 submission, verification, and posting of errata for the RFC Series.
 The main concepts behind this process are (1) distributing the
 responsibility for verification to the appropriate organization or
 person for each RFC stream, and (2) using a Web portal to automate
-the book-keeping for handling errata.
+the processing of erratum reports.
 
 --- middle
 
 #  Introduction
 
-This document describes a new set of the procedures and mechanisms
-for handling RFC errata, to improve efficiency and accountability of
-errata processing.  The main concepts are (1) distributing
+This document describes the procedures and mechanisms
+for handling RFC errata reports.  The main concepts are (1) distributing
 responsibility for errata verification to the appropriate body or
 person for each RFC stream, and (2) using a Web portal to automate
-the book-keeping task for verifying and posting errata.
+the tasks for verifying and posting errata.
 
 The errata process assumes the organization of RFC publication into
 four document streams {{RFC4844}}: (1) the IETF stream, which includes
-both working group and individual submissions, (2) the IAB stream,
-(3) the IRTF stream, and (4) the Independent Submission stream.  We
-propose that personnel representing each stream be responsible for
-verifying the errata reported for that stream's RFCs.  In particular,
-we propose that one or more stream-specific parties (SSPs) be
-designated with responsibility for verifying errata for each stream.
+both working group and individual submissions plus all RFCs that were 
+published before the concept of streams existed (known as legacy RFCs), (2) the IAB stream,
+(3) the IRTF stream, (4) the Independent Submission stream, and
+(5) the Editorial stream.  
+Personnel representing each stream, called the stream-specific party (SSP), are responsible for
+verifying the erratum reports for that stream's RFCs.
 
-At the organizational level, the SSPs might be:
+At the organizational level, the SSPs are:
 
-   *  IESG for IETF documents
-   *  IAB for IAB documents
-   *  IRSG for IRTF documents
-   *  RFC Editor/Editorial Board for Independent Submissions
+   *  IESG for legacy RFCs
+   *  The Area Directors for RFCs that originated in one of that area's working groups.
+   *  IAB for IAB stream documents
+   *  IRSG for IRTF stream documents
+   *  Independent Submissions Editor for Independent Submission stream documents
+   *  RFC Series Approval Board for Editorial stream documents
 
-The IETF stream could be considered to be subdivided by area, so that
-each Area Director could be an SSP for RFCs originating in that area.
-The RFC publication process maintains the AD contact information for
-each RFC, so errata reports for RFCs in the IETF document stream
-could be sent to the appropriate ADs.
+In addition, the RFC Production Center reviews all editorial errata reports.
 
 ##  Background on RFC Errata
 
@@ -99,13 +96,11 @@ typos in published RFCs.  This evolved into the errata verification
 and posting process described in Appendix B, which was a manually
 operated, email-based task.
 
-Unfortunately, our understanding of the errata problem was wrong in
-several ways.  The number of errors reported turned out to be
-significantly greater than anticipated, and the process of vetting
-and posting required more human resources.
+Because the number of errors reported turned out to be significantly greater than anticipated, and the process of vetting
+and posting required more human resources, a web-based process was created.
 
-Another issue with errata is that some of the reported errors are not
-simply editorial, but rather correct technical contents of RFCs.  A
+Another reason to go with a web-based approach to handling erratum reports is that about half the reports are not
+simply editorial, but rather apply to the technical contents of RFCs.  A
 savvy implementer of the specification can often, but not always,
 figure out what was intended by the RFC as published, but technical
 errors should be announced somehow.  Furthermore, posting technical
@@ -125,40 +120,36 @@ avoid hard choices.  For the IETF stream, these choices should be
 made by the IESG, and are discussed in their proposed guidelines on
 errata processing {{IESG-Err-Proc}}.
 
-In summary, errata have become a much larger, more complex, and more
-important issue than they were originally.  This proposal attempts to
-address these problems.
-
 #  Proposed Errata Process Using the Web Portal
 
 To manage and automate the reporting, verifying, and posting of
-errata, the RFC Editor has transitioned to a Web application
-("portal").  This Web portal allows for a more uniform reporting
+errata, the RFC Editor website provides a web application
+("portal").  This web portal allows for a more uniform reporting
 process, eases communication among the parties responsible for
 verification, and automates the posting of errata as soon as they are
 reported.
 
-There are four possible states for an erratum under this proposal:
+There are four possible states for an erratum report:
 
    1.  Reported - The erratum has been reported but is unverified.
    2.  Verified - The erratum has been edited as necessary and verified.
    3.  Rejected - The erratum was redundant or incorrect and has been discarded.
-   4.  Archived - The erratum is not a necessary update to the RFC. However, it should be considered in future revisions of the RFC. (Note that this state is not yet available; it is pending the IESG's statement regarding errata processing {{IESG-Err-Proc}}.)
+   4.  Held for Document Update - The erratum is not a necessary update to the RFC. However, it should be considered in future revisions of the RFC.
 
-Currently, Reported and Verified errata are posted (see Section 2.4
+Currently, reports in all states are posted (see Section 2.4
 for more details).
 
 For more information on the states and their definitions, and the
-guidelines by which the IESG intends to classify errata into the the
+guidelines by which the IESG classifies erratum reports into the
 above states, see {{IESG-Err-Proc}}.
 
 The Web interface supports the following functions:
 
    1.  Retrieve -- display all posted errata for a specific RFC number or display a particular erratum by its errata ID number.
-   2.  Report -- report a new erratum, as described below.  (See {{HOW_TO_REPORT}} for up-to-date instructions on reporting a new erratum.)
+   2.  Report -- report a new erratum, as described below.  (See {{HOW_TO_REPORT}} for instructions on reporting a new erratum.)
    3.  Edit/Verify/Reject -- used by an SSP to edit the contents of an erratum and change its state.
 
-The following sections describe the proposed process in more detail.
+The following sections describe the process in more detail.
 
 ##  Reporting Errata
 
