@@ -32,7 +32,7 @@ author:
   email: jmahoney@amsl.com
 
 informative:
-  RFC4844:
+  RFC8729:
   ERRATA_PAGE:
     target: https://www.rfc-editor.org/errata.php
     title: RFC Errata
@@ -56,20 +56,20 @@ submission, verification, and posting of errata for the RFC Series.
 The main concepts behind this process are (1) distributing the
 responsibility for verification to the appropriate organization or
 person for each RFC stream, and (2) using a Web portal to automate
-the processing of erratum reports.
+the processing of erratum reports. This system was launched in November 2007.
 
 --- middle
 
 #  Introduction
 
 This document describes the procedures and mechanisms
-for handling RFC errata reports.  The main concepts are (1) distributing
-responsibility for errata verification to the appropriate body or
+for handling RFC erratum reports.  The main concepts are (1) distributing
+responsibility for report verification to the appropriate body or
 person for each RFC stream, and (2) using a Web portal to automate
-the tasks for verifying and posting errata.
+the tasks for verifying and posting erratum reports.
 
-The errata process assumes the organization of RFC publication into
-four document streams {{RFC4844}}: (1) the IETF stream, which includes
+This process assumes the organization of RFC publication into
+five document streams {{RFC8729}}: (1) the IETF stream, which includes
 both working group and individual submissions plus all RFCs that were
 published before the concept of streams existed (known as legacy RFCs), (2) the IAB stream,
 (3) the IRTF stream, (4) the Independent Submission stream, and
@@ -80,30 +80,36 @@ verifying the erratum reports for that stream's RFCs.
 At the organizational level, the SSPs are:
 
    *  IESG for legacy RFCs
-   *  The Area Directors for RFCs that originated in one of that area's working groups.
+   *  The Area Directors for RFCs that originated in one of that area's working groups
    *  IAB for IAB stream documents
    *  IRSG for IRTF stream documents
    *  Independent Submissions Editor for Independent Submission stream documents
    *  RFC Series Approval Board for Editorial stream documents
-
-In addition, the RFC Production Center reviews all editorial errata reports.
+   *  RFC Production Center for all editorial erratum reports
 
 ##  Background on RFC Errata
 
-The RFC Editor began to collect and post RFC errata in 2000.  The
+The RFC Production Center began to collect and post RFC errata in 2000.  The
 idea was to discourage readers from repeatedly pointing out the same
-typos in published RFCs.  This evolved into the errata verification
-and posting process described in Appendix B, which was a manually
-operated, email-based task.
+typos in published RFCs.  This evolved into an errata verification
+and posting process that was a manually operated, email-based task.
+Errata from this period have been made available in the current system
+and marked as Reported or Verified, as appropriate. Generally,
+the name of the verifier is not given as this information was not
+associated with errata records until the new system was put in
+place.
 
-Because the number of errors reported turned out to be significantly greater than anticipated, and the process of vetting
-and posting required more human resources, a web-based process was created.
+Because the number of errors reported turned out to be significantly
+greater than anticipated, and the process of vetting
+and posting required more human resources, a web-based process was created
+and launched in November 2007.
 
-Another reason to go with a web-based approach to handling erratum reports is that about half the reports are not
+Another reason for the current, web-based approach to handling erratum reports
+is that about half the reports are not
 simply editorial, but rather apply to the technical contents of RFCs.  A
 savvy implementer of the specification can often, but not always,
-figure out what was intended by the RFC as published, but technical
-errors should be announced somehow.  Furthermore, posting technical
+determine what was intended by the RFC as published, but technical
+errors should be announced somehow.  Furthermore, the posting of technical
 errata for Standards Track documents should always involve the IESG,
 as a matter of correct process.  Technical errata may require much
 review and discussion among the author(s), Area Directors, and other
@@ -112,21 +118,21 @@ editorial vs. technical classification.)
 
 We note that allowing technical errata is a slippery slope: there may
 be a temptation to use errata to "fix" protocol design errors, rather
-than publishing new RFCs that update the erroneous documents.  In
+than to publish new RFCs that update the erroneous documents.  In
 general, an erratum is intended to report an error in a document,
 rather than an error in the design of the protocol or other entity
 defined in the document, but this distinction may be too imprecise to
-avoid hard choices.  For the IETF stream, these choices should be
-made by the IESG, and are discussed in their proposed guidelines on
+avoid hard choices.  For the IETF stream, these choices are
+made by the IESG and are discussed in their guidelines on
 errata processing {{IESG-Err-Proc}}.
 
-#  Proposed Errata Process Using the Web Portal
+#  Current Errata Process Using the Web Portal
 
 To manage and automate the reporting, verifying, and posting of
-errata, the RFC Editor website provides a web application
+errata, the rfc-editor.org website provides a web application
 ("portal").  This web portal allows for a more uniform reporting
 process, eases communication among the parties responsible for
-verification, and automates the posting of errata as soon as they are
+verification, and automates the posting of erratum reports as soon as they are
 reported.
 
 There are four possible states for an erratum report:
@@ -154,30 +160,64 @@ The following sections describe the process in more detail.
 ##  Reporting Errata
 
 A member of the Internet community (the "reporter") navigates to the
-RFC errata page {{ERRATA_PAGE}} and enters the RFC number of the
-document containing the error.  All earlier errata for that RFC are
-displayed, and the reporter is asked to check that the erratum does
-not already appear in the full list of errata for any given RFC.
-This should help prevent multiple reports of the same error.
+RFC errata page {{ERRATA_PAGE}}, enters the RFC number of the
+document containing the error, and clicks the Search button.
+All earlier erratum reports for that RFC are
+displayed. These reports include verified errata, reported errata,
+issues that are held for document update, and rejected reports.
+The reporter is asked to check that the erratum does
+not already appear on the errata page for any given RFC.
+This step is to prevent multiple reports of the same error.
 
 The user then reports the erratum using a Web form to create a report
 record in the RFC errata database.  The report is composed of
 information provided by the reporter, and is supplemented by data
-drawn from the primary RFC Editor database.  The erratum report
+drawn from the primary rfc-editor.org database.  The erratum report
 record includes the following fields:
 
-This information is requested from the reporter:
+The following information is requested from the reporter. All fields must be filled in:
 
-   * RFC #
-   * Type: editorial, technical
    * Reporter name
-   * Reporter email address (Note that the address is provided for communication purposes with the relevant SSPs and authors, but it is not displayed in the online errata report.)
+   * Reporter email address (Note that the address is provided for communication purposes with the relevant SSPs and authors, but it is not displayed in the online erratum report.)
+   * Publication format: Text, PDF, HTML
+   * Type: editorial, technical
    * Section #
    * Original text
    * Corrected text
    * Notes
 
-The above information is supplemented by information pulled from the
+The reporter is asked to make a judgment on the erratum type --
+technical vs. editorial.  If the reporter has both editorial and
+technical errors in the same RFC, the two classes of errata must be
+entered as separate reports.  This initial classification is useful
+to the SSP; for example, it might allow technical errata to be
+processed with higher priority than editorial errata, and it allows
+the RFC Production Center to verify editorial erratum reports and to note frequent editorial
+errors that could possibly lead to improvements in the editorial
+process.
+
+With the aid of published guidelines (see
+{{HOW_TO_REPORT}}), the reporter should make the right technical/
+editorial classification.  However, if the reporter does misclassify the
+report, the SSP can fix the classification when logged in as a verifier.
+
+The reporter should enter a new erratum using the
+Original and Corrected Text fields, as this allows for easier
+verification.  The reporter can use the free-text Notes field to provide
+the rationale or to describe those errata that cannot easily be put
+into the Original/Corrected format.
+
+The Report page allows a set number of reports (i.e., 4 TODO) for the same
+RFC to be submitted at the same time, using the Original/Corrected
+form.  By having the reporter separate the report entries, the SSP should
+have an easier time verifying each entry.  We also hope that this
+encourages reporters to submit only the most valuable erratum reports.
+
+When the reporter submits the report, they are shown a preview of it.
+They can choose to edit the report, cancel, or submit. They must successfully
+navigate a reCAPTCHA in order to complete the report submission.
+
+The information provided by the reporter is supplemented by information pulled from the
 database:
 
    * Errata ID number
@@ -191,225 +231,253 @@ database:
    * Verifying Party (SSP Identity)
    * URL to the distinct erratum report
 
-Generally, we want the reporter to enter a new erratum using the
-Original and Corrected Text fields, as this allows for easier
-verification.  The free-text Notes field can be used for providing
-rationale or for describing those errata that cannot easily be put
-into the Original/Corrected format.
-
-The Report page allows a set number of reports (i.e., 4) for the same
-RFC to be submitted at the same time, using the Original/Corrected
-form.  By having the user separate the errata entries, the SSP should
-have an easier time verifying each entry.  We also hope that this
-encourages users to submit only the most valuable errata.
-
-The reporter is asked to make a judgment on the errata type --
-technical vs. editorial.  If the reporter has both editorial and
-technical errors in the same RFC, the two classes of errata must be
-entered as separate reports.  This initial classification is useful
-to the SSP; for example, it might allow technical errata to be
-processed with higher priority than editorial errata, and it allows
-the RFC Editor to monitor editorial errata to note frequent editorial
-errors that could possibly lead to improvements in the editorial
-process.
-
-We expect that the reporter will usually make the right technical/
-editorial classification, with the aid of published guidelines (see
-{{HOW_TO_REPORT}}).  However, in case of misclassification by the
-reporter, the SSP can fix it when logged in as a verifier.
-
 ##  Initial Notification Message
 
-Submitting the report triggers an email notification message to the
-appropriate SSP, the RFC author(s), and the RFC Editor.  Including
-them all as addressees in one message facilitates cooperation in
-verifying the error.
+Submitting the report triggers an email notification message to
+multiple parties; see the notification lists below.  Including
+multiple parties facilitates cooperation in
+verifying the error and transparency in the process.
 
-The message includes the information listed in Section 2.1.  The SSP
-could forward the notification email further; for example, an Area
-Director might forward it to the chair of the responsible working
-group, if it still exists.
+Notifications are determined by stream and type of erratum report
+and are sent by rfc-editor@rfc-editor.org to the following:
 
-In the case of early RFCs for which the RFC Editor does not have
-associated stream or area information, the reports will be sent to
-the IESG (as a whole) and the authors.
+Technical erratum reports:
+
+Legacy RFCs:
+
+* To: IESG
+* CC: reporter, rfc-editor@rfc-editor.org
+
+IETF stream:
+
+* To: authors, ADs of the area from which the document came, document shepherd
+* CC: reporter, working group, rfc-editor@rfc-editor.org
+
+IAB stream:
+
+* To: authors, IAB
+* CC: reporter, rfc-editor@rfc-editor.org
+
+IRTF stream: TODO - doesn't include RG
+
+* To: authors, IRSG
+* CC: reporter, rfc-editor@rfc-editor.org
+
+Independent Submission stream:
+
+* To: authors, ISE
+* CC: reporter, rfc-editor@rfc-editor.org
+
+Editorial stream: TODO
+
+* To: authors, RSAB
+* CC: reporter, rfc-editor@rfc-editor.org
+
+All editorial erratum reports are sent to rfc-editor@rfc-editor.org,
+and other stream-specific parties are CCed:
+
+Legacy RFCs:
+
+* To: rfc-editor@rfc-editor.org
+* CC: reporter
+
+IETF stream:
+
+* To: rfc-editor@rfc-editor.org
+* CC: reporter, authors, working group
+
+IAB stream:
+
+* To: rfc-editor@rfc-editor.org
+* CC: reporter, authors, IAB
+
+IRTF stream:
+
+* To: rfc-editor@rfc-editor.org
+* CC: reporter, authors
+
+Independent Submission stream:
+
+* To: rfc-editor@rfc-editor.org
+* CC: reporter, authors
+
+Editorial stream:
+
+* To: rfc-editor@rfc-editor.org
+* CC: reporter, authors, RSAB
+
+
+The message includes the information listed in Section 2.1.
 
 Author email addresses are often out of date.  In these cases, the
-relevant SSPs have the option of seeking current author contact
+SSP has the option of seeking current author contact
 information or relying on other individuals with knowledge of the
-subject matter to help determine the validity of the errata.
+subject matter to help determine the validity of the erratum report.
 
-##  Verifying Errata
+##  Verifying Erratum Reports
 
 The initial notification message starts the verification process.
-The SSP and the authors are expected to determine the validity of the
-reported erratum, by whatever procedure the SSP or the stream owner
-determines.  The RFC Editor does not intend to (normally) track the
-verification process.  The SSP, not the author(s) or the RFC Editor,
-has final responsibility for verifying or rejecting each report.
+The SSP and the authors are expected to determine the validity of
+any technical erratum report, by whatever procedure the SSP or the stream owner
+determines.  Th RFC Production Center determines the validity of editorial erratum reports.
+The RFC Production Center does not track the
+verification process for technical erratum reports.  The SSP, not the author(s) or the RPC,
+has final responsibility for verifying or rejecting each technical erratum report.
 This helps to avoid a great deal of complexity and confusion.
 
-Each SSP has a login account on the errata portal to edit errata
-records as necessary.  The SSP identity is added to the record and
+Each SSP has a login account on the errata portal to edit and verify erratum
+reports.  The SSP identity is added to the record and
 the individual is able to edit, verify, or reject each erratum.
 
 The Notes field allows users to submit information in any fashion
 they like, so there is a possibility of multiple errors being
-reported in this field.  The SSP is able to edit the record and split
-it into multiple records to maintain one record per erratum, as
+reported in this field.  The SSP is able to split
+the report into multiple records to maintain one record per erratum report, as
 necessary.
 
-Based on experience, we know that some errata reports will require
+Some erratum reports require
 significant email discussion between the reporter and the author(s)
 and/or SSPs (in particular, the IESG) before the final decision on a
-record can be made.  The final outcome will be captured in the errata
-entry, and any controversy or explanatory material can be recorded in
+report can be made.  The final outcome is captured in the erratum
+entry, and any controversy or explanatory material is recorded in
 the Notes field.
 
-##  Posting Errata
-
-As soon as an erratum is submitted, it is available online, i.e., it
-is posted as described below.  The erratum entry is marked Reported
-until its state is updated by verifiers as described above.
-
-In this document, posting an erratum means that it is:
-
-   1.  Available from the RFC errata page: http://www.rfc-editor.org/errata.php.
-   2.  Linked to from the results of the RFC search engine: http://www.rfc-editor.org/rfcsearch.html.
-   3.  Linked to from some HTML versions of the RFC.  For example, see http://tools.ietf.org/html/rfc2119.
-
-The state of errata determines whether they are posted.  Currently,
-Reported and Verified errata are posted, and Rejected errata are not
-posted.  However, this can be altered to improve the errata display
-for readers and implementers.  For example, Rejected and Archived
-errata could be hidden behind a link (as has been suggested).
-
-The order in which errata are displayed for a single RFC (e.g.,
-Verified Technical, Reported Technical, Verified Editorial, Reported
-Editorial) also can be altered to improve the usability.
-
 It sometimes happens that there are errata for errata, i.e., earlier
-postings must be altered.  In this case, the RFC Editor can do the
-update as requested by an SSP or can grant an SSP temporary write
+postings must be altered.  In this case, the RFC Editor can
+update the report as requested by an SSP or can grant an SSP temporary write
 access to the record to be updated.
 
-There are other possibilities for errata posting that should be
-considered by the community; see Appendix A.
+##  Posting Erratum Reports
 
-##  Errata Announcements
+As soon as an erratum is submitted, it is available online
+as described below.  The erratum entry is marked Reported
+until its state is updated by verifiers as described above.
 
-The RFC Editor proposes to announce verified technical errata
-postings to the rfc-distribution list.  If the SSP felt the errata
-was important enough, they might want to submit a note to the ietf-
-announce list.  However, we do not believe it is necessary to
-inundate the ietf-announce list with mail each time an errata is
-verified, rejected, or edited.
+In this document, posting an erratum means that:
 
-#  Role of the RFC Editor
+   1.  The report can be discovered through the RFC errata search page: https://www.rfc-editor.org/errata.php.
+   2.  A link to the RFC's errata page appears on the following:
+     * the results of the RFC search engine: https://www.rfc-editor.org/rfcsearch.html.
+     * the RFC's info page. For example, see https://www.rfc-editor.org/info/rfc2119.
+     * On the HTML format of the RFC. For example, https://www.rfc-editor.org/rfc/rfc2119.html.
 
-The role of the RFC Editor in errata processing is to:
+All erratum reports for a single RFC, except for obvious spam reports,
+are posted in the following order:
+
+* Verified Technical
+* Verified Editorial
+* Held for Document Update Technical
+* Held for Document Update Editorial
+* Rejected Technical
+* Rejected Editorial
+* Reported Technical
+* Reported Editorial
+
+All erratum reports are also available at https://www.rfc-editor.org/errata.json.
+
+Once verified, the erratum is available for viewing in the RFC's HTML format "inline" (for example, see https://www.rfc-editor.org/rfc/inline-errata/rfc3261.html) in addition to being on the RFC's errata page and discoverable through errata search functionality.
+
+##  Erratum Report Announcements
+
+Like the notification of submissions, the announcement of a verified erratum report varies by Stream:
+
+Notifications are determined by stream and type of erratum report:
+
+Technical erratum reports are sent from rfc-editor@rfc-editor.org to the following:
+
+Legacy RFCs:
+
+* To: reporter, authors
+* CC: AD who verified the report, IESG, rfc-editor@rfc-editor.org
+
+IETF stream:
+
+* To: reporter, authors
+* CC: AD who verified the report, IESG, working group, IANA, rfc-editor@rfc-editor.org
+
+IAB stream:
+
+* To: reporter, authors
+* CC: IAB, IAB chair, rfc-editor@rfc-editor.org
+
+IRTF stream:
+
+* To: reporter, authors
+* CC: verifier from IRSG, IRSG, research group, IANA, rfc-editor@rfc-editor.org
+
+Independent Submission stream:
+
+* To: reporter, authors
+* CC: ISE (TODO - twice), IANA, rfc-editor@rfc-editor.org
+
+Editorial stream: TODO
+
+* To: reporter, authors
+* CC: RSAB, rfc-editor@rfc-editor.org
+
+The announcement of verified editorial erratum reports are sent from rfc-editor@rfc-editor.org to the following:
+
+Legacy RFCs:
+
+* To: reporter, author
+* CC: rfc-ed@rfc-editor.org (TODO why different), IESG, IANA
+
+IETF stream:
+
+* To: reporter, authors
+* CC: rfc-ed@rfc-editor.org, IESG, working group, IANA
+
+IAB stream: TODO
+
+* To: reporter, authors
+* CC: rfc-ed@rfc-editor.org, IAB, IAB chair
+
+IRTF stream:
+
+* To: reporter, authors
+* CC: rfc-ed@rfc-editor.org, IRSG, research group, IANA
+
+Independent Submission stream:
+
+* To: reporter, authors
+* CC: rfc-ed@rfc-editor.org, ISE, IANA
+
+Editorial stream: TODO
+
+* To: reporter, authors
+* CC: rfc-ed@rfc-editor.org, TODO
+
+#  Role of the RFC Production Center
+
+The role of the RFC Production Center in errata processing is to:
 
    1.  Operate the Web portal.
    2.  Maintain the errata database.
    3.  Make changes in previously posted errata at the request of the corresponding SSP, or give the SSP temporary write access to the record.
-   4.  Act as SSP for Independent Submissions.
-   5.  Send periodic nudge messages to SSPs for errata that are in the Reported state.
+   4.  Act as SSP for editorial erratum reports.
+   5.  Send periodic nudge messages to SSPs for errata that are in the Reported state. TODO - no longer done.
    6.  Track SSP and community requests for various features that will make the job of reporting and verifying errata more efficient.
-
-#  Transition
-
-Errata from the original errata page have been made available from
-the new Web portal.  Generally, they are marked Verified without
-listing the name of the verifier, as this information was not
-associated with the errata records until November 2007.
-
-Errata that were posted in the pending file (as described in
-Appendix B) have been made available from the Web portal and are
-marked as Reported or Verified, as appropriate.  Lists of unverified
-reports have been sent to the appropriate SSPs for review and
-verification.
 
 #  Security Considerations
 
-It is necessary to have access control for errata reports.  A
-logged-in SSP is able to edit, verify, or reject any errata report on
-an RFC that is the product of their stream.  However, we propose that
-once the SSP has submitted an erratum's final state (Verified or
-Rejected) and the record entry has been committed to the errata
-database, the SSP will lose write access to it.  This is a safety
-feature to prevent inadvertent or malicious changes to the database,
+It is necessary to have access control in order to process erratum reports.  A
+logged-in SSP is able to edit, verify, or reject any erratum report on
+an RFC that is the product of their stream.
+Once the SSP has submitted an erratum's final state (Verified or
+Rejected) and the record entry has been committed to the erratum
+database, the SSP loses write access to it.  This is
+to prevent inadvertent or malicious changes to the database,
 even if the passwords for some SSP logins may become fairly widely
-known.  However, the RFC Editor will always have write access to
+known.  However, the RPC will always have write access to
 posted entries and can make later changes if necessary.
 
-The RFC Editor has chosen to use HTTPS as a reasonably secure login
-mechanism.  Also, the RFC Editor has obtained a signed certificate
-from a CA for the errata verification pages, so that SSPs have
-confidence that they are logging into the RFC Editor site.
+The portal uses HTTPS as a reasonably secure login
+mechanism.  Also, the rfc-editor.org website has a signed certificate
+from a CA, so that SSPs have
+confidence that they are logging into the rfc-editor.org website.
 
 #  IANA Considerations
 
-There are no IANA considerations for this document.
+This document has no IANA actions.
 
 --- back
-
-# Possibilities for Posting Errata
-
-   Choosing any of these possibilities for posting errata should be
-   decided by the IETF community and its governing bodies.
-
-   1.  Brian Carpenter has suggested an approach similar to that used by W3C: Add a URL to every published RFC that points to its errata (if any). For W3C examples, see: http://www.w3.org/TR/2004/REC-xmlschema-2-20041028/ and http://www.w3.org/TR/2006/REC-xml-names-20060816, which include the text:
-
-            "Please refer to the <errata> for this document, which may
-             include some normative corrections."
-
-         where \<errata\> is a hyperlink to the list of all errata or a
-         page that says:
-
-            "There are no errata to this document yet."
-
-       Similarly, a URL could be added to all (future) RFCs pointing to
-       where the relevant errata are posted.
-
-   2.  Another possibility would be to add new errata files to the RFC repository, e.g., with names of the form: rfcnnnn.err.txt.  Such a file would contain all the errata for the corresponding RFC.
-   3.  As mentioned in Section 2.4, there are HTML versions of RFCs with errata links; these are currently hosted by tools.ietf.org, but they could be made available on the RFC Editor Web site as well.
-
-# Errata Processing before the Web Portal
-
-The following is a summary of the RFC Editor errata verification and
-posting process prior to the deployment of the Web portal in November
-2007.  The RFC Editor used to:
-
-   *  Review email and relevant RFCs to ensure that the reported errata actually appeared in the RFCs as available from http://www.rfc-editor.org/.  This does not mean that the errata were reviewed and deemed correct, only that the reported erronous text appears in the RFC (i.e., without judgment about the reports correctness).
-   *  Disentangle multiple errors reported in one message.
-   *  Check that each error has not already been posted.
-   *  Attempt to determine whether the errata are editorial or technical.
-   *  Forward each erratum report to the author(s) of the published RFC.
-   *  Track bounce messages (contact information for authors is often out of date) and try to find current contact information.
-   *  Forward the message to the relevant ADs if we were unable to find current author contact information.
-   *  Track follow-up email.
-   *  Figure out how to post when reporters/authors do not submit errata in the original/new format.  This is often a problem when reporters submit email claiming an error, but do not offer corrective text.
-   *  Post verified errata and discard rejected errata.
-
-   There were three possible states for processing an erratum:
-
-   1.  Reported - the erratum has been reported but is unverified.
-   2.  Verified - the erratum has been edited as necessary and verified.
-   3.  Rejected - the erratum was redundant or incorrect and has been discarded.
-
-Generally speaking, an erratum was posted when it was verified.
-(Note that "posted" here means available online from the original RFC
-errata page; the list of posting locations in Section 2.4 includes
-those developed after 2000.)  The exceptions were the "pending
-errata", whose processing was delayed as described below.
-
-During 2006, the RFC Editor was understaffed for the growing load of
-RFCs to be published (see
-http://www.rfc-editor.org/num_rfc_year.html).  To catch up, the RFC
-Editor suspended all activities not directly related to RFC
-publication.  As a result, more than a year's worth of errata reports
-had not been verified or posted.  As resources allowed, the RFC
-Editor provided the following interim measures:
-
-   1.  Made available, from the RFC Editor Web site, a mailbox text file (mbox format) of all errata-related email (ftp:// ftp.rfc-editor.org/in-notes/pending-errata/pending-errata.msgs).
-   2.  For those few errata that did get added to the errata database, marked them UNVERIFIED.
