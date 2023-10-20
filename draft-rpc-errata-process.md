@@ -16,20 +16,21 @@ keyword:
 pi: [toc, sortrefs, symrefs]
 
 author:
-  ins: A. Russo
-  name: Alice Russo
-  org: RFC Production Center
-  email: arusso@amsl.com
-author:
-  ins: S. Ginoza
-  name: Sandy Ginoza
-  org: RFC Production Center
-  email: sginoza@amsl.com
-author:
-  ins: J. Mahoney
-  name: Jean Mahoney
-  org: RFC Production Center
-  email: jmahoney@amsl.com
+  -
+    ins: A. Russo
+    name: Alice Russo
+    org: RFC Production Center
+    email: arusso@amsl.com
+  -
+    ins: S. Ginoza
+    name: Sandy Ginoza
+    org: RFC Production Center
+    email: sginoza@amsl.com
+  - 
+    ins: J. Mahoney
+    name: Jean Mahoney
+    org: RFC Production Center
+    email: jmahoney@amsl.com
 
 informative:
   RFC8729:
@@ -60,7 +61,7 @@ the processing of erratum reports. This system was launched in November 2007.
 
 --- middle
 
-#  Introduction
+#  Introduction {#introduction}
 
 This document describes the procedures and mechanisms
 for handling RFC erratum reports.  The main concepts are (1) distributing
@@ -87,7 +88,7 @@ At the organizational level, the SSPs are:
    *  RFC Series Approval Board for Editorial stream documents
    *  RFC Production Center for all editorial erratum reports
 
-##  Background on RFC Errata
+##  Background on RFC Errata {#background}
 
 The RFC Production Center began to collect and post RFC errata in 2000.  The
 idea was to discourage readers from repeatedly pointing out the same
@@ -126,7 +127,7 @@ avoid hard choices.  For the IETF stream, these choices are
 made by the IESG and are discussed in their guidelines on
 errata processing {{IESG-Err-Proc}}.
 
-#  Current Errata Process Using the Web Portal
+#  Current Errata Process Using the Web Portal {#current-process}
 
 To manage and automate the reporting, verifying, and posting of
 errata, the rfc-editor.org website provides a web application
@@ -142,7 +143,7 @@ There are four possible states for an erratum report:
    3.  Rejected - The erratum was redundant or incorrect and has been discarded.
    4.  Held for Document Update - The erratum is not a necessary update to the RFC. However, it should be considered in future revisions of the RFC.
 
-Currently, reports in all states are posted (see Section 2.4
+Currently, reports in all states are posted (see {{posting-erratum-reports}}
 for more details).
 
 For more information on the states and their definitions, and the
@@ -157,7 +158,7 @@ The Web interface supports the following functions:
 
 The following sections describe the process in more detail.
 
-##  Reporting Errata
+##  Reporting Errata {#reporting-errata}
 
 A member of the Internet community (the "reporter") navigates to the
 RFC errata page {{ERRATA_PAGE}}, enters the RFC number of the
@@ -231,7 +232,7 @@ database:
    * Verifying Party (SSP Identity)
    * URL to the distinct erratum report
 
-##  Initial Notification Message
+##  Initial Notification Message {#initial-notification-message}
 
 Submitting the report triggers an email notification message to
 multiple parties; see the notification lists below.  Including
@@ -239,9 +240,12 @@ multiple parties facilitates cooperation in
 verifying the error and transparency in the process.
 
 Notifications are determined by stream and type of erratum report
-and are sent by rfc-editor@rfc-editor.org to the following:
+and are sent by rfc-editor@rfc-editor.org to the following SSPs.
 
-Technical erratum reports:
+### Technical erratum reports
+
+Technical erratum reports are sent to SSPs, and the reporter and 
+rfc-editor@rfc-editor.org are CCed.
 
 Legacy RFCs:
 
@@ -258,7 +262,7 @@ IAB stream:
 * To: authors, IAB
 * CC: reporter, rfc-editor@rfc-editor.org
 
-IRTF stream: TODO - doesn't include RG
+IRTF stream:
 
 * To: authors, IRSG
 * CC: reporter, rfc-editor@rfc-editor.org
@@ -268,13 +272,15 @@ Independent Submission stream:
 * To: authors, ISE
 * CC: reporter, rfc-editor@rfc-editor.org
 
-Editorial stream: TODO
+Editorial stream:
 
 * To: authors, RSAB
 * CC: reporter, rfc-editor@rfc-editor.org
 
+### Editorial erratum reports
+
 All editorial erratum reports are sent to rfc-editor@rfc-editor.org,
-and other stream-specific parties are CCed:
+and other SSPs are CCed:
 
 Legacy RFCs:
 
@@ -304,17 +310,16 @@ Independent Submission stream:
 Editorial stream:
 
 * To: rfc-editor@rfc-editor.org
-* CC: reporter, authors, RSAB
+* CC: reporter, authors
 
-
-The message includes the information listed in Section 2.1.
+The message includes the information listed in {{reporting-errata}}.
 
 Author email addresses are often out of date.  In these cases, the
 SSP has the option of seeking current author contact
 information or relying on other individuals with knowledge of the
 subject matter to help determine the validity of the erratum report.
 
-##  Verifying Erratum Reports
+##  Verifying Erratum Reports {#verifying-erratum-reports}
 
 The initial notification message starts the verification process.
 The SSP and the authors are expected to determine the validity of
@@ -347,7 +352,7 @@ postings must be altered.  In this case, the RFC Editor can
 update the report as requested by an SSP or can grant an SSP temporary write
 access to the record to be updated.
 
-##  Posting Erratum Reports
+##  Posting Erratum Reports {#posting-erratum-reports}
 
 As soon as an erratum is submitted, it is available online
 as described below.  The erratum entry is marked Reported
@@ -377,13 +382,15 @@ All erratum reports are also available at https://www.rfc-editor.org/errata.json
 
 Once verified, the erratum is available for viewing in the RFC's HTML format "inline" (for example, see https://www.rfc-editor.org/rfc/inline-errata/rfc3261.html) in addition to being on the RFC's errata page and discoverable through errata search functionality.
 
-##  Erratum Report Announcements
+##  Erratum Report Announcements {#erratum-report-announcements}
 
 Like the notification of submissions, the announcement of a verified erratum report varies by Stream:
 
-Notifications are determined by stream and type of erratum report:
+Notifications are determined by stream and type of erratum report.
 
-Technical erratum reports are sent from rfc-editor@rfc-editor.org to the following:
+### Technical erratum reports
+
+The announcement of verified technical erratum reports are sent from rfc-editor@rfc-editor.org to the following:
 
 Legacy RFCs:
 
@@ -410,10 +417,12 @@ Independent Submission stream:
 * To: reporter, authors
 * CC: ISE (TODO - twice), IANA, rfc-editor@rfc-editor.org
 
-Editorial stream: TODO
+Editorial stream:
 
 * To: reporter, authors
-* CC: RSAB, rfc-editor@rfc-editor.org
+* CC: RSAB, RSWG, IANA, rfc-editor@rfc-editor.org
+
+### Editorial erratum reports
 
 The announcement of verified editorial erratum reports are sent from rfc-editor@rfc-editor.org to the following:
 
@@ -427,7 +436,7 @@ IETF stream:
 * To: reporter, authors
 * CC: rfc-ed@rfc-editor.org, IESG, working group, IANA
 
-IAB stream: TODO
+IAB stream:
 
 * To: reporter, authors
 * CC: rfc-ed@rfc-editor.org, IAB, IAB chair
@@ -442,12 +451,12 @@ Independent Submission stream:
 * To: reporter, authors
 * CC: rfc-ed@rfc-editor.org, ISE, IANA
 
-Editorial stream: TODO
+Editorial stream:
 
 * To: reporter, authors
-* CC: rfc-ed@rfc-editor.org, TODO
+* CC: RSAB, RSWG, IANA, rfc-ed@rfc-editor.org
 
-#  Role of the RFC Production Center
+#  Role of the RFC Production Center {#rpc-role}
 
 The role of the RFC Production Center in errata processing is to:
 
@@ -458,7 +467,7 @@ The role of the RFC Production Center in errata processing is to:
    5.  Send periodic nudge messages to SSPs for errata that are in the Reported state. TODO - no longer done.
    6.  Track SSP and community requests for various features that will make the job of reporting and verifying errata more efficient.
 
-#  Security Considerations
+#  Security Considerations {#security-considerations}
 
 It is necessary to have access control in order to process erratum reports.  A
 logged-in SSP is able to edit, verify, or reject any erratum report on
