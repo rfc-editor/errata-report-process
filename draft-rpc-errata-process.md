@@ -172,7 +172,7 @@ This step is to prevent multiple reports of the same error.
 
 The user then reports the erratum using a Web form to create a report
 record in the RFC errata database.  The report is composed of
-information provided by the reporter, and is supplemented by data
+information provided by the reporter and is supplemented by data
 drawn from the primary rfc-editor.org database.  The erratum report
 record includes the following fields:
 
@@ -198,8 +198,8 @@ errors that could possibly lead to improvements in the editorial
 process.
 
 With the aid of published guidelines (see
-{{HOW_TO_REPORT}}), the reporter should make the right technical/
-editorial classification.  However, if the reporter does misclassify the
+{{HOW_TO_REPORT}}), the reporter should make the right technical/editorial
+classification.  However, if the reporter does misclassify the
 report, the SSP can fix the classification when logged in as a verifier.
 
 The reporter should enter a new erratum using the
@@ -372,9 +372,9 @@ In this document, posting an erratum means that:
 
    1.  The report can be discovered through the RFC errata search page: https://www.rfc-editor.org/errata.php.
    2.  A link to the RFC's errata page appears on the following:
-     * the results of the RFC search engine: https://www.rfc-editor.org/rfcsearch.html.
-     * the RFC's info page. For example, see https://www.rfc-editor.org/info/rfc2119.
-     * On the HTML format of the RFC. For example, https://www.rfc-editor.org/rfc/rfc2119.html.
+       * the results of the RFC search engine: https://www.rfc-editor.org/rfcsearch.html.
+       * the RFC's info page. For example, see https://www.rfc-editor.org/info/rfc2119.
+       * On the HTML format of the RFC. For example, https://www.rfc-editor.org/rfc/rfc2119.html.
 
 All erratum reports for a single RFC, except for obvious spam reports,
 are posted in the following order:
@@ -425,7 +425,7 @@ IRTF Stream:
 Independent Submission Stream:
 
 * To: reporter, authors
-* CC: ISE (TODO - twice), IANA, rfc-editor@rfc-editor.org
+* CC: ISE, Document Shepherd, IANA, rfc-editor@rfc-editor.org
 
 Editorial Stream:
 
@@ -439,7 +439,7 @@ The announcement of verified editorial erratum reports are sent from rfc-editor@
 Legacy RFCs:
 
 * To: reporter, author
-* CC: rfc-ed@rfc-editor.org (TODO why different), IESG, IANA
+* CC: rfc-ed@rfc-editor.org, IESG, IANA
 
 IETF Stream:
 
@@ -474,8 +474,7 @@ The role of the RPC in errata processing is to:
    2.  Maintain the errata database.
    3.  Make changes in previously posted errata at the request of the corresponding SSP, or give the SSP temporary write access to the record.
    4.  Act as SSP for editorial erratum reports.
-   5.  Send periodic nudge messages to SSPs for errata that are in the Reported state. TODO - no longer done.
-   6.  Track SSP and community requests for various features that will make the job of reporting and verifying errata more efficient.
+   5.  Track SSP and community requests for various features that will make the job of reporting and verifying errata more efficient.
 
 #  Security Considerations {#security-considerations}
 
