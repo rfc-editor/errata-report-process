@@ -242,7 +242,7 @@ verifying the error and transparency in the process.
 Notifications are determined by stream and type of erratum report
 and are sent by rfc-editor@rfc-editor.org to the following SSPs.
 
-### Technical erratum reports
+### Technical Erratum Reports
 
 Technical erratum reports are sent to SSPs, and the reporter and
 rfc-editor@rfc-editor.org are CCed.
@@ -277,7 +277,7 @@ Editorial Stream:
 * To: authors, RSAB
 * CC: reporter, rfc-editor@rfc-editor.org
 
-### Editorial erratum reports
+### Editorial Erratum Reports
 
 All editorial erratum reports are sent to rfc-editor@rfc-editor.org,
 and other SSPs are CCed:
@@ -398,7 +398,7 @@ Like the notification of submissions, the announcement of a verified erratum rep
 
 Notifications are determined by stream and type of erratum report.
 
-### Technical erratum reports
+### Technical Erratum Reports
 
 The announcement of verified technical erratum reports are sent from rfc-editor@rfc-editor.org to the following:
 
@@ -432,7 +432,7 @@ Editorial Stream:
 * To: reporter, authors
 * CC: RSAB, RSWG, IANA, rfc-editor@rfc-editor.org
 
-### Editorial erratum reports
+### Editorial Erratum Reports
 
 The announcement of verified editorial erratum reports are sent from rfc-editor@rfc-editor.org to the following:
 
