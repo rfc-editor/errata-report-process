@@ -370,11 +370,11 @@ until its state is updated by verifiers as described above.
 
 In this document, posting an erratum means that:
 
-   *  The report can be discovered through the RFC errata search page: https://www.rfc-editor.org/errata.php.
+   *  The report can be discovered through the RFC errata search page: <https://www.rfc-editor.org/errata.php>.
    *  A link to the RFC's errata page appears on the following:
-      * the results of the RFC search engine: https://www.rfc-editor.org/rfcsearch.html.
-      * the RFC's info page. For example, see https://www.rfc-editor.org/info/rfc2119.
-      * On the HTML format of the RFC. For example, https://www.rfc-editor.org/rfc/rfc2119.html.
+      * the results of the RFC search engine: <https://www.rfc-editor.org/rfcsearch.html>.
+      * the RFC's info page. For example, see <https://www.rfc-editor.org/info/rfc2119>.
+      * On the HTML format of the RFC. For example, <https://www.rfc-editor.org/rfc/rfc2119.html>.
 
 All erratum reports for a single RFC, except for obvious spam reports,
 are posted in the following order:
@@ -388,9 +388,9 @@ are posted in the following order:
 * Reported Technical
 * Reported Editorial
 
-All erratum reports are also available at https://www.rfc-editor.org/errata.json.
+All erratum reports are also available at <https://www.rfc-editor.org/errata.json>.
 
-Once verified, the erratum is available for viewing in the RFC's HTML format "inline" (for example, see https://www.rfc-editor.org/rfc/inline-errata/rfc3261.html) in addition to being on the RFC's errata page and discoverable through errata search functionality.
+Once verified, the erratum is available for viewing in the RFC's HTML format "inline" (for example, see <https://www.rfc-editor.org/rfc/inline-errata/rfc3261.html>) in addition to being on the RFC's errata page and discoverable through errata search functionality.
 
 ##  Erratum Report Announcements {#erratum-report-announcements}
 
