@@ -70,11 +70,11 @@ person for each RFC stream, and (2) using a Web portal to automate
 the tasks for verifying and posting erratum reports.
 
 This process assumes the organization of RFC publication into
-five document streams {{RFC8729}}: (1) the IETF stream, which includes
+five document streams {{RFC8729}}: (1) the IETF Stream, which includes
 both working group and individual submissions plus all RFCs that were
-published before the concept of streams existed (known as legacy RFCs), (2) the IAB stream,
-(3) the IRTF stream, (4) the Independent Submission stream, and
-(5) the Editorial stream.
+published before the concept of streams existed (known as legacy RFCs), (2) the IAB Stream,
+(3) the IRTF Stream, (4) the Independent Submission Stream, and
+(5) the Editorial Stream.
 Personnel representing each stream, called the stream-specific party (SSP), are responsible for
 verifying the erratum reports for that stream's RFCs.
 
@@ -82,10 +82,10 @@ At the organizational level, the SSPs are:
 
    *  IESG for legacy RFCs
    *  The Area Directors for RFCs that originated in one of that area's working groups
-   *  IAB for IAB stream documents
-   *  IRSG for IRTF stream documents
-   *  Independent Submissions Editor for Independent Submission stream documents
-   *  RFC Series Approval Board for Editorial stream documents
+   *  IAB for IAB Stream documents
+   *  IRSG for IRTF Stream documents
+   *  Independent Submissions Editor for Independent Submission Stream documents
+   *  RFC Series Approval Board for Editorial Stream documents
    *  RFC Production Center for all editorial erratum reports
 
 ##  Background on RFC Errata {#background}
@@ -123,7 +123,7 @@ than to publish new RFCs that update the erroneous documents.  In
 general, an erratum is intended to report an error in a document,
 rather than an error in the design of the protocol or other entity
 defined in the document, but this distinction may be too imprecise to
-avoid hard choices.  For the IETF stream, these choices are
+avoid hard choices.  For the IETF Stream, these choices are
 made by the IESG and are discussed in their guidelines on
 errata processing {{IESG-Err-Proc}}.
 
@@ -227,7 +227,7 @@ database:
    * Author(s)
    * Category ("status") of RFC
    * Source (Working Group Name, IAB, IRTF, or INDEPENDENT)
-   * Area (for IETF stream)
+   * Area (for IETF Stream)
    * Stream (IETF, IAB, IRTF, or INDEPENDENT)
    * Verifying Party (SSP Identity)
    * URL to the distinct erratum report
@@ -252,27 +252,27 @@ Legacy RFCs:
 * To: IESG
 * CC: reporter, rfc-editor@rfc-editor.org
 
-IETF stream:
+IETF Stream:
 
 * To: authors, ADs of the area from which the document came, document shepherd
 * CC: reporter, working group, rfc-editor@rfc-editor.org
 
-IAB stream:
+IAB Stream:
 
 * To: authors, IAB
 * CC: reporter, rfc-editor@rfc-editor.org
 
-IRTF stream:
+IRTF Stream:
 
 * To: authors, IRSG
 * CC: reporter, rfc-editor@rfc-editor.org
 
-Independent Submission stream:
+Independent Submission Stream:
 
 * To: authors, ISE
 * CC: reporter, rfc-editor@rfc-editor.org
 
-Editorial stream:
+Editorial Stream:
 
 * To: authors, RSAB
 * CC: reporter, rfc-editor@rfc-editor.org
@@ -287,27 +287,27 @@ Legacy RFCs:
 * To: rfc-editor@rfc-editor.org
 * CC: reporter
 
-IETF stream:
+IETF Stream:
 
 * To: rfc-editor@rfc-editor.org
 * CC: reporter, authors, working group
 
-IAB stream:
+IAB Stream:
 
 * To: rfc-editor@rfc-editor.org
 * CC: reporter, authors, IAB
 
-IRTF stream:
+IRTF Stream:
 
 * To: rfc-editor@rfc-editor.org
 * CC: reporter, authors
 
-Independent Submission stream:
+Independent Submission Stream:
 
 * To: rfc-editor@rfc-editor.org
 * CC: reporter, authors
 
-Editorial stream:
+Editorial Stream:
 
 * To: rfc-editor@rfc-editor.org
 * CC: reporter, authors
@@ -394,7 +394,7 @@ Once verified, the erratum is available for viewing in the RFC's HTML format "in
 
 ##  Erratum Report Announcements {#erratum-report-announcements}
 
-Like the notification of submissions, the announcement of a verified erratum report varies by Stream:
+Like the notification of submissions, the announcement of a verified erratum report varies by stream:
 
 Notifications are determined by stream and type of erratum report.
 
@@ -407,27 +407,27 @@ Legacy RFCs:
 * To: reporter, authors
 * CC: AD who verified the report, IESG, rfc-editor@rfc-editor.org
 
-IETF stream:
+IETF Stream:
 
 * To: reporter, authors
 * CC: AD who verified the report, IESG, working group, IANA, rfc-editor@rfc-editor.org
 
-IAB stream:
+IAB Stream:
 
 * To: reporter, authors
 * CC: IAB, IAB chair, rfc-editor@rfc-editor.org
 
-IRTF stream:
+IRTF Stream:
 
 * To: reporter, authors
 * CC: verifier from IRSG, IRSG, research group, IANA, rfc-editor@rfc-editor.org
 
-Independent Submission stream:
+Independent Submission Stream:
 
 * To: reporter, authors
 * CC: ISE (TODO - twice), IANA, rfc-editor@rfc-editor.org
 
-Editorial stream:
+Editorial Stream:
 
 * To: reporter, authors
 * CC: RSAB, RSWG, IANA, rfc-editor@rfc-editor.org
@@ -441,27 +441,27 @@ Legacy RFCs:
 * To: reporter, author
 * CC: rfc-ed@rfc-editor.org (TODO why different), IESG, IANA
 
-IETF stream:
+IETF Stream:
 
 * To: reporter, authors
 * CC: rfc-ed@rfc-editor.org, IESG, working group, IANA
 
-IAB stream:
+IAB Stream:
 
 * To: reporter, authors
 * CC: rfc-ed@rfc-editor.org, IAB, IAB chair
 
-IRTF stream:
+IRTF Stream:
 
 * To: reporter, authors
 * CC: rfc-ed@rfc-editor.org, IRSG, research group, IANA
 
-Independent Submission stream:
+Independent Submission Stream:
 
 * To: reporter, authors
 * CC: rfc-ed@rfc-editor.org, ISE, IANA
 
-Editorial stream:
+Editorial Stream:
 
 * To: reporter, authors
 * CC: RSAB, RSWG, IANA, rfc-ed@rfc-editor.org
