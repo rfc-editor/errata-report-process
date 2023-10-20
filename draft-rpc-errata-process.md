@@ -352,6 +352,16 @@ postings must be altered.  In this case, the RFC Editor can
 update the report as requested by an SSP or can grant an SSP temporary write
 access to the record to be updated.
 
+Some erratum reports contain bogus content in the Original text, Corrected text, 
+and/or Notes fields. These reports are considered junk. The RPC deletes
+such a report from the database and sends an email message to 
+all recipients of the report notification, except for the reporter, 
+notifying them that the report has been deleted. 
+
+If an erratum report duplicates an existing report, the RPC 
+deletes the report and does a reply-all to the notification message
+to say the report has been deleted. 
+
 ##  Posting Erratum Reports {#posting-erratum-reports}
 
 As soon as an erratum is submitted, it is available online
