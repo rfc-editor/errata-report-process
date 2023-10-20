@@ -90,7 +90,7 @@ At the organizational level, the SSPs are:
 
 ##  Background on RFC Errata {#background}
 
-The RFC Production Center began to collect and post RFC errata in 2000.  The
+The RFC Production Center (RPC) began to collect and post RFC errata in 2000.  The
 idea was to discourage readers from repeatedly pointing out the same
 typos in published RFCs.  This evolved into an errata verification
 and posting process that was a manually operated, email-based task.
@@ -193,7 +193,7 @@ technical errors in the same RFC, the two classes of errata must be
 entered as separate reports.  This initial classification is useful
 to the SSP; for example, it might allow technical errata to be
 processed with higher priority than editorial errata, and it allows
-the RFC Production Center to verify editorial erratum reports and to note frequent editorial
+the RPC to verify editorial erratum reports and to note frequent editorial
 errors that could possibly lead to improvements in the editorial
 process.
 
@@ -324,8 +324,8 @@ subject matter to help determine the validity of the erratum report.
 The initial notification message starts the verification process.
 The SSP and the authors are expected to determine the validity of
 any technical erratum report, by whatever procedure the SSP or the stream owner
-determines.  Th RFC Production Center determines the validity of editorial erratum reports.
-The RFC Production Center does not track the
+determines.  Th RPC determines the validity of editorial erratum reports.
+The RPC does not track the
 verification process for technical erratum reports.  The SSP, not the author(s) or the RPC,
 has final responsibility for verifying or rejecting each technical erratum report.
 This helps to avoid a great deal of complexity and confusion.
@@ -456,9 +456,9 @@ Editorial stream:
 * To: reporter, authors
 * CC: RSAB, RSWG, IANA, rfc-ed@rfc-editor.org
 
-#  Role of the RFC Production Center {#rpc-role}
+#  Role of the RPC {#rpc-role}
 
-The role of the RFC Production Center in errata processing is to:
+The role of the RPC in errata processing is to:
 
    1.  Operate the Web portal.
    2.  Maintain the errata database.
