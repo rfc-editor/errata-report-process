@@ -370,12 +370,11 @@ until its state is updated by verifiers as described above.
 
 In this document, posting an erratum means that:
 
-   1.  The report can be discovered through the RFC errata search page: https://www.rfc-editor.org/errata.php.
-   2.  A link to the RFC's errata page appears on the following:
-
-       * the results of the RFC search engine: https://www.rfc-editor.org/rfcsearch.html.
-       * the RFC's info page. For example, see https://www.rfc-editor.org/info/rfc2119.
-       * On the HTML format of the RFC. For example, https://www.rfc-editor.org/rfc/rfc2119.html.
+   *  The report can be discovered through the RFC errata search page: https://www.rfc-editor.org/errata.php.
+   *  A link to the RFC's errata page appears on the following:
+      * the results of the RFC search engine: https://www.rfc-editor.org/rfcsearch.html.
+      * the RFC's info page. For example, see https://www.rfc-editor.org/info/rfc2119.
+      * On the HTML format of the RFC. For example, https://www.rfc-editor.org/rfc/rfc2119.html.
 
 All erratum reports for a single RFC, except for obvious spam reports,
 are posted in the following order:
