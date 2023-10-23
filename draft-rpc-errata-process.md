@@ -208,12 +208,6 @@ verification.  The reporter can use the free-text Notes field to provide
 the rationale or to describe those errata that cannot easily be put
 into the Original/Corrected format.
 
-The Report page allows a set number of reports (i.e., 4 TODO) for the same
-RFC to be submitted at the same time, using the Original/Corrected
-form.  By having the reporter separate the report entries, the SSP should
-have an easier time verifying each entry.  We also hope that this
-encourages reporters to submit only the most valuable erratum reports.
-
 When the reporter submits the report, they are shown a preview of it.
 They can choose to edit the report, cancel, or submit. They must successfully
 navigate a reCAPTCHA in order to complete the report submission.
