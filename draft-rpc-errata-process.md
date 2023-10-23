@@ -49,6 +49,11 @@ informative:
     title: IESG Processing of RFC Errata for the IETF Stream
     author:
     - org: IESG
+  ERRATA_SYS_PROPOSAL:
+    target: https://datatracker.ietf.org/doc/draft-rfc-editor-errata-process/
+    title: RFC Editor Proposal for Handling RFC Errata
+    author:
+    - org: RFC Editor
 
 --- abstract
 
@@ -102,7 +107,7 @@ place.
 
 Because the number of errors reported turned out to be significantly
 greater than anticipated, and the process of vetting
-and posting required more human resources, a web-based process was created
+and posting required more human resources, a web-based process {{ERRATA_SYS_PROPOSAL}} was created
 and launched in November 2007.
 
 Another reason for the current, web-based approach to handling erratum reports
@@ -482,7 +487,8 @@ The role of the RPC in errata processing is to:
    2.  Maintain the errata database.
    3.  Make changes in previously posted errata at the request of the corresponding SSP, or give the SSP temporary write access to the record.
    4.  Act as SSP for editorial erratum reports.
-   5.  Track SSP and community requests for various features that will make the job of reporting and verifying errata more efficient.
+   5.  Remove junk and duplicate reports.
+   6.  Track SSP and community requests for various features that will make the job of reporting and verifying errata more efficient.
 
 #  Security Considerations {#security-considerations}
 
