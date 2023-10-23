@@ -232,6 +232,10 @@ database:
    * Verifying Party (SSP Identity)
    * URL to the distinct erratum report
 
+When a report is successfully submitted, a notification is sent via email
+(see {{initial-notification-message}}), and the report is posted to the rfc-editor.org website
+(see {{posting-erratum-reports}}).
+
 ##  Initial Notification Message {#initial-notification-message}
 
 Submitting the report triggers an email notification message to
@@ -321,6 +325,36 @@ Editorial Stream:
 
 The message includes the information listed in {{reporting-errata}}.
 
+##  Posting Erratum Reports {#posting-erratum-reports}
+
+As soon as an erratum is submitted, it is available online
+as described below.  The erratum entry is marked Reported
+until its state is updated by verifiers as described in {{verifying-erratum-reports}}.
+Duplicate and junk reports are available and marked as Reported
+only until they are deleted from the database by the RPC.
+
+In this document, posting an erratum means that:
+
+   *  The report can be discovered through the RFC errata search page: <https://www.rfc-editor.org/errata.php>.
+   *  A link to the RFC's errata page appears on the following:
+      * the results of the RFC search engine: <https://www.rfc-editor.org/rfcsearch.html>.
+      * the RFC's info page. For example, see <https://www.rfc-editor.org/info/rfc2119>.
+      * On the HTML format of the RFC. For example, <https://www.rfc-editor.org/rfc/rfc2119.html>.
+
+All erratum reports for a single RFC, except for obvious spam reports,
+are posted in the following order:
+
+* Verified Technical
+* Verified Editorial
+* Held for Document Update Technical
+* Held for Document Update Editorial
+* Rejected Technical
+* Rejected Editorial
+* Reported Technical
+* Reported Editorial
+
+All erratum reports are also available at <https://www.rfc-editor.org/errata.json>.
+
 ##  Verifying Erratum Reports {#verifying-erratum-reports}
 
 The initial notification message starts the verification process.
@@ -369,36 +403,6 @@ It sometimes happens that there are errata for errata, i.e., earlier
 postings must be altered.  In this case, the RFC Editor can
 update the report as requested by an SSP or can grant an SSP temporary write
 access to the record to be updated.
-
-##  Posting Erratum Reports {#posting-erratum-reports}
-
-As soon as an erratum is submitted, it is available online
-as described below.  The erratum entry is marked Reported
-until its state is updated by verifiers as described above.
-Duplicate and junk reports are available and marked as Reported
-only until they are deleted from the database by the RPC.
-
-In this document, posting an erratum means that:
-
-   *  The report can be discovered through the RFC errata search page: <https://www.rfc-editor.org/errata.php>.
-   *  A link to the RFC's errata page appears on the following:
-      * the results of the RFC search engine: <https://www.rfc-editor.org/rfcsearch.html>.
-      * the RFC's info page. For example, see <https://www.rfc-editor.org/info/rfc2119>.
-      * On the HTML format of the RFC. For example, <https://www.rfc-editor.org/rfc/rfc2119.html>.
-
-All erratum reports for a single RFC, except for obvious spam reports,
-are posted in the following order:
-
-* Verified Technical
-* Verified Editorial
-* Held for Document Update Technical
-* Held for Document Update Editorial
-* Rejected Technical
-* Rejected Editorial
-* Reported Technical
-* Reported Editorial
-
-All erratum reports are also available at <https://www.rfc-editor.org/errata.json>.
 
 Once verified, the erratum is available for viewing in the RFC's HTML format "inline" (for example, see <https://www.rfc-editor.org/rfc/inline-errata/rfc3261.html>) in addition to being on the RFC's errata page and discoverable through errata search functionality.
 
