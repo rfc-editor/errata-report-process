@@ -170,7 +170,7 @@ The reporter is asked to check that the erratum does
 not already appear on the errata page for any given RFC.
 This step is to prevent multiple reports of the same error.
 
-The user then reports the erratum using a Web form to create a report
+The reporter then reports the erratum using a Web form to create a report
 record in the RFC errata database.  The report is composed of
 information provided by the reporter and is supplemented by data
 drawn from the primary rfc-editor.org database.  The erratum report
@@ -241,6 +241,13 @@ verifying the error and transparency in the process.
 
 Notifications are determined by stream and type of erratum report
 and are sent by rfc-editor@rfc-editor.org to the following SSPs.
+
+Note that while SSP email addresses are maintained by the
+database, author email addresses, especially for older RFCs,
+are often out of date. In these cases, the
+SSP has the option of seeking current author contact
+information or relying on other individuals with knowledge of the
+subject matter to help determine the validity of the erratum report.
 
 ### Technical Erratum Reports
 
@@ -314,17 +321,28 @@ Editorial Stream:
 
 The message includes the information listed in {{reporting-errata}}.
 
-Author email addresses are often out of date.  In these cases, the
-SSP has the option of seeking current author contact
-information or relying on other individuals with knowledge of the
-subject matter to help determine the validity of the erratum report.
-
 ##  Verifying Erratum Reports {#verifying-erratum-reports}
 
 The initial notification message starts the verification process.
+
+The RPC determines the validity of editorial erratum reports and also
+handles any junk or duplicate reports, whether they are labeled as editorial
+or technical.
+
+Junk erratum reports contain bogus content in the Original text, Corrected text,
+and/or Notes fields. The RPC deletes
+such a report from the database and sends an email message to
+all recipients of the report notification, except for the reporter,
+notifying them that the report has been deleted.
+
+If an erratum report duplicates an existing report, the RPC
+deletes the report and sends a reply-all to the notification message
+to say the report has been deleted.
+
 The SSP and the authors are expected to determine the validity of
 any technical erratum report, by whatever procedure the SSP or the stream owner
-determines.  Th RPC determines the validity of editorial erratum reports.
+determines.
+
 The RPC does not track the
 verification process for technical erratum reports.  The SSP, not the author(s) or the RPC,
 has final responsibility for verifying or rejecting each technical erratum report.
@@ -334,7 +352,7 @@ Each SSP has a login account on the errata portal to edit and verify erratum
 reports.  The SSP identity is added to the record and
 the individual is able to edit, verify, or reject each erratum.
 
-The Notes field allows users to submit information in any fashion
+The Notes field allows reporters to submit information in any fashion
 they like, so there is a possibility of multiple errors being
 reported in this field.  The SSP is able to split
 the report into multiple records to maintain one record per erratum report, as
@@ -352,21 +370,13 @@ postings must be altered.  In this case, the RFC Editor can
 update the report as requested by an SSP or can grant an SSP temporary write
 access to the record to be updated.
 
-Some erratum reports contain bogus content in the Original text, Corrected text,
-and/or Notes fields. These reports are considered junk. The RPC deletes
-such a report from the database and sends an email message to
-all recipients of the report notification, except for the reporter,
-notifying them that the report has been deleted.
-
-If an erratum report duplicates an existing report, the RPC
-deletes the report and does a reply-all to the notification message
-to say the report has been deleted.
-
 ##  Posting Erratum Reports {#posting-erratum-reports}
 
 As soon as an erratum is submitted, it is available online
 as described below.  The erratum entry is marked Reported
 until its state is updated by verifiers as described above.
+Duplicate and junk reports are available and marked as Reported
+only until they are deleted from the database by the RPC.
 
 In this document, posting an erratum means that:
 
