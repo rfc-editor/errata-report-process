@@ -274,7 +274,7 @@ IAB Stream:
 
 IRTF Stream:
 
-* To: authors, IRSG
+* To: authors, IRSG, research group
 * CC: reporter, rfc-editor@rfc-editor.org
 
 Independent Submission Stream:
