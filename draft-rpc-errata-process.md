@@ -274,8 +274,8 @@ IAB Stream:
 
 IRTF Stream:
 
-* To: authors, IRSG, research group
-* CC: reporter, rfc-editor@rfc-editor.org
+* To: authors, IRSG
+* CC: reporter, rfc-editor@rfc-editor.org, research group
 
 Independent Submission Stream:
 
@@ -285,7 +285,7 @@ Independent Submission Stream:
 Editorial Stream:
 
 * To: authors, RSAB
-* CC: reporter, rfc-editor@rfc-editor.org
+* CC: reporter, rfc-editor@rfc-editor.org, RSWG
 
 ### Editorial Erratum Reports
 
@@ -310,7 +310,7 @@ IAB Stream:
 IRTF Stream:
 
 * To: rfc-editor@rfc-editor.org
-* CC: reporter, authors
+* CC: reporter, authors, research group
 
 Independent Submission Stream:
 
@@ -320,7 +320,7 @@ Independent Submission Stream:
 Editorial Stream:
 
 * To: rfc-editor@rfc-editor.org
-* CC: reporter, authors
+* CC: reporter, authors, RSWG
 
 The message includes the information listed in {{reporting-errata}}.
 
