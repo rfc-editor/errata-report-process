@@ -5,8 +5,8 @@
 RSWG                                                            A. Russo
 Internet-Draft                                                 S. Ginoza
 Intended status: Informational                                J. Mahoney
-Expires: 3 August 2024                             RFC Production Center
-                                                         31 January 2024
+Expires: 14 August 2024                            RFC Production Center
+                                                        11 February 2024
 
 
             Current Process for Handling RFC Errata Reports
@@ -44,7 +44,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 3 August 2024.
+   This Internet-Draft will expire on 14 August 2024.
 
 Copyright Notice
 
@@ -330,9 +330,9 @@ Table of Contents
 
    IRTF Stream:
 
-   *  To: authors, IRSG, research group
+   *  To: authors, IRSG
 
-   *  CC: reporter, rfc-editor@rfc-editor.org
+   *  CC: reporter, rfc-editor@rfc-editor.org, research group
 
    Independent Submission Stream:
 
@@ -344,7 +344,7 @@ Table of Contents
 
    *  To: authors, RSAB
 
-   *  CC: reporter, rfc-editor@rfc-editor.org
+   *  CC: reporter, rfc-editor@rfc-editor.org, RSWG
 
 2.2.2.  Editorial Erratum Reports
 
@@ -373,7 +373,7 @@ Table of Contents
 
    *  To: rfc-editor@rfc-editor.org
 
-   *  CC: reporter, authors
+   *  CC: reporter, authors, research group
 
    Independent Submission Stream:
 
@@ -385,7 +385,7 @@ Table of Contents
 
    *  To: rfc-editor@rfc-editor.org
 
-   *  CC: reporter, authors
+   *  CC: reporter, authors, RSWG
 
    The message includes the information listed in Section 2.1.
 
