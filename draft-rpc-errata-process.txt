@@ -3,10 +3,9 @@
 
 
 RSWG                                                            A. Russo
-Internet-Draft                                                 S. Ginoza
-Intended status: Informational                                J. Mahoney
-Expires: 15 August 2024                            RFC Production Center
-                                                        12 February 2024
+Internet-Draft                                                J. Mahoney
+Intended status: Informational                     RFC Production Center
+Expires: 15 August 2024                                 12 February 2024
 
 
             Current Process for Handling RFC Errata Reports
@@ -82,6 +81,7 @@ Table of Contents
    4.  Security Considerations
    5.  IANA Considerations
    6.  Informative References
+   Acknowledgements
    Authors' Addresses
 
 1.  Introduction
@@ -654,16 +654,17 @@ Table of Contents
               RFC Editor", RFC 8729, DOI 10.17487/RFC8729, February
               2020, <https://www.rfc-editor.org/rfc/rfc8729>.
 
+Acknowledgements
+
+   This document is based on [ERRATA_SYS_PROPOSAL], written by Alice
+   Russo (née Hagens), Sandy Ginoza, and Bob Braden.  This document
+   received helpful feedback from Sandy Ginoza, TBD...
+
 Authors' Addresses
 
    Alice Russo
    RFC Production Center
    Email: arusso@amsl.com
-
-
-   Sandy Ginoza
-   RFC Production Center
-   Email: sginoza@amsl.com
 
 
    Jean Mahoney
