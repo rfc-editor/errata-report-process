@@ -2,10 +2,10 @@
 
 This is the working area for the individual Internet-Draft, "Current Process for Handling RFC Errata Reports".
 
-* [Editor's Copy](https://ajeanmahoney.github.io/errata-report-process/#go.draft-rpc-errata-process-latest.html)
+* [Editor's Copy](https://rfc-editor.github.io/errata-report-process/#go.draft-rpc-errata-process-latest.html)
 * [Datatracker Page](https://datatracker.ietf.org/doc/draft-rpc-errata-process-latest)
 * [Individual Draft](https://datatracker.ietf.org/doc/html/draft-rpc-errata-process-latest)
-* [Compare Editor's Copy to Individual Draft](https://ajeanmahoney.github.io/errata-report-process/#go.draft-rpc-errata-process-latest.diff)
+* [Compare Editor's Copy to Individual Draft](https://rfc-editor.github.io/errata-report-process/#go.draft-rpc-errata-process-latest.diff)
 
 
 ## Contributing
