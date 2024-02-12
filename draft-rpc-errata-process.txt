@@ -5,8 +5,8 @@
 RSWG                                                            A. Russo
 Internet-Draft                                                 S. Ginoza
 Intended status: Informational                                J. Mahoney
-Expires: 14 August 2024                            RFC Production Center
-                                                        11 February 2024
+Expires: 15 August 2024                            RFC Production Center
+                                                        12 February 2024
 
 
             Current Process for Handling RFC Errata Reports
@@ -21,6 +21,10 @@ Abstract
    or person for each RFC stream, and (2) using a Web portal to automate
    the processing of erratum reports.  This system was launched in
    November 2007.
+
+   This draft documents the existing system as a means to facilitate
+   discussion to revamp how errata are reported, reviewed, and
+   publicized.
 
 Discussion Venues
 
@@ -44,7 +48,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 14 August 2024.
+   This Internet-Draft will expire on 15 August 2024.
 
 Copyright Notice
 
