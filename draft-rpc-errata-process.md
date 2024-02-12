@@ -64,6 +64,8 @@ responsibility for verification to the appropriate organization or
 person for each RFC stream, and (2) using a Web portal to automate
 the processing of erratum reports. This system was launched in November 2007.
 
+This draft documents the existing system as a means to facilitate discussion to revamp how errata are reported, reviewed, and publicized.   
+
 --- middle
 
 #  Introduction {#introduction}
