@@ -22,11 +22,6 @@ author:
     org: RFC Production Center
     email: arusso@amsl.com
   -
-    ins: S. Ginoza
-    name: Sandy Ginoza
-    org: RFC Production Center
-    email: sginoza@amsl.com
-  -
     ins: J. Mahoney
     name: Jean Mahoney
     org: RFC Production Center
@@ -515,3 +510,10 @@ confidence that they are logging into the rfc-editor.org website.
 This document has no IANA actions.
 
 --- back
+
+# Acknowledgements
+{: numbered="false"}
+
+This document is based on {{ERRATA_SYS_PROPOSAL}}, written by
+Alice Russo (née Hagens), Sandy Ginoza, and Bob Braden. This document
+received helpful feedback from Sandy Ginoza, TBD...
