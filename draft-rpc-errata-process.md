@@ -512,6 +512,6 @@ This document has no IANA actions.
 # Acknowledgements
 {: numbered="false"}
 
-This document is based on {{ERRATA_SYS_PROPOSAL}}, written by 
+This document is based on {{ERRATA_SYS_PROPOSAL}}, written by
 Alice Russo (née Hagens), Sandy Ginoza, and Bob Braden. This document
 received helpful feedback from Sandy Ginoza, TBD...
