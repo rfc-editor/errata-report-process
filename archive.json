@@ -1,7 +1,7 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-02-11T01:02:18.836247+00:00",
-  "repo": "ajeanmahoney/errata-report-process",
+  "timestamp": "2024-02-13T00:58:22.356382+00:00",
+  "repo": "rfc-editor/errata-report-process",
   "labels": [
     {
       "name": "bug",
@@ -54,10 +54,10 @@
       "number": 1,
       "id": "I_kwDOKaCsxc59ySH9",
       "title": "RGs are now included in report notifications",
-      "url": "https://github.com/ajeanmahoney/errata-report-process/issues/1",
+      "url": "https://github.com/rfc-editor/errata-report-process/issues/1",
       "state": "CLOSED",
       "author": "ajeanmahoney",
-      "authorAssociation": "OWNER",
+      "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "",
@@ -67,5 +67,76 @@
       "comments": []
     }
   ],
-  "pulls": []
+  "pulls": [
+    {
+      "number": 2,
+      "id": "PR_kwDOKaCsxc5mrOl2",
+      "title": "Added Acknowledgments section",
+      "url": "https://github.com/rfc-editor/errata-report-process/pull/2",
+      "state": "MERGED",
+      "author": "ajeanmahoney",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Moved Sandy from authors list to Acknowledgments at her request.",
+      "createdAt": "2024-02-12T19:51:49Z",
+      "updatedAt": "2024-02-12T20:21:46Z",
+      "baseRepository": "rfc-editor/errata-report-process",
+      "baseRefName": "main",
+      "baseRefOid": "436a60929fb8b031f81c2b17f476e0f4c9b48282",
+      "headRepository": "rfc-editor/errata-report-process",
+      "headRefName": "ajeanmahoney-acks-add",
+      "headRefOid": "2761a3e85e6c74bdf46ee857910a509730b56870",
+      "closedAt": "2024-02-12T20:21:43Z",
+      "mergedAt": "2024-02-12T20:21:43Z",
+      "mergedBy": "ajeanmahoney",
+      "mergeCommit": {
+        "oid": "91f5d61898913e86490806c96b7a856ce57b3c79"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOKaCsxc5v03qU",
+          "commit": {
+            "abbreviatedOid": "da74cce"
+          },
+          "author": "sginoza",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "lgtm - thanks.",
+          "createdAt": "2024-02-12T20:10:19Z",
+          "updatedAt": "2024-02-12T20:10:19Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "id": "PR_kwDOKaCsxc5mrTAW",
+      "title": "Update draft-rpc-errata-process.md",
+      "url": "https://github.com/rfc-editor/errata-report-process/pull/3",
+      "state": "MERGED",
+      "author": "sginoza",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Add to abstract that a goal of this doc is to facilitate discussion for a new system.\r\nNot sure whether we should specify that a complete redesign is in scope - perhaps that's for @ajeanmahoney's  requirements documentation. ",
+      "createdAt": "2024-02-12T20:05:34Z",
+      "updatedAt": "2024-02-12T20:09:43Z",
+      "baseRepository": "rfc-editor/errata-report-process",
+      "baseRefName": "main",
+      "baseRefOid": "436a60929fb8b031f81c2b17f476e0f4c9b48282",
+      "headRepository": "rfc-editor/errata-report-process",
+      "headRefName": "sginoza-facilitate-discussion",
+      "headRefOid": "4464eeee6c9ebb841c38dab861877fa70e9c430e",
+      "closedAt": "2024-02-12T20:09:38Z",
+      "mergedAt": "2024-02-12T20:09:38Z",
+      "mergedBy": "ajeanmahoney",
+      "mergeCommit": {
+        "oid": "b21384b53ed3f2bdd5347658e4cb74054fbff06f"
+      },
+      "comments": [],
+      "reviews": []
+    }
+  ]
 }
