@@ -16,11 +16,11 @@ person for each RFC stream, and (2) using a Web portal to automate
 the processing of erratum reports. This system was launched in November 2007. 
        This draft documents the existing system as a means to facilitate discussion to revamp how errata are reported, reviewed, and publicized. 
     " name="description">
-<meta content="xml2rfc 3.19.2" name="generator">
+<meta content="xml2rfc 3.19.4" name="generator">
 <meta content="errata system" name="keyword">
 <meta content="draft-rpc-errata-process-latest" name="ietf.draft">
 <!-- Generator version information:
-  xml2rfc 3.19.2
+  xml2rfc 3.19.4
     Python 3.11.6
     ConfigArgParse 1.7
     google-i18n-address 3.1.0
@@ -1036,7 +1036,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 </tr></thead>
 <tfoot><tr>
 <td class="left">Russo &amp; Mahoney</td>
-<td class="center">Expires 15 August 2024</td>
+<td class="center">Expires 29 August 2024</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1049,12 +1049,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <dd class="internet-draft">draft-rpc-errata-process-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2024-02-12" class="published">12 February 2024</time>
+<time datetime="2024-02-26" class="published">26 February 2024</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Informational</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2024-08-15">15 August 2024</time></dd>
+<dd class="expires"><time datetime="2024-08-29">29 August 2024</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -1106,7 +1106,7 @@ the processing of erratum reports. This system was launched in November 2007.<a 
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 15 August 2024.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 29 August 2024.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1225,7 +1225,7 @@ verifying the erratum reports for that stream's RFCs.<a href="#section-1-2" clas
           <p id="section-1-4.1.1">IESG for legacy RFCs<a href="#section-1-4.1.1" class="pilcrow">¶</a></p>
 </li>
         <li class="normal" id="section-1-4.2">
-          <p id="section-1-4.2.1">The Area Directors for RFCs that originated in one of that area's working groups<a href="#section-1-4.2.1" class="pilcrow">¶</a></p>
+          <p id="section-1-4.2.1">IESG for IETF Stream documents<a href="#section-1-4.2.1" class="pilcrow">¶</a></p>
 </li>
         <li class="normal" id="section-1-4.3">
           <p id="section-1-4.3.1">IAB for IAB Stream documents<a href="#section-1-4.3.1" class="pilcrow">¶</a></p>
@@ -1239,10 +1239,8 @@ verifying the erratum reports for that stream's RFCs.<a href="#section-1-2" clas
         <li class="normal" id="section-1-4.6">
           <p id="section-1-4.6.1">RFC Series Approval Board for Editorial Stream documents<a href="#section-1-4.6.1" class="pilcrow">¶</a></p>
 </li>
-        <li class="normal" id="section-1-4.7">
-          <p id="section-1-4.7.1">RFC Production Center for all editorial erratum reports<a href="#section-1-4.7.1" class="pilcrow">¶</a></p>
-</li>
       </ul>
+<p id="section-1-5">In addition, the RFC Production Center reviews editorial errata reports from all streams and marks them as verified when possible, as per <span>[<a href="#IESG-Err-Proc" class="cite xref">IESG-Err-Proc</a>]</span>.<a href="#section-1-5" class="pilcrow">¶</a></p>
 <div id="background">
 <section id="section-1.1">
         <h3 id="name-background-on-rfc-errata">
@@ -1325,7 +1323,7 @@ above states, see <span>[<a href="#IESG-Err-Proc" class="cite xref">IESG-Err-Pro
           <p id="section-2-7.2.1">Report -- report a new erratum, as described below.  (See <span>[<a href="#HOW_TO_REPORT" class="cite xref">HOW_TO_REPORT</a>]</span> for instructions on reporting a new erratum.)<a href="#section-2-7.2.1" class="pilcrow">¶</a></p>
 </li>
         <li id="section-2-7.3">
-          <p id="section-2-7.3.1">Edit/Verify/Reject -- used by an SSP to edit the contents of an erratum and change its state.<a href="#section-2-7.3.1" class="pilcrow">¶</a></p>
+          <p id="section-2-7.3.1">Edit/Verify/Reject -- used by an SSP to edit the contents of an erratum and change its status.<a href="#section-2-7.3.1" class="pilcrow">¶</a></p>
 </li>
       </ol>
 <p id="section-2-8">The following sections describe the process in more detail.<a href="#section-2-8" class="pilcrow">¶</a></p>
@@ -1338,8 +1336,8 @@ above states, see <span>[<a href="#IESG-Err-Proc" class="cite xref">IESG-Err-Pro
 RFC errata page <span>[<a href="#ERRATA_PAGE" class="cite xref">ERRATA_PAGE</a>]</span>, enters the RFC number of the
 document containing the error, and clicks the Search button.
 All earlier erratum reports for that RFC are
-displayed. These reports include verified errata, reported errata,
-issues that are held for document update, and rejected reports.
+displayed. This includes reports of any status (Verified, Reported,
+Held for Document Update, and Rejected).
 The reporter is asked to check that the erratum does
 not already appear on the errata page for any given RFC.
 This step is to prevent multiple reports of the same error.<a href="#section-2.1-1" class="pilcrow">¶</a></p>
@@ -1357,7 +1355,7 @@ record includes the following fields:<a href="#section-2.1-2" class="pilcrow">¶
             <p id="section-2.1-4.2.1">Reporter email address (Note that the address is provided for communication purposes with the relevant SSPs and authors, but it is not displayed in the online erratum report.)<a href="#section-2.1-4.2.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-2.1-4.3">
-            <p id="section-2.1-4.3.1">Publication format: Text, PDF, HTML<a href="#section-2.1-4.3.1" class="pilcrow">¶</a></p>
+            <p id="section-2.1-4.3.1">Publication format: Text, PDF, HTML (This field is present for only RFC 8650 and higher.)<a href="#section-2.1-4.3.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-2.1-4.4">
             <p id="section-2.1-4.4.1">Type: editorial, technical<a href="#section-2.1-4.4.1" class="pilcrow">¶</a></p>
@@ -1668,7 +1666,7 @@ has final responsibility for verifying or rejecting each technical erratum repor
 This helps to avoid a great deal of complexity and confusion.<a href="#section-2.4-6" class="pilcrow">¶</a></p>
 <p id="section-2.4-7">Each SSP has a login account on the errata portal to edit and verify erratum
 reports.  The SSP identity is added to the record and
-the individual is able to edit, verify, or reject each erratum.<a href="#section-2.4-7" class="pilcrow">¶</a></p>
+the individual is able to edit, verify, hold, or reject each erratum.<a href="#section-2.4-7" class="pilcrow">¶</a></p>
 <p id="section-2.4-8">The Notes field allows reporters to submit information in any fashion
 they like, so there is a possibility of multiple errors being
 reported in this field.  The SSP is able to split
@@ -1692,21 +1690,21 @@ access to the record to be updated.<a href="#section-2.4-10" class="pilcrow">¶<
         <h3 id="name-erratum-report-announcement">
 <a href="#section-2.5" class="section-number selfRef">2.5. </a><a href="#name-erratum-report-announcement" class="section-name selfRef">Erratum Report Announcements</a>
         </h3>
-<p id="section-2.5-1">Like the notification of submissions, the announcement of a verified erratum report varies by stream:<a href="#section-2.5-1" class="pilcrow">¶</a></p>
+<p id="section-2.5-1">Like the notification of submissions, the announcement of a verified (or held or rejected) erratum report varies by stream:<a href="#section-2.5-1" class="pilcrow">¶</a></p>
 <p id="section-2.5-2">Notifications are determined by stream and type of erratum report.<a href="#section-2.5-2" class="pilcrow">¶</a></p>
 <div id="technical-erratum-reports-1">
 <section id="section-2.5.1">
           <h4 id="name-technical-erratum-reports-2">
 <a href="#section-2.5.1" class="section-number selfRef">2.5.1. </a><a href="#name-technical-erratum-reports-2" class="section-name selfRef">Technical Erratum Reports</a>
           </h4>
-<p id="section-2.5.1-1">The announcement of verified technical erratum reports are sent from rfc-editor@rfc-editor.org to the following:<a href="#section-2.5.1-1" class="pilcrow">¶</a></p>
+<p id="section-2.5.1-1">The announcement of technical erratum reports are sent from rfc-editor@rfc-editor.org to the following:<a href="#section-2.5.1-1" class="pilcrow">¶</a></p>
 <p id="section-2.5.1-2">Legacy RFCs:<a href="#section-2.5.1-2" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-2.5.1-3.1">
               <p id="section-2.5.1-3.1.1">To: reporter, authors<a href="#section-2.5.1-3.1.1" class="pilcrow">¶</a></p>
 </li>
             <li class="normal" id="section-2.5.1-3.2">
-              <p id="section-2.5.1-3.2.1">CC: AD who verified the report, IESG, rfc-editor@rfc-editor.org<a href="#section-2.5.1-3.2.1" class="pilcrow">¶</a></p>
+              <p id="section-2.5.1-3.2.1">CC: verifier, IESG, rfc-editor@rfc-editor.org<a href="#section-2.5.1-3.2.1" class="pilcrow">¶</a></p>
 </li>
           </ul>
 <p id="section-2.5.1-4">IETF Stream:<a href="#section-2.5.1-4" class="pilcrow">¶</a></p>
@@ -1715,7 +1713,7 @@ access to the record to be updated.<a href="#section-2.4-10" class="pilcrow">¶<
               <p id="section-2.5.1-5.1.1">To: reporter, authors<a href="#section-2.5.1-5.1.1" class="pilcrow">¶</a></p>
 </li>
             <li class="normal" id="section-2.5.1-5.2">
-              <p id="section-2.5.1-5.2.1">CC: AD who verified the report, IESG, working group, IANA, rfc-editor@rfc-editor.org<a href="#section-2.5.1-5.2.1" class="pilcrow">¶</a></p>
+              <p id="section-2.5.1-5.2.1">CC: verifier, IESG, working group, IANA, rfc-editor@rfc-editor.org<a href="#section-2.5.1-5.2.1" class="pilcrow">¶</a></p>
 </li>
           </ul>
 <p id="section-2.5.1-6">IAB Stream:<a href="#section-2.5.1-6" class="pilcrow">¶</a></p>
@@ -1724,7 +1722,7 @@ access to the record to be updated.<a href="#section-2.4-10" class="pilcrow">¶<
               <p id="section-2.5.1-7.1.1">To: reporter, authors<a href="#section-2.5.1-7.1.1" class="pilcrow">¶</a></p>
 </li>
             <li class="normal" id="section-2.5.1-7.2">
-              <p id="section-2.5.1-7.2.1">CC: IAB, IAB chair, rfc-editor@rfc-editor.org<a href="#section-2.5.1-7.2.1" class="pilcrow">¶</a></p>
+              <p id="section-2.5.1-7.2.1">CC: verifier, IAB, IAB chair, rfc-editor@rfc-editor.org<a href="#section-2.5.1-7.2.1" class="pilcrow">¶</a></p>
 </li>
           </ul>
 <p id="section-2.5.1-8">IRTF Stream:<a href="#section-2.5.1-8" class="pilcrow">¶</a></p>
@@ -1733,7 +1731,7 @@ access to the record to be updated.<a href="#section-2.4-10" class="pilcrow">¶<
               <p id="section-2.5.1-9.1.1">To: reporter, authors<a href="#section-2.5.1-9.1.1" class="pilcrow">¶</a></p>
 </li>
             <li class="normal" id="section-2.5.1-9.2">
-              <p id="section-2.5.1-9.2.1">CC: verifier from IRSG, IRSG, research group, IANA, rfc-editor@rfc-editor.org<a href="#section-2.5.1-9.2.1" class="pilcrow">¶</a></p>
+              <p id="section-2.5.1-9.2.1">CC: verifier, IRSG, research group, IANA, rfc-editor@rfc-editor.org<a href="#section-2.5.1-9.2.1" class="pilcrow">¶</a></p>
 </li>
           </ul>
 <p id="section-2.5.1-10">Independent Submission Stream:<a href="#section-2.5.1-10" class="pilcrow">¶</a></p>
@@ -1742,7 +1740,7 @@ access to the record to be updated.<a href="#section-2.4-10" class="pilcrow">¶<
               <p id="section-2.5.1-11.1.1">To: reporter, authors<a href="#section-2.5.1-11.1.1" class="pilcrow">¶</a></p>
 </li>
             <li class="normal" id="section-2.5.1-11.2">
-              <p id="section-2.5.1-11.2.1">CC: ISE, Document Shepherd, IANA, rfc-editor@rfc-editor.org<a href="#section-2.5.1-11.2.1" class="pilcrow">¶</a></p>
+              <p id="section-2.5.1-11.2.1">CC: verifier, ISE, Document Shepherd, IANA, rfc-editor@rfc-editor.org<a href="#section-2.5.1-11.2.1" class="pilcrow">¶</a></p>
 </li>
           </ul>
 <p id="section-2.5.1-12">Editorial Stream:<a href="#section-2.5.1-12" class="pilcrow">¶</a></p>
@@ -1751,7 +1749,7 @@ access to the record to be updated.<a href="#section-2.4-10" class="pilcrow">¶<
               <p id="section-2.5.1-13.1.1">To: reporter, authors<a href="#section-2.5.1-13.1.1" class="pilcrow">¶</a></p>
 </li>
             <li class="normal" id="section-2.5.1-13.2">
-              <p id="section-2.5.1-13.2.1">CC: RSAB, RSWG, IANA, rfc-editor@rfc-editor.org<a href="#section-2.5.1-13.2.1" class="pilcrow">¶</a></p>
+              <p id="section-2.5.1-13.2.1">CC: verifier, RSAB, RSWG, IANA, rfc-editor@rfc-editor.org<a href="#section-2.5.1-13.2.1" class="pilcrow">¶</a></p>
 </li>
           </ul>
 </section>
@@ -1768,7 +1766,7 @@ access to the record to be updated.<a href="#section-2.4-10" class="pilcrow">¶<
               <p id="section-2.5.2-3.1.1">To: reporter, author<a href="#section-2.5.2-3.1.1" class="pilcrow">¶</a></p>
 </li>
             <li class="normal" id="section-2.5.2-3.2">
-              <p id="section-2.5.2-3.2.1">CC: rfc-ed@rfc-editor.org, IESG, IANA<a href="#section-2.5.2-3.2.1" class="pilcrow">¶</a></p>
+              <p id="section-2.5.2-3.2.1">CC: verifier, rfc-ed@rfc-editor.org, IESG, IANA<a href="#section-2.5.2-3.2.1" class="pilcrow">¶</a></p>
 </li>
           </ul>
 <p id="section-2.5.2-4">IETF Stream:<a href="#section-2.5.2-4" class="pilcrow">¶</a></p>
@@ -1777,7 +1775,7 @@ access to the record to be updated.<a href="#section-2.4-10" class="pilcrow">¶<
               <p id="section-2.5.2-5.1.1">To: reporter, authors<a href="#section-2.5.2-5.1.1" class="pilcrow">¶</a></p>
 </li>
             <li class="normal" id="section-2.5.2-5.2">
-              <p id="section-2.5.2-5.2.1">CC: rfc-ed@rfc-editor.org, IESG, working group, IANA<a href="#section-2.5.2-5.2.1" class="pilcrow">¶</a></p>
+              <p id="section-2.5.2-5.2.1">CC: verifier, rfc-ed@rfc-editor.org, IESG, working group, IANA<a href="#section-2.5.2-5.2.1" class="pilcrow">¶</a></p>
 </li>
           </ul>
 <p id="section-2.5.2-6">IAB Stream:<a href="#section-2.5.2-6" class="pilcrow">¶</a></p>
@@ -1786,7 +1784,7 @@ access to the record to be updated.<a href="#section-2.4-10" class="pilcrow">¶<
               <p id="section-2.5.2-7.1.1">To: reporter, authors<a href="#section-2.5.2-7.1.1" class="pilcrow">¶</a></p>
 </li>
             <li class="normal" id="section-2.5.2-7.2">
-              <p id="section-2.5.2-7.2.1">CC: rfc-ed@rfc-editor.org, IAB, IAB chair<a href="#section-2.5.2-7.2.1" class="pilcrow">¶</a></p>
+              <p id="section-2.5.2-7.2.1">CC: verifier, rfc-ed@rfc-editor.org, IAB, IAB chair<a href="#section-2.5.2-7.2.1" class="pilcrow">¶</a></p>
 </li>
           </ul>
 <p id="section-2.5.2-8">IRTF Stream:<a href="#section-2.5.2-8" class="pilcrow">¶</a></p>
@@ -1795,7 +1793,7 @@ access to the record to be updated.<a href="#section-2.4-10" class="pilcrow">¶<
               <p id="section-2.5.2-9.1.1">To: reporter, authors<a href="#section-2.5.2-9.1.1" class="pilcrow">¶</a></p>
 </li>
             <li class="normal" id="section-2.5.2-9.2">
-              <p id="section-2.5.2-9.2.1">CC: rfc-ed@rfc-editor.org, IRSG, research group, IANA<a href="#section-2.5.2-9.2.1" class="pilcrow">¶</a></p>
+              <p id="section-2.5.2-9.2.1">CC: verifier, rfc-ed@rfc-editor.org, IRSG, research group, IANA<a href="#section-2.5.2-9.2.1" class="pilcrow">¶</a></p>
 </li>
           </ul>
 <p id="section-2.5.2-10">Independent Submission Stream:<a href="#section-2.5.2-10" class="pilcrow">¶</a></p>
@@ -1804,7 +1802,7 @@ access to the record to be updated.<a href="#section-2.4-10" class="pilcrow">¶<
               <p id="section-2.5.2-11.1.1">To: reporter, authors<a href="#section-2.5.2-11.1.1" class="pilcrow">¶</a></p>
 </li>
             <li class="normal" id="section-2.5.2-11.2">
-              <p id="section-2.5.2-11.2.1">CC: rfc-ed@rfc-editor.org, ISE, IANA<a href="#section-2.5.2-11.2.1" class="pilcrow">¶</a></p>
+              <p id="section-2.5.2-11.2.1">CC: verifier, rfc-ed@rfc-editor.org, ISE, IANA<a href="#section-2.5.2-11.2.1" class="pilcrow">¶</a></p>
 </li>
           </ul>
 <p id="section-2.5.2-12">Editorial Stream:<a href="#section-2.5.2-12" class="pilcrow">¶</a></p>
@@ -1813,7 +1811,7 @@ access to the record to be updated.<a href="#section-2.4-10" class="pilcrow">¶<
               <p id="section-2.5.2-13.1.1">To: reporter, authors<a href="#section-2.5.2-13.1.1" class="pilcrow">¶</a></p>
 </li>
             <li class="normal" id="section-2.5.2-13.2">
-              <p id="section-2.5.2-13.2.1">CC: RSAB, RSWG, IANA, rfc-ed@rfc-editor.org<a href="#section-2.5.2-13.2.1" class="pilcrow">¶</a></p>
+              <p id="section-2.5.2-13.2.1">CC: verifier, RSAB, RSWG, IANA, rfc-ed@rfc-editor.org<a href="#section-2.5.2-13.2.1" class="pilcrow">¶</a></p>
 </li>
           </ul>
 </section>
@@ -1839,7 +1837,7 @@ access to the record to be updated.<a href="#section-2.4-10" class="pilcrow">¶<
           <p id="section-3-2.3.1">Make changes in previously posted errata at the request of the corresponding SSP, or give the SSP temporary write access to the record.<a href="#section-3-2.3.1" class="pilcrow">¶</a></p>
 </li>
         <li id="section-3-2.4">
-          <p id="section-3-2.4.1">Act as SSP for editorial erratum reports.<a href="#section-3-2.4.1" class="pilcrow">¶</a></p>
+          <p id="section-3-2.4.1">Act as verifier for editorial erratum reports.<a href="#section-3-2.4.1" class="pilcrow">¶</a></p>
 </li>
         <li id="section-3-2.5">
           <p id="section-3-2.5.1">Remove junk and duplicate reports.<a href="#section-3-2.5.1" class="pilcrow">¶</a></p>
@@ -1858,12 +1856,12 @@ access to the record to be updated.<a href="#section-2.4-10" class="pilcrow">¶<
 <p id="section-4-1">It is necessary to have access control in order to process erratum reports.  A
 logged-in SSP is able to edit, verify, or reject any erratum report on
 an RFC that is the product of their stream.
-Once the SSP has submitted an erratum's final state (Verified or
+Once the SSP has submitted an erratum's final state (Verified, Held, or
 Rejected) and the record entry has been committed to the erratum
 database, the SSP loses write access to it.  This is
 to prevent inadvertent or malicious changes to the database,
 even if the passwords for some SSP logins may become fairly widely
-known.  However, the RPC will always have write access to
+known.  However, the RPC continues to have write access to
 posted entries and can make later changes if necessary.<a href="#section-4-1" class="pilcrow">¶</a></p>
 <p id="section-4-2">The portal uses HTTPS as a reasonably secure login
 mechanism.  Also, the rfc-editor.org website has a signed certificate
@@ -1891,7 +1889,7 @@ confidence that they are logging into the rfc-editor.org website.<a href="#secti
 <dd class="break"></dd>
 <dt id="ERRATA_SYS_PROPOSAL">[ERRATA_SYS_PROPOSAL]</dt>
       <dd>
-<span class="refAuthor">RFC Editor</span>, <span class="refTitle">"RFC Editor Proposal for Handling RFC Errata"</span>, <span>n.d.</span>, <span>&lt;<a href="https://datatracker.ietf.org/doc/draft-rfc-editor-errata-process/">https://datatracker.ietf.org/doc/draft-rfc-editor-errata-process/</a>&gt;</span>. </dd>
+<span class="refAuthor">RFC Editor</span>, <span class="refTitle">"RFC Editor Proposal for Handling RFC Errata"</span>, <time datetime="2008-05-20" class="refDate">20 May 2008</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/draft-rfc-editor-errata-process/">https://datatracker.ietf.org/doc/draft-rfc-editor-errata-process/</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="HOW_TO_REPORT">[HOW_TO_REPORT]</dt>
       <dd>
@@ -1899,7 +1897,7 @@ confidence that they are logging into the rfc-editor.org website.<a href="#secti
 <dd class="break"></dd>
 <dt id="IESG-Err-Proc">[IESG-Err-Proc]</dt>
       <dd>
-<span class="refAuthor">IESG</span>, <span class="refTitle">"IESG Processing of RFC Errata for the IETF Stream"</span>, <span>n.d.</span>, <span>&lt;<a href="https://www.ietf.org/about/groups/iesg/statements/processing-errata-ietf-stream/">https://www.ietf.org/about/groups/iesg/statements/processing-errata-ietf-stream/</a>&gt;</span>. </dd>
+<span class="refAuthor">IESG</span>, <span class="refTitle">"IESG Processing of RFC Errata for the IETF Stream"</span>, <time datetime="2021-05-07" class="refDate">7 May 2021</time>, <span>&lt;<a href="https://www.ietf.org/about/groups/iesg/statements/processing-errata-ietf-stream/">https://www.ietf.org/about/groups/iesg/statements/processing-errata-ietf-stream/</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="RFC8729">[RFC8729]</dt>
     <dd>
