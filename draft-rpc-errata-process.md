@@ -43,14 +43,14 @@ informative:
     target: https://www.ietf.org/about/groups/iesg/statements/processing-errata-ietf-stream/
     title: IESG Processing of RFC Errata for the IETF Stream
     author:
-    date: 2021-05-07
     - org: IESG
+    date: 2021-05-07
   ERRATA_SYS_PROPOSAL:
     target: https://datatracker.ietf.org/doc/draft-rfc-editor-errata-process/
     title: RFC Editor Proposal for Handling RFC Errata
     author:
-    date: 2008-05-20
     - org: RFC Editor
+    date: 2008-05-20
 
 --- abstract
 
