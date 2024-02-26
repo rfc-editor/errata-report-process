@@ -34,11 +34,13 @@ informative:
     title: RFC Errata
     author:
     - org: RFC Editor
+    date: false
   HOW_TO_REPORT:
     target: https://www.rfc-editor.org/how_to_report.html
     title: How to Report Errata
     author:
     - org: RFC Editor
+    date: false
   IESG-Err-Proc:
     target: https://www.ietf.org/about/groups/iesg/statements/processing-errata-ietf-stream/
     title: IESG Processing of RFC Errata for the IETF Stream
