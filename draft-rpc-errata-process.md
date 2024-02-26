@@ -43,11 +43,13 @@ informative:
     target: https://www.ietf.org/about/groups/iesg/statements/processing-errata-ietf-stream/
     title: IESG Processing of RFC Errata for the IETF Stream
     author:
+    date: 2021-05-07
     - org: IESG
   ERRATA_SYS_PROPOSAL:
     target: https://datatracker.ietf.org/doc/draft-rfc-editor-errata-process/
     title: RFC Editor Proposal for Handling RFC Errata
     author:
+    date: 2008-05-20
     - org: RFC Editor
 
 --- abstract
@@ -83,12 +85,13 @@ verifying the erratum reports for that stream's RFCs.
 At the organizational level, the SSPs are:
 
    *  IESG for legacy RFCs
-   *  The Area Directors for RFCs that originated in one of that area's working groups
+   *  IESG for IETF Stream documents
    *  IAB for IAB Stream documents
    *  IRSG for IRTF Stream documents
    *  Independent Submissions Editor for Independent Submission Stream documents
    *  RFC Series Approval Board for Editorial Stream documents
-   *  RFC Production Center for all editorial erratum reports
+
+In addition, the RFC Production Center reviews editorial errata reports from all streams and marks them as verified when possible, as per {{IESG-Err-Proc}}.
 
 ##  Background on RFC Errata {#background}
 
@@ -156,7 +159,7 @@ The Web interface supports the following functions:
 
    1.  Retrieve -- display all posted errata for a specific RFC number or display a particular erratum by its errata ID number.
    2.  Report -- report a new erratum, as described below.  (See {{HOW_TO_REPORT}} for instructions on reporting a new erratum.)
-   3.  Edit/Verify/Reject -- used by an SSP to edit the contents of an erratum and change its state.
+   3.  Edit/Verify/Reject -- used by an SSP to edit the contents of an erratum and change its status.
 
 The following sections describe the process in more detail.
 
@@ -166,8 +169,8 @@ A member of the Internet community (the "reporter") navigates to the
 RFC errata page {{ERRATA_PAGE}}, enters the RFC number of the
 document containing the error, and clicks the Search button.
 All earlier erratum reports for that RFC are
-displayed. These reports include verified errata, reported errata,
-issues that are held for document update, and rejected reports.
+displayed. This includes reports of any status (Verified, Reported,
+Held for Document Update, and Rejected).
 The reporter is asked to check that the erratum does
 not already appear on the errata page for any given RFC.
 This step is to prevent multiple reports of the same error.
@@ -182,7 +185,7 @@ The following information is requested from the reporter. All fields must be fil
 
    * Reporter name
    * Reporter email address (Note that the address is provided for communication purposes with the relevant SSPs and authors, but it is not displayed in the online erratum report.)
-   * Publication format: Text, PDF, HTML
+   * Publication format: Text, PDF, HTML (This field is present for only RFC 8650 and higher.)
    * Type: editorial, technical
    * Section #
    * Original text
@@ -380,7 +383,7 @@ This helps to avoid a great deal of complexity and confusion.
 
 Each SSP has a login account on the errata portal to edit and verify erratum
 reports.  The SSP identity is added to the record and
-the individual is able to edit, verify, or reject each erratum.
+the individual is able to edit, verify, hold, or reject each erratum.
 
 The Notes field allows reporters to submit information in any fashion
 they like, so there is a possibility of multiple errors being
@@ -404,43 +407,43 @@ Once verified, the erratum is available for viewing in the RFC's HTML format "in
 
 ##  Erratum Report Announcements {#erratum-report-announcements}
 
-Like the notification of submissions, the announcement of a verified erratum report varies by stream:
+Like the notification of submissions, the announcement of a verified (or held or rejected) erratum report varies by stream:
 
 Notifications are determined by stream and type of erratum report.
 
 ### Technical Erratum Reports
 
-The announcement of verified technical erratum reports are sent from rfc-editor@rfc-editor.org to the following:
+The announcement of technical erratum reports are sent from rfc-editor@rfc-editor.org to the following:
 
 Legacy RFCs:
 
 * To: reporter, authors
-* CC: AD who verified the report, IESG, rfc-editor@rfc-editor.org
+* CC: verifier, IESG, rfc-editor@rfc-editor.org
 
 IETF Stream:
 
 * To: reporter, authors
-* CC: AD who verified the report, IESG, working group, IANA, rfc-editor@rfc-editor.org
+* CC: verifier, IESG, working group, IANA, rfc-editor@rfc-editor.org
 
 IAB Stream:
 
 * To: reporter, authors
-* CC: IAB, IAB chair, rfc-editor@rfc-editor.org
+* CC: verifier, IAB, IAB chair, rfc-editor@rfc-editor.org
 
 IRTF Stream:
 
 * To: reporter, authors
-* CC: verifier from IRSG, IRSG, research group, IANA, rfc-editor@rfc-editor.org
+* CC: verifier, IRSG, research group, IANA, rfc-editor@rfc-editor.org
 
 Independent Submission Stream:
 
 * To: reporter, authors
-* CC: ISE, Document Shepherd, IANA, rfc-editor@rfc-editor.org
+* CC: verifier, ISE, Document Shepherd, IANA, rfc-editor@rfc-editor.org
 
 Editorial Stream:
 
 * To: reporter, authors
-* CC: RSAB, RSWG, IANA, rfc-editor@rfc-editor.org
+* CC: verifier, RSAB, RSWG, IANA, rfc-editor@rfc-editor.org
 
 ### Editorial Erratum Reports
 
@@ -449,32 +452,32 @@ The announcement of verified editorial erratum reports are sent from rfc-editor@
 Legacy RFCs:
 
 * To: reporter, author
-* CC: rfc-ed@rfc-editor.org, IESG, IANA
+* CC: verifier, rfc-ed@rfc-editor.org, IESG, IANA
 
 IETF Stream:
 
 * To: reporter, authors
-* CC: rfc-ed@rfc-editor.org, IESG, working group, IANA
+* CC: verifier, rfc-ed@rfc-editor.org, IESG, working group, IANA
 
 IAB Stream:
 
 * To: reporter, authors
-* CC: rfc-ed@rfc-editor.org, IAB, IAB chair
+* CC: verifier, rfc-ed@rfc-editor.org, IAB, IAB chair
 
 IRTF Stream:
 
 * To: reporter, authors
-* CC: rfc-ed@rfc-editor.org, IRSG, research group, IANA
+* CC: verifier, rfc-ed@rfc-editor.org, IRSG, research group, IANA
 
 Independent Submission Stream:
 
 * To: reporter, authors
-* CC: rfc-ed@rfc-editor.org, ISE, IANA
+* CC: verifier, rfc-ed@rfc-editor.org, ISE, IANA
 
 Editorial Stream:
 
 * To: reporter, authors
-* CC: RSAB, RSWG, IANA, rfc-ed@rfc-editor.org
+* CC: verifier, RSAB, RSWG, IANA, rfc-ed@rfc-editor.org
 
 #  Role of the RPC {#rpc-role}
 
@@ -483,7 +486,7 @@ The role of the RPC in errata processing is to:
    1.  Operate the Web portal.
    2.  Maintain the errata database.
    3.  Make changes in previously posted errata at the request of the corresponding SSP, or give the SSP temporary write access to the record.
-   4.  Act as SSP for editorial erratum reports.
+   4.  Act as verifier for editorial erratum reports.
    5.  Remove junk and duplicate reports.
    6.  Track SSP and community requests for various features that will make the job of reporting and verifying errata more efficient.
 
@@ -492,12 +495,12 @@ The role of the RPC in errata processing is to:
 It is necessary to have access control in order to process erratum reports.  A
 logged-in SSP is able to edit, verify, or reject any erratum report on
 an RFC that is the product of their stream.
-Once the SSP has submitted an erratum's final state (Verified or
+Once the SSP has submitted an erratum's final state (Verified, Held, or
 Rejected) and the record entry has been committed to the erratum
 database, the SSP loses write access to it.  This is
 to prevent inadvertent or malicious changes to the database,
 even if the passwords for some SSP logins may become fairly widely
-known.  However, the RPC will always have write access to
+known.  However, the RPC continues to have write access to
 posted entries and can make later changes if necessary.
 
 The portal uses HTTPS as a reasonably secure login
