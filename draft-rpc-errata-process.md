@@ -225,9 +225,9 @@ database:
    * Publication Date
    * Author(s)
    * Category ("status") of RFC
-   * Source (Working Group Name, IAB, IRTF, or INDEPENDENT)
+   * Source (Working Group Name, IAB, IRTF, INDEPENDENT, or Editorial)
    * Area (for IETF Stream)
-   * Stream (IETF, IAB, IRTF, or INDEPENDENT)
+   * Stream (IETF, IAB, IRTF, INDEPENDENT, or Editorial)
    * Verifying Party (SSP Identity)
    * URL to the distinct erratum report
 
