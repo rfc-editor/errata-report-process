@@ -635,7 +635,7 @@ Table of Contents
 6.  Informative References
 
    [ERRATA_PAGE]
-              RFC Editor, "RFC Errata", n.d.,
+              RFC Editor, "RFC Errata",
               <https://www.rfc-editor.org/errata.php>.
 
    [ERRATA_SYS_PROPOSAL]
@@ -644,7 +644,7 @@ Table of Contents
               editor-errata-process/>.
 
    [HOW_TO_REPORT]
-              RFC Editor, "How to Report Errata", n.d.,
+              RFC Editor, "How to Report Errata",
               <https://www.rfc-editor.org/how_to_report.html>.
 
    [IESG-Err-Proc]
