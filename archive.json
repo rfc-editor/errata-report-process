@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-03-17T01:01:41.272395+00:00",
+  "timestamp": "2024-03-19T00:57:57.340794+00:00",
   "repo": "rfc-editor/errata-report-process",
   "labels": [
     {
@@ -64,6 +64,22 @@
       "createdAt": "2024-01-31T15:16:39Z",
       "updatedAt": "2024-01-31T15:37:53Z",
       "closedAt": "2024-01-31T15:37:53Z",
+      "comments": []
+    },
+    {
+      "number": 4,
+      "id": "I_kwDOKaCsxc6CwlSY",
+      "title": "once posted, a report is locked",
+      "url": "https://github.com/rfc-editor/errata-report-process/issues/4",
+      "state": "OPEN",
+      "author": "ajeanmahoney",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "And a verifier no longer has access to make updates. To update a report, the RPC must be contacted. ",
+      "createdAt": "2024-03-19T00:47:34Z",
+      "updatedAt": "2024-03-19T00:47:34Z",
+      "closedAt": null,
       "comments": []
     }
   ],
