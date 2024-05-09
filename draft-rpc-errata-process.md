@@ -56,7 +56,7 @@ informative:
 
 --- abstract
 
-Test.  
+Test.
 
 This document describes the current web-based process for handling the
 submission, verification, and posting of errata for the RFC Series.
