@@ -1,0 +1,277 @@
+{
+  "magic": "E!vIA5L86J2I",
+  "timestamp": "2024-05-23T01:02:28.760718+00:00",
+  "repo": "rfc-editor/errata-report-process",
+  "labels": [
+    {
+      "name": "bug",
+      "description": "Something isn't working",
+      "color": "d73a4a"
+    },
+    {
+      "name": "documentation",
+      "description": "Improvements or additions to documentation",
+      "color": "0075ca"
+    },
+    {
+      "name": "duplicate",
+      "description": "This issue or pull request already exists",
+      "color": "cfd3d7"
+    },
+    {
+      "name": "enhancement",
+      "description": "New feature or request",
+      "color": "a2eeef"
+    },
+    {
+      "name": "good first issue",
+      "description": "Good for newcomers",
+      "color": "7057ff"
+    },
+    {
+      "name": "help wanted",
+      "description": "Extra attention is needed",
+      "color": "008672"
+    },
+    {
+      "name": "invalid",
+      "description": "This doesn't seem right",
+      "color": "e4e669"
+    },
+    {
+      "name": "question",
+      "description": "Further information is requested",
+      "color": "d876e3"
+    },
+    {
+      "name": "wontfix",
+      "description": "This will not be worked on",
+      "color": "ffffff"
+    }
+  ],
+  "issues": [
+    {
+      "number": 1,
+      "id": "I_kwDOKaCsxc59ySH9",
+      "title": "RGs are now included in report notifications",
+      "url": "https://github.com/rfc-editor/errata-report-process/issues/1",
+      "state": "CLOSED",
+      "author": "ajeanmahoney",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-01-31T15:16:39Z",
+      "updatedAt": "2024-01-31T15:37:53Z",
+      "closedAt": "2024-01-31T15:37:53Z",
+      "comments": []
+    },
+    {
+      "number": 4,
+      "id": "I_kwDOKaCsxc6CwlSY",
+      "title": "once posted, a report is locked",
+      "url": "https://github.com/rfc-editor/errata-report-process/issues/4",
+      "state": "OPEN",
+      "author": "ajeanmahoney",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "And a verifier no longer has access to make updates. To update a report, the RPC must be contacted. ",
+      "createdAt": "2024-03-19T00:47:34Z",
+      "updatedAt": "2024-03-19T00:47:34Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 5,
+      "id": "I_kwDOKaCsxc6EDZtl",
+      "title": "API between rfc-editor.org and datatracker only indicates whether reports exist",
+      "url": "https://github.com/rfc-editor/errata-report-process/issues/5",
+      "state": "OPEN",
+      "author": "ajeanmahoney",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Datatracker doesn't know any details. It just creates a badge and a link to the errata page.",
+      "createdAt": "2024-03-29T14:25:49Z",
+      "updatedAt": "2024-03-29T14:25:49Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 6,
+      "id": "I_kwDOKaCsxc6EZTAv",
+      "title": "add some history regarding editorial errata?",
+      "url": "https://github.com/rfc-editor/errata-report-process/issues/6",
+      "state": "OPEN",
+      "author": "ajeanmahoney",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "All errata was transitioned into the new system in 2007.\r\nIn 2021, the IESG put out [statement on errata](https://www.ietf.org/about/groups/iesg/statements/processing-errata-ietf-stream/) (after consulting with the RPC) indicating that the RFC Editor would field editorial errata. The other streams adopted the same handling. ",
+      "createdAt": "2024-04-02T19:00:26Z",
+      "updatedAt": "2024-04-02T19:00:26Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 7,
+      "id": "I_kwDOKaCsxc6EgVAZ",
+      "title": "backlog",
+      "url": "https://github.com/rfc-editor/errata-report-process/issues/7",
+      "state": "OPEN",
+      "author": "ajeanmahoney",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Add some text regarding the backlog of reports. ",
+      "createdAt": "2024-04-03T14:15:33Z",
+      "updatedAt": "2024-04-03T14:15:33Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 8,
+      "id": "I_kwDOKaCsxc6HyoaV",
+      "title": "add info on reports for non-WG RFCs",
+      "url": "https://github.com/rfc-editor/errata-report-process/issues/8",
+      "state": "OPEN",
+      "author": "ajeanmahoney",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Reports go to iesg@ietf.org and authors, and rfc-editor is cc:ed.",
+      "createdAt": "2024-05-03T18:19:16Z",
+      "updatedAt": "2024-05-13T19:24:36Z",
+      "closedAt": null,
+      "comments": [
+        {
+          "author": "rvanrheenen",
+          "authorAssociation": "NONE",
+          "body": "To clarify, the above would be for technical reports. It seems that editorial reports should go to the RFC Editor and authors. ",
+          "createdAt": "2024-05-13T19:24:35Z",
+          "updatedAt": "2024-05-13T19:24:35Z"
+        }
+      ]
+    }
+  ],
+  "pulls": [
+    {
+      "number": 2,
+      "id": "PR_kwDOKaCsxc5mrOl2",
+      "title": "Added Acknowledgments section",
+      "url": "https://github.com/rfc-editor/errata-report-process/pull/2",
+      "state": "MERGED",
+      "author": "ajeanmahoney",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Moved Sandy from authors list to Acknowledgments at her request.",
+      "createdAt": "2024-02-12T19:51:49Z",
+      "updatedAt": "2024-02-12T20:21:46Z",
+      "baseRepository": "rfc-editor/errata-report-process",
+      "baseRefName": "main",
+      "baseRefOid": "436a60929fb8b031f81c2b17f476e0f4c9b48282",
+      "headRepository": "rfc-editor/errata-report-process",
+      "headRefName": "ajeanmahoney-acks-add",
+      "headRefOid": "2761a3e85e6c74bdf46ee857910a509730b56870",
+      "closedAt": "2024-02-12T20:21:43Z",
+      "mergedAt": "2024-02-12T20:21:43Z",
+      "mergedBy": "ajeanmahoney",
+      "mergeCommit": {
+        "oid": "91f5d61898913e86490806c96b7a856ce57b3c79"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOKaCsxc5v03qU",
+          "commit": {
+            "abbreviatedOid": "da74cce"
+          },
+          "author": "sginoza",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "lgtm - thanks.",
+          "createdAt": "2024-02-12T20:10:19Z",
+          "updatedAt": "2024-02-12T20:10:19Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "id": "PR_kwDOKaCsxc5mrTAW",
+      "title": "Update draft-rpc-errata-process.md",
+      "url": "https://github.com/rfc-editor/errata-report-process/pull/3",
+      "state": "MERGED",
+      "author": "sginoza",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Add to abstract that a goal of this doc is to facilitate discussion for a new system.\r\nNot sure whether we should specify that a complete redesign is in scope - perhaps that's for @ajeanmahoney's  requirements documentation. ",
+      "createdAt": "2024-02-12T20:05:34Z",
+      "updatedAt": "2024-02-12T20:09:43Z",
+      "baseRepository": "rfc-editor/errata-report-process",
+      "baseRefName": "main",
+      "baseRefOid": "436a60929fb8b031f81c2b17f476e0f4c9b48282",
+      "headRepository": "rfc-editor/errata-report-process",
+      "headRefName": "sginoza-facilitate-discussion",
+      "headRefOid": "4464eeee6c9ebb841c38dab861877fa70e9c430e",
+      "closedAt": "2024-02-12T20:09:38Z",
+      "mergedAt": "2024-02-12T20:09:38Z",
+      "mergedBy": "ajeanmahoney",
+      "mergeCommit": {
+        "oid": "b21384b53ed3f2bdd5347658e4cb74054fbff06f"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 9,
+      "id": "PR_kwDOKaCsxc5vBHjR",
+      "title": "just a demo",
+      "url": "https://github.com/rfc-editor/errata-report-process/pull/9",
+      "state": "CLOSED",
+      "author": "ajeanmahoney",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "please ignore",
+      "createdAt": "2024-05-09T18:02:34Z",
+      "updatedAt": "2024-05-09T18:16:44Z",
+      "baseRepository": "rfc-editor/errata-report-process",
+      "baseRefName": "main",
+      "baseRefOid": "b574dd9990a8f9aa4298c0f89ef3b357d3785ad3",
+      "headRepository": "rfc-editor/errata-report-process",
+      "headRefName": "demo",
+      "headRefOid": "2ac435b68f9dfd402d5f16895a6ae5ed74f065e6",
+      "closedAt": "2024-05-09T18:16:33Z",
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOKaCsxc56GhkJ",
+          "commit": {
+            "abbreviatedOid": "269c39f"
+          },
+          "author": "ajeanmahoney",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-05-09T18:04:13Z",
+          "updatedAt": "2024-05-09T18:04:13Z",
+          "comments": [
+            {
+              "originalPosition": 4,
+              "body": "Need to remove trailing spaces",
+              "createdAt": "2024-05-09T18:04:13Z",
+              "updatedAt": "2024-05-09T18:04:13Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
