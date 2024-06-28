@@ -328,19 +328,22 @@ The message includes the information listed in {{reporting-errata}}.
 
 ##  Posting Erratum Reports {#posting-erratum-reports}
 
-As soon as an erratum is submitted, it is available online
-as described below.  The erratum entry is marked Reported
+As soon as an erratum report is submitted, it is available online
+as described below.  The erratum report is marked Reported
 until its state is updated by verifiers as described in {{verifying-erratum-reports}}.
 Duplicate and junk reports are available and marked as Reported
 only until they are deleted from the database by the RPC.
 
-In this document, posting an erratum means that:
+In this document, posting an erratum report means that:
 
    *  The report can be discovered through the RFC errata search page: <https://www.rfc-editor.org/errata.php>.
    *  A link to the RFC's errata page appears on the following:
       * the results of the RFC search engine: <https://www.rfc-editor.org/rfcsearch.html>.
       * the RFC's info page. For example, see <https://www.rfc-editor.org/info/rfc2119>.
       * On the HTML format of the RFC. For example, <https://www.rfc-editor.org/rfc/rfc2119.html>.
+      * On the datatracker status page for the RFC. For example, <https://datatracker.ietf.org/doc/rfc2119/>.
+      The datatracker learns that at least one erratum report exists via <https://www.rfc-editor.org/rfc-index.xml>
+      and sets a badge on the RFC's datatracker status page. 
 
 All erratum reports for a single RFC, except for obvious spam reports,
 are posted in the following order:
