@@ -8,7 +8,6 @@
 <meta content="Alice Russo" name="author">
 <meta content="Jean Mahoney" name="author">
 <meta content="
-       Test. 
        This document describes the current web-based process for handling the
 submission, verification, and posting of errata for the RFC Series.
 The main concepts behind this process are (1) distributing the
@@ -22,17 +21,17 @@ the processing of erratum reports. This system was launched in November 2007.
 <meta content="draft-rpc-errata-process-latest" name="ietf.draft">
 <!-- Generator version information:
   xml2rfc 3.21.0
-    Python 3.11.9
+    Python 3.12.3
     ConfigArgParse 1.7
     google-i18n-address 3.1.0
     intervaltree 3.1.0
-    Jinja2 3.1.2
-    lxml 4.9.3
-    platformdirs 4.2.1
+    Jinja2 3.1.4
+    lxml 4.9.4
+    platformdirs 4.2.2
     pycountry 22.3.5
     PyYAML 6.0.1
     requests 2.31.0
-    setuptools 68.2.2
+    setuptools 69.5.1
     six 1.16.0
     wcwidth 0.2.13
 -->
@@ -1033,11 +1032,11 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <thead><tr>
 <td class="left">Internet-Draft</td>
 <td class="center">Handling Errata Reports</td>
-<td class="right">May 2024</td>
+<td class="right">June 2024</td>
 </tr></thead>
 <tfoot><tr>
 <td class="left">Russo &amp; Mahoney</td>
-<td class="center">Expires 10 November 2024</td>
+<td class="center">Expires 30 December 2024</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1050,12 +1049,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <dd class="internet-draft">draft-rpc-errata-process-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2024-05-09" class="published">9 May 2024</time>
+<time datetime="2024-06-28" class="published">28 June 2024</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Informational</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2024-11-10">10 November 2024</time></dd>
+<dd class="expires"><time datetime="2024-12-30">30 December 2024</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -1072,14 +1071,13 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <h1 id="title">Current Process for Handling RFC Errata Reports</h1>
 <section id="section-abstract">
       <h2 id="abstract"><a href="#abstract" class="selfRef">Abstract</a></h2>
-<p id="section-abstract-1">Test.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
-<p id="section-abstract-2">This document describes the current web-based process for handling the
+<p id="section-abstract-1">This document describes the current web-based process for handling the
 submission, verification, and posting of errata for the RFC Series.
 The main concepts behind this process are (1) distributing the
 responsibility for verification to the appropriate organization or
 person for each RFC stream, and (2) using a Web portal to automate
-the processing of erratum reports. This system was launched in November 2007.<a href="#section-abstract-2" class="pilcrow">¶</a></p>
-<p id="section-abstract-3">This draft documents the existing system as a means to facilitate discussion to revamp how errata are reported, reviewed, and publicized.<a href="#section-abstract-3" class="pilcrow">¶</a></p>
+the processing of erratum reports. This system was launched in November 2007.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
+<p id="section-abstract-2">This draft documents the existing system as a means to facilitate discussion to revamp how errata are reported, reviewed, and publicized.<a href="#section-abstract-2" class="pilcrow">¶</a></p>
 </section>
 <section class="note rfcEditorRemove" id="section-note.1">
       <h2 id="name-discussion-venues">
@@ -1108,7 +1106,7 @@ the processing of erratum reports. This system was launched in November 2007.<a 
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 10 November 2024.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 30 December 2024.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1216,7 +1214,7 @@ the tasks for verifying and posting erratum reports.<a href="#section-1-1" class
 <p id="section-1-2">This process assumes the organization of RFC publication into
 five document streams <span>[<a href="#RFC8729" class="cite xref">RFC8729</a>]</span>: (1) the IETF Stream, which includes
 both working group and individual submissions plus all RFCs that were
-published before the concept of streams existed (known as legacy RFCs), (2) the IAB Stream,
+published before a formal source (e.g., working group or stream) existed or was recorded (known as legacy RFCs), (2) the IAB Stream,
 (3) the IRTF Stream, (4) the Independent Submission Stream, and
 (5) the Editorial Stream.
 Personnel representing each stream, called the stream-specific party (SSP), are responsible for
