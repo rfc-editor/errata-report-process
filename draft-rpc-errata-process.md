@@ -343,7 +343,7 @@ In this document, posting an erratum report means that:
       * On the HTML format of the RFC. For example, <https://www.rfc-editor.org/rfc/rfc2119.html>.
       * On the datatracker status page for the RFC. For example, <https://datatracker.ietf.org/doc/rfc2119/>.
       The datatracker learns that at least one erratum report exists via <https://www.rfc-editor.org/rfc-index.xml>
-      and sets a badge on the RFC's datatracker status page. 
+      and sets a badge on the RFC's datatracker status page.
 
 All erratum reports for a single RFC, except for obvious spam reports,
 are posted in the following order:
