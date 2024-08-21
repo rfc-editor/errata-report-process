@@ -5,7 +5,7 @@
 RSWG                                                            A. Russo
 Internet-Draft                                                J. Mahoney
 Intended status: Informational                     RFC Production Center
-Expires: 29 August 2024                                 26 February 2024
+Expires: 22 February 2025                                 21 August 2024
 
 
             Current Process for Handling RFC Errata Reports
@@ -47,7 +47,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 29 August 2024.
+   This Internet-Draft will expire on 22 February 2025.
 
 Copyright Notice
 
@@ -397,13 +397,13 @@ Table of Contents
 
 2.3.  Posting Erratum Reports
 
-   As soon as an erratum is submitted, it is available online as
-   described below.  The erratum entry is marked Reported until its
+   As soon as an erratum report is submitted, it is available online as
+   described below.  The erratum report is marked Reported until its
    state is updated by verifiers as described in Section 2.4.  Duplicate
    and junk reports are available and marked as Reported only until they
    are deleted from the database by the RPC.
 
-   In this document, posting an erratum means that:
+   In this document, posting an erratum report means that:
 
    *  The report can be discovered through the RFC errata search page:
       https://www.rfc-editor.org/errata.php (https://www.rfc-editor.org/
@@ -422,6 +422,14 @@ Table of Contents
       -  On the HTML format of the RFC.  For example, https://www.rfc-
          editor.org/rfc/rfc2119.html (https://www.rfc-editor.org/rfc/
          rfc2119.html).
+
+      -  On the datatracker status page for the RFC.  For example,
+         https://datatracker.ietf.org/doc/rfc2119/
+         (https://datatracker.ietf.org/doc/rfc2119/).  The datatracker
+         learns that at least one erratum report exists via
+         https://www.rfc-editor.org/rfc-index.xml (https://www.rfc-
+         editor.org/rfc-index.xml) and sets a badge on the RFC's
+         datatracker status page.
 
    All erratum reports for a single RFC, except for obvious spam
    reports, are posted in the following order:
