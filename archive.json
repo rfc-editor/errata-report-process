@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-08-20T01:08:49.425655+00:00",
+  "timestamp": "2024-08-22T01:10:30.656318+00:00",
   "repo": "rfc-editor/errata-report-process",
   "labels": [
     {
@@ -87,15 +87,15 @@
       "id": "I_kwDOKaCsxc6EDZtl",
       "title": "API between rfc-editor.org and datatracker only indicates whether reports exist",
       "url": "https://github.com/rfc-editor/errata-report-process/issues/5",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "ajeanmahoney",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "Datatracker doesn't know any details. It just creates a badge and a link to the errata page.",
       "createdAt": "2024-03-29T14:25:49Z",
-      "updatedAt": "2024-03-29T14:25:49Z",
-      "closedAt": null,
+      "updatedAt": "2024-08-21T18:53:17Z",
+      "closedAt": "2024-08-21T18:53:17Z",
       "comments": []
     },
     {
@@ -285,7 +285,7 @@
       "labels": [],
       "body": "",
       "createdAt": "2024-06-28T21:13:42Z",
-      "updatedAt": "2024-06-28T21:13:42Z",
+      "updatedAt": "2024-08-21T21:31:00Z",
       "baseRepository": "rfc-editor/errata-report-process",
       "baseRefName": "main",
       "baseRefOid": "b574dd9990a8f9aa4298c0f89ef3b357d3785ad3",
@@ -297,7 +297,21 @@
       "mergedBy": null,
       "mergeCommit": null,
       "comments": [],
-      "reviews": []
+      "reviews": [
+        {
+          "id": "PRR_kwDOKaCsxc6GOnX7",
+          "commit": {
+            "abbreviatedOid": "ca104c2"
+          },
+          "author": "sginoza",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2024-08-21T21:31:00Z",
+          "updatedAt": "2024-08-21T21:31:00Z",
+          "comments": []
+        }
+      ]
     },
     {
       "number": 11,
@@ -311,7 +325,7 @@
       "labels": [],
       "body": "Fixes #4 ",
       "createdAt": "2024-06-28T21:20:54Z",
-      "updatedAt": "2024-06-28T21:20:54Z",
+      "updatedAt": "2024-08-21T21:30:08Z",
       "baseRepository": "rfc-editor/errata-report-process",
       "baseRefName": "main",
       "baseRefOid": "b574dd9990a8f9aa4298c0f89ef3b357d3785ad3",
@@ -323,33 +337,76 @@
       "mergedBy": null,
       "mergeCommit": null,
       "comments": [],
-      "reviews": []
+      "reviews": [
+        {
+          "id": "PRR_kwDOKaCsxc6GOnGm",
+          "commit": {
+            "abbreviatedOid": "2c2b8a2"
+          },
+          "author": "sginoza",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "Wonder whether we should add \"to ensure stability\" or similar.  I don't feel strongly about this, but I have seen some question why they get locked.",
+          "createdAt": "2024-08-21T21:30:08Z",
+          "updatedAt": "2024-08-21T21:30:08Z",
+          "comments": []
+        }
+      ]
     },
     {
       "number": 12,
       "id": "PR_kwDOKaCsxc5z74FU",
       "title": "Added how errata info gets posted to datatracker",
       "url": "https://github.com/rfc-editor/errata-report-process/pull/12",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "ajeanmahoney",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "Fixes #5 ",
       "createdAt": "2024-06-28T21:41:51Z",
-      "updatedAt": "2024-06-28T21:42:34Z",
+      "updatedAt": "2024-08-21T18:53:22Z",
       "baseRepository": "rfc-editor/errata-report-process",
       "baseRefName": "main",
       "baseRefOid": "b574dd9990a8f9aa4298c0f89ef3b357d3785ad3",
       "headRepository": "rfc-editor/errata-report-process",
       "headRefName": "datatracker-api",
       "headRefOid": "556c17945392fe82da4162a32b6e6541dc901f17",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2024-08-21T18:53:16Z",
+      "mergedAt": "2024-08-21T18:53:16Z",
+      "mergedBy": "ajeanmahoney",
+      "mergeCommit": {
+        "oid": "c9842afede7809551fc79f22cc42b01fbefc0b90"
+      },
       "comments": [],
-      "reviews": []
+      "reviews": [
+        {
+          "id": "PRR_kwDOKaCsxc6GD77t",
+          "commit": {
+            "abbreviatedOid": "556c179"
+          },
+          "author": "sginoza",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2024-08-20T22:07:28Z",
+          "updatedAt": "2024-08-20T22:07:28Z",
+          "comments": []
+        },
+        {
+          "id": "PRR_kwDOKaCsxc6GD8FK",
+          "commit": {
+            "abbreviatedOid": "556c179"
+          },
+          "author": "sginoza",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2024-08-20T22:07:45Z",
+          "updatedAt": "2024-08-20T22:07:45Z",
+          "comments": []
+        }
+      ]
     }
   ]
 }
