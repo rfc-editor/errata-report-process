@@ -403,12 +403,12 @@ report can be made.  The final outcome is captured in the erratum
 entry, and any controversy or explanatory material is recorded in
 the Notes field.
 
-It sometimes happens that there are errata for errata, i.e., earlier
-postings must be altered.  In this case, the RFC Editor can
-update the report as requested by an SSP or can grant an SSP temporary write
-access to the record to be updated.
-
 Once verified, the erratum is available for viewing in the RFC's HTML format "inline" (for example, see <https://www.rfc-editor.org/rfc/inline-errata/rfc3261.html>) in addition to being on the RFC's errata page and discoverable through errata search functionality.
+
+In addition, once a report is verified, it is locked against further updates to ensure the stability of the report.
+However, sometimes there are mistakes in the report that need correction.  In this case, the RFC Editor can
+update the report as requested by an SSP or can grant an SSP temporary write
+access to the report that needs to be updated.
 
 ##  Erratum Report Announcements {#erratum-report-announcements}
 
