@@ -78,7 +78,7 @@ the tasks for verifying and posting erratum reports.
 This process assumes the organization of RFC publication into
 five document streams {{RFC8729}}: (1) the IETF Stream, which includes
 both working group and individual submissions plus all RFCs that were
-published before the concept of streams existed (known as legacy RFCs), (2) the IAB Stream,
+published before a formal source (e.g., working group or stream) existed or was recorded (known as legacy RFCs), (2) the IAB Stream,
 (3) the IRTF Stream, (4) the Independent Submission Stream, and
 (5) the Editorial Stream.
 Personnel representing each stream, called the stream-specific party (SSP), are responsible for
