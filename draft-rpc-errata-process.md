@@ -77,7 +77,8 @@ the tasks for verifying and posting erratum reports.
 
 This process assumes the organization of RFC publication into
 five document streams {{RFC8729}}: (1) the IETF Stream, which includes
-both working group and individual submissions plus all RFCs that were
+both working group and individual submissions (also known as "AD Sponsored"
+or "non-working group" documents) plus all RFCs that were
 published before a formal source (e.g., working group or stream) existed or was recorded (known as legacy RFCs), (2) the IAB Stream,
 (3) the IRTF Stream, (4) the Independent Submission Stream, and
 (5) the Editorial Stream.
@@ -227,7 +228,7 @@ database:
    * Publication Date
    * Author(s)
    * Category ("status") of RFC
-   * Source (Working Group Name, IAB, IRTF, INDEPENDENT, or Editorial)
+   * Source (working group name, IETF - NON WORKING GROUP, IAB, IRTF, INDEPENDENT, or Editorial)
    * Area (for IETF Stream)
    * Stream (IETF, IAB, IRTF, INDEPENDENT, or Editorial)
    * Verifying Party (SSP Identity)
@@ -264,10 +265,15 @@ Legacy RFCs:
 * To: IESG
 * CC: reporter, rfc-editor@rfc-editor.org
 
-IETF Stream:
+IETF Stream (working group):
 
 * To: authors, ADs of the area from which the document came, document shepherd
 * CC: reporter, working group, rfc-editor@rfc-editor.org
+
+IETF Stream (non-working group):
+
+* To: IESG, authors
+* CC: reporter, rfc-editor@rfc-editor.org
 
 IAB Stream:
 
@@ -299,10 +305,15 @@ Legacy RFCs:
 * To: rfc-editor@rfc-editor.org
 * CC: reporter
 
-IETF Stream:
+IETF Stream (working group):
 
 * To: rfc-editor@rfc-editor.org
 * CC: reporter, authors, working group
+
+IETF Stream (non-working group):
+
+* To: rfc-editor@rfc-editor.org
+* CC: reporter, authors
 
 IAB Stream:
 
@@ -412,9 +423,7 @@ access to the report that needs to be updated.
 
 ##  Erratum Report Announcements {#erratum-report-announcements}
 
-Like the notification of submissions, the announcement of a verified (or held or rejected) erratum report varies by stream:
-
-Notifications are determined by stream and type of erratum report.
+Like the notification of submissions, the announcement of a verified (or held or rejected) erratum report varies by stream and type of erratum report.
 
 ### Technical Erratum Reports
 
@@ -425,10 +434,15 @@ Legacy RFCs:
 * To: reporter, authors
 * CC: verifier, IESG, rfc-editor@rfc-editor.org
 
-IETF Stream:
+IETF Stream (working group):
 
 * To: reporter, authors
 * CC: verifier, IESG, working group, IANA, rfc-editor@rfc-editor.org
+
+IETF Stream (non-working group):
+
+* To: reporter, authors
+* CC: verifier, IESG, IANA, rfc-editor@rfc-editor.org
 
 IAB Stream:
 
@@ -459,10 +473,15 @@ Legacy RFCs:
 * To: reporter, author
 * CC: verifier, rfc-ed@rfc-editor.org, IESG, IANA
 
-IETF Stream:
+IETF Stream (working group):
 
 * To: reporter, authors
 * CC: verifier, rfc-ed@rfc-editor.org, IESG, working group, IANA
+
+IETF Stream (non-working group):
+
+* To: reporter, authors
+* CC: verifier, rfc-ed@rfc-editor.org, IESG, IANA
 
 IAB Stream:
 
