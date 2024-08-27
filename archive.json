@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-08-25T01:15:00.723203+00:00",
+  "timestamp": "2024-08-27T01:10:46.016432+00:00",
   "repo": "rfc-editor/errata-report-process",
   "labels": [
     {
@@ -71,15 +71,15 @@
       "id": "I_kwDOKaCsxc6CwlSY",
       "title": "once posted, a report is locked",
       "url": "https://github.com/rfc-editor/errata-report-process/issues/4",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "ajeanmahoney",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "And a verifier no longer has access to make updates. To update a report, the RPC must be contacted. ",
       "createdAt": "2024-03-19T00:47:34Z",
-      "updatedAt": "2024-03-19T00:47:34Z",
-      "closedAt": null,
+      "updatedAt": "2024-08-26T18:47:27Z",
+      "closedAt": "2024-08-26T18:47:27Z",
       "comments": []
     },
     {
@@ -278,24 +278,26 @@
       "id": "PR_kwDOKaCsxc5z7x_d",
       "title": "updated definition of legacy",
       "url": "https://github.com/rfc-editor/errata-report-process/pull/10",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "ajeanmahoney",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "",
       "createdAt": "2024-06-28T21:13:42Z",
-      "updatedAt": "2024-08-21T21:31:00Z",
+      "updatedAt": "2024-08-26T18:48:46Z",
       "baseRepository": "rfc-editor/errata-report-process",
       "baseRefName": "main",
       "baseRefOid": "b574dd9990a8f9aa4298c0f89ef3b357d3785ad3",
       "headRepository": "rfc-editor/errata-report-process",
       "headRefName": "legacy",
       "headRefOid": "ca104c2d2c9575df9d7f50c0fb74642737eb3e4d",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2024-08-26T18:48:41Z",
+      "mergedAt": "2024-08-26T18:48:41Z",
+      "mergedBy": "ajeanmahoney",
+      "mergeCommit": {
+        "oid": "32e84b32285b92b5aaa7f166e526d8a8e568f875"
+      },
       "comments": [],
       "reviews": [
         {
@@ -318,25 +320,35 @@
       "id": "PR_kwDOKaCsxc5z70Gw",
       "title": "Added info about locked reports",
       "url": "https://github.com/rfc-editor/errata-report-process/pull/11",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "ajeanmahoney",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "Fixes #4 ",
       "createdAt": "2024-06-28T21:20:54Z",
-      "updatedAt": "2024-08-21T21:30:08Z",
+      "updatedAt": "2024-08-26T18:47:36Z",
       "baseRepository": "rfc-editor/errata-report-process",
       "baseRefName": "main",
       "baseRefOid": "b574dd9990a8f9aa4298c0f89ef3b357d3785ad3",
       "headRepository": "rfc-editor/errata-report-process",
       "headRefName": "locked-reports",
-      "headRefOid": "2c2b8a21215e63aea1c83058463fd20f8134ae30",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
-      "comments": [],
+      "headRefOid": "275bfe368ea3fd44404d39d7ca880850a55f5089",
+      "closedAt": "2024-08-26T18:47:26Z",
+      "mergedAt": "2024-08-26T18:47:26Z",
+      "mergedBy": "ajeanmahoney",
+      "mergeCommit": {
+        "oid": "604d0f96c85a1ff3680030f0d2e5e059ef0c5022"
+      },
+      "comments": [
+        {
+          "author": "ajeanmahoney",
+          "authorAssociation": "COLLABORATOR",
+          "body": "Updated text to mention stability",
+          "createdAt": "2024-08-26T18:47:15Z",
+          "updatedAt": "2024-08-26T18:47:15Z"
+        }
+      ],
       "reviews": [
         {
           "id": "PRR_kwDOKaCsxc6GOnGm",
@@ -407,6 +419,58 @@
           "comments": []
         }
       ]
+    },
+    {
+      "number": 13,
+      "id": "PR_kwDOKaCsxc55fCD3",
+      "title": "Added info for non-WG errata",
+      "url": "https://github.com/rfc-editor/errata-report-process/pull/13",
+      "state": "OPEN",
+      "author": "ajeanmahoney",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Fixes #8 ",
+      "createdAt": "2024-08-26T20:15:42Z",
+      "updatedAt": "2024-08-26T20:16:00Z",
+      "baseRepository": "rfc-editor/errata-report-process",
+      "baseRefName": "main",
+      "baseRefOid": "32e84b32285b92b5aaa7f166e526d8a8e568f875",
+      "headRepository": "rfc-editor/errata-report-process",
+      "headRefName": "non-wg-errata",
+      "headRefOid": "92cf82e0a00b83f6dc1a7fb9b14a75013e0a9412",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 14,
+      "id": "PR_kwDOKaCsxc55fPC1",
+      "title": "added history of RPC processing of editorial errata",
+      "url": "https://github.com/rfc-editor/errata-report-process/pull/14",
+      "state": "OPEN",
+      "author": "ajeanmahoney",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Fixes #6",
+      "createdAt": "2024-08-26T20:46:09Z",
+      "updatedAt": "2024-08-26T20:47:04Z",
+      "baseRepository": "rfc-editor/errata-report-process",
+      "baseRefName": "main",
+      "baseRefOid": "32e84b32285b92b5aaa7f166e526d8a8e568f875",
+      "headRepository": "rfc-editor/errata-report-process",
+      "headRefName": "ed-errata-history",
+      "headRefOid": "3c97028dc2b98a0766ecd6961ce28cd00da56358",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": []
     }
   ]
 }
