@@ -16,11 +16,11 @@ person for each RFC stream, and (2) using a Web portal to automate
 the processing of erratum reports. This system was launched in November 2007. 
        This draft documents the existing system as a means to facilitate discussion to revamp how errata are reported, reviewed, and publicized. 
     " name="description">
-<meta content="xml2rfc 3.22.0" name="generator">
+<meta content="xml2rfc 3.23.0" name="generator">
 <meta content="errata system" name="keyword">
 <meta content="draft-rpc-errata-process-latest" name="ietf.draft">
 <!-- Generator version information:
-  xml2rfc 3.22.0
+  xml2rfc 3.23.0
     Python 3.12.3
     ConfigArgParse 1.7
     google-i18n-address 3.1.0
@@ -1035,7 +1035,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 </tr></thead>
 <tfoot><tr>
 <td class="left">Russo &amp; Mahoney</td>
-<td class="center">Expires 27 February 2025</td>
+<td class="center">Expires 28 February 2025</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1048,12 +1048,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <dd class="internet-draft">draft-rpc-errata-process-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2024-08-26" class="published">26 August 2024</time>
+<time datetime="2024-08-27" class="published">27 August 2024</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Informational</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2025-02-27">27 February 2025</time></dd>
+<dd class="expires"><time datetime="2025-02-28">28 February 2025</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -1105,7 +1105,7 @@ the processing of erratum reports. This system was launched in November 2007.<a 
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 27 February 2025.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 28 February 2025.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1212,7 +1212,8 @@ person for each RFC stream, and (2) using a Web portal to automate
 the tasks for verifying and posting erratum reports.<a href="#section-1-1" class="pilcrow">¶</a></p>
 <p id="section-1-2">This process assumes the organization of RFC publication into
 five document streams <span>[<a href="#RFC8729" class="cite xref">RFC8729</a>]</span>: (1) the IETF Stream, which includes
-both working group and individual submissions plus all RFCs that were
+both working group and individual submissions (also known as "AD Sponsored"
+or "non-working group" documents) plus all RFCs that were
 published before a formal source (e.g., working group or stream) existed or was recorded (known as legacy RFCs), (2) the IAB Stream,
 (3) the IRTF Stream, (4) the Independent Submission Stream, and
 (5) the Editorial Stream.
@@ -1412,7 +1413,7 @@ database:<a href="#section-2.1-9" class="pilcrow">¶</a></p>
             <p id="section-2.1-10.5.1">Category ("status") of RFC<a href="#section-2.1-10.5.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-2.1-10.6">
-            <p id="section-2.1-10.6.1">Source (Working Group Name, IAB, IRTF, INDEPENDENT, or Editorial)<a href="#section-2.1-10.6.1" class="pilcrow">¶</a></p>
+            <p id="section-2.1-10.6.1">Source (working group name, IETF - NON WORKING GROUP, IAB, IRTF, INDEPENDENT, or Editorial)<a href="#section-2.1-10.6.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-2.1-10.7">
             <p id="section-2.1-10.7.1">Area (for IETF Stream)<a href="#section-2.1-10.7.1" class="pilcrow">¶</a></p>
@@ -1465,7 +1466,7 @@ rfc-editor@rfc-editor.org are CCed.<a href="#section-2.2.1-1" class="pilcrow">¶
               <p id="section-2.2.1-3.2.1">CC: reporter, rfc-editor@rfc-editor.org<a href="#section-2.2.1-3.2.1" class="pilcrow">¶</a></p>
 </li>
           </ul>
-<p id="section-2.2.1-4">IETF Stream:<a href="#section-2.2.1-4" class="pilcrow">¶</a></p>
+<p id="section-2.2.1-4">IETF Stream (working group):<a href="#section-2.2.1-4" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-2.2.1-5.1">
               <p id="section-2.2.1-5.1.1">To: authors, ADs of the area from which the document came, document shepherd<a href="#section-2.2.1-5.1.1" class="pilcrow">¶</a></p>
@@ -1474,40 +1475,49 @@ rfc-editor@rfc-editor.org are CCed.<a href="#section-2.2.1-1" class="pilcrow">¶
               <p id="section-2.2.1-5.2.1">CC: reporter, working group, rfc-editor@rfc-editor.org<a href="#section-2.2.1-5.2.1" class="pilcrow">¶</a></p>
 </li>
           </ul>
-<p id="section-2.2.1-6">IAB Stream:<a href="#section-2.2.1-6" class="pilcrow">¶</a></p>
+<p id="section-2.2.1-6">IETF Stream (non-working group):<a href="#section-2.2.1-6" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-2.2.1-7.1">
-              <p id="section-2.2.1-7.1.1">To: authors, IAB<a href="#section-2.2.1-7.1.1" class="pilcrow">¶</a></p>
+              <p id="section-2.2.1-7.1.1">To: IESG, authors<a href="#section-2.2.1-7.1.1" class="pilcrow">¶</a></p>
 </li>
             <li class="normal" id="section-2.2.1-7.2">
               <p id="section-2.2.1-7.2.1">CC: reporter, rfc-editor@rfc-editor.org<a href="#section-2.2.1-7.2.1" class="pilcrow">¶</a></p>
 </li>
           </ul>
-<p id="section-2.2.1-8">IRTF Stream:<a href="#section-2.2.1-8" class="pilcrow">¶</a></p>
+<p id="section-2.2.1-8">IAB Stream:<a href="#section-2.2.1-8" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-2.2.1-9.1">
-              <p id="section-2.2.1-9.1.1">To: authors, IRSG<a href="#section-2.2.1-9.1.1" class="pilcrow">¶</a></p>
+              <p id="section-2.2.1-9.1.1">To: authors, IAB<a href="#section-2.2.1-9.1.1" class="pilcrow">¶</a></p>
 </li>
             <li class="normal" id="section-2.2.1-9.2">
-              <p id="section-2.2.1-9.2.1">CC: reporter, rfc-editor@rfc-editor.org, research group<a href="#section-2.2.1-9.2.1" class="pilcrow">¶</a></p>
+              <p id="section-2.2.1-9.2.1">CC: reporter, rfc-editor@rfc-editor.org<a href="#section-2.2.1-9.2.1" class="pilcrow">¶</a></p>
 </li>
           </ul>
-<p id="section-2.2.1-10">Independent Submission Stream:<a href="#section-2.2.1-10" class="pilcrow">¶</a></p>
+<p id="section-2.2.1-10">IRTF Stream:<a href="#section-2.2.1-10" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-2.2.1-11.1">
-              <p id="section-2.2.1-11.1.1">To: authors, ISE<a href="#section-2.2.1-11.1.1" class="pilcrow">¶</a></p>
+              <p id="section-2.2.1-11.1.1">To: authors, IRSG<a href="#section-2.2.1-11.1.1" class="pilcrow">¶</a></p>
 </li>
             <li class="normal" id="section-2.2.1-11.2">
-              <p id="section-2.2.1-11.2.1">CC: reporter, rfc-editor@rfc-editor.org<a href="#section-2.2.1-11.2.1" class="pilcrow">¶</a></p>
+              <p id="section-2.2.1-11.2.1">CC: reporter, rfc-editor@rfc-editor.org, research group<a href="#section-2.2.1-11.2.1" class="pilcrow">¶</a></p>
 </li>
           </ul>
-<p id="section-2.2.1-12">Editorial Stream:<a href="#section-2.2.1-12" class="pilcrow">¶</a></p>
+<p id="section-2.2.1-12">Independent Submission Stream:<a href="#section-2.2.1-12" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-2.2.1-13.1">
-              <p id="section-2.2.1-13.1.1">To: authors, RSAB<a href="#section-2.2.1-13.1.1" class="pilcrow">¶</a></p>
+              <p id="section-2.2.1-13.1.1">To: authors, ISE<a href="#section-2.2.1-13.1.1" class="pilcrow">¶</a></p>
 </li>
             <li class="normal" id="section-2.2.1-13.2">
-              <p id="section-2.2.1-13.2.1">CC: reporter, rfc-editor@rfc-editor.org, RSWG<a href="#section-2.2.1-13.2.1" class="pilcrow">¶</a></p>
+              <p id="section-2.2.1-13.2.1">CC: reporter, rfc-editor@rfc-editor.org<a href="#section-2.2.1-13.2.1" class="pilcrow">¶</a></p>
+</li>
+          </ul>
+<p id="section-2.2.1-14">Editorial Stream:<a href="#section-2.2.1-14" class="pilcrow">¶</a></p>
+<ul class="normal">
+<li class="normal" id="section-2.2.1-15.1">
+              <p id="section-2.2.1-15.1.1">To: authors, RSAB<a href="#section-2.2.1-15.1.1" class="pilcrow">¶</a></p>
+</li>
+            <li class="normal" id="section-2.2.1-15.2">
+              <p id="section-2.2.1-15.2.1">CC: reporter, rfc-editor@rfc-editor.org, RSWG<a href="#section-2.2.1-15.2.1" class="pilcrow">¶</a></p>
 </li>
           </ul>
 </section>
@@ -1528,7 +1538,7 @@ and other SSPs are CCed:<a href="#section-2.2.2-1" class="pilcrow">¶</a></p>
               <p id="section-2.2.2-3.2.1">CC: reporter<a href="#section-2.2.2-3.2.1" class="pilcrow">¶</a></p>
 </li>
           </ul>
-<p id="section-2.2.2-4">IETF Stream:<a href="#section-2.2.2-4" class="pilcrow">¶</a></p>
+<p id="section-2.2.2-4">IETF Stream (working group):<a href="#section-2.2.2-4" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-2.2.2-5.1">
               <p id="section-2.2.2-5.1.1">To: rfc-editor@rfc-editor.org<a href="#section-2.2.2-5.1.1" class="pilcrow">¶</a></p>
@@ -1537,43 +1547,52 @@ and other SSPs are CCed:<a href="#section-2.2.2-1" class="pilcrow">¶</a></p>
               <p id="section-2.2.2-5.2.1">CC: reporter, authors, working group<a href="#section-2.2.2-5.2.1" class="pilcrow">¶</a></p>
 </li>
           </ul>
-<p id="section-2.2.2-6">IAB Stream:<a href="#section-2.2.2-6" class="pilcrow">¶</a></p>
+<p id="section-2.2.2-6">IETF Stream (non-working group):<a href="#section-2.2.2-6" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-2.2.2-7.1">
               <p id="section-2.2.2-7.1.1">To: rfc-editor@rfc-editor.org<a href="#section-2.2.2-7.1.1" class="pilcrow">¶</a></p>
 </li>
             <li class="normal" id="section-2.2.2-7.2">
-              <p id="section-2.2.2-7.2.1">CC: reporter, authors, IAB<a href="#section-2.2.2-7.2.1" class="pilcrow">¶</a></p>
+              <p id="section-2.2.2-7.2.1">CC: reporter, authors<a href="#section-2.2.2-7.2.1" class="pilcrow">¶</a></p>
 </li>
           </ul>
-<p id="section-2.2.2-8">IRTF Stream:<a href="#section-2.2.2-8" class="pilcrow">¶</a></p>
+<p id="section-2.2.2-8">IAB Stream:<a href="#section-2.2.2-8" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-2.2.2-9.1">
               <p id="section-2.2.2-9.1.1">To: rfc-editor@rfc-editor.org<a href="#section-2.2.2-9.1.1" class="pilcrow">¶</a></p>
 </li>
             <li class="normal" id="section-2.2.2-9.2">
-              <p id="section-2.2.2-9.2.1">CC: reporter, authors, research group<a href="#section-2.2.2-9.2.1" class="pilcrow">¶</a></p>
+              <p id="section-2.2.2-9.2.1">CC: reporter, authors, IAB<a href="#section-2.2.2-9.2.1" class="pilcrow">¶</a></p>
 </li>
           </ul>
-<p id="section-2.2.2-10">Independent Submission Stream:<a href="#section-2.2.2-10" class="pilcrow">¶</a></p>
+<p id="section-2.2.2-10">IRTF Stream:<a href="#section-2.2.2-10" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-2.2.2-11.1">
               <p id="section-2.2.2-11.1.1">To: rfc-editor@rfc-editor.org<a href="#section-2.2.2-11.1.1" class="pilcrow">¶</a></p>
 </li>
             <li class="normal" id="section-2.2.2-11.2">
-              <p id="section-2.2.2-11.2.1">CC: reporter, authors<a href="#section-2.2.2-11.2.1" class="pilcrow">¶</a></p>
+              <p id="section-2.2.2-11.2.1">CC: reporter, authors, research group<a href="#section-2.2.2-11.2.1" class="pilcrow">¶</a></p>
 </li>
           </ul>
-<p id="section-2.2.2-12">Editorial Stream:<a href="#section-2.2.2-12" class="pilcrow">¶</a></p>
+<p id="section-2.2.2-12">Independent Submission Stream:<a href="#section-2.2.2-12" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-2.2.2-13.1">
               <p id="section-2.2.2-13.1.1">To: rfc-editor@rfc-editor.org<a href="#section-2.2.2-13.1.1" class="pilcrow">¶</a></p>
 </li>
             <li class="normal" id="section-2.2.2-13.2">
-              <p id="section-2.2.2-13.2.1">CC: reporter, authors, RSWG<a href="#section-2.2.2-13.2.1" class="pilcrow">¶</a></p>
+              <p id="section-2.2.2-13.2.1">CC: reporter, authors<a href="#section-2.2.2-13.2.1" class="pilcrow">¶</a></p>
 </li>
           </ul>
-<p id="section-2.2.2-14">The message includes the information listed in <a href="#reporting-errata" class="auto internal xref">Section 2.1</a>.<a href="#section-2.2.2-14" class="pilcrow">¶</a></p>
+<p id="section-2.2.2-14">Editorial Stream:<a href="#section-2.2.2-14" class="pilcrow">¶</a></p>
+<ul class="normal">
+<li class="normal" id="section-2.2.2-15.1">
+              <p id="section-2.2.2-15.1.1">To: rfc-editor@rfc-editor.org<a href="#section-2.2.2-15.1.1" class="pilcrow">¶</a></p>
+</li>
+            <li class="normal" id="section-2.2.2-15.2">
+              <p id="section-2.2.2-15.2.1">CC: reporter, authors, RSWG<a href="#section-2.2.2-15.2.1" class="pilcrow">¶</a></p>
+</li>
+          </ul>
+<p id="section-2.2.2-16">The message includes the information listed in <a href="#reporting-errata" class="auto internal xref">Section 2.1</a>.<a href="#section-2.2.2-16" class="pilcrow">¶</a></p>
 </section>
 </div>
 </section>
@@ -1694,8 +1713,7 @@ access to the report that needs to be updated.<a href="#section-2.4-11" class="p
         <h3 id="name-erratum-report-announcement">
 <a href="#section-2.5" class="section-number selfRef">2.5. </a><a href="#name-erratum-report-announcement" class="section-name selfRef">Erratum Report Announcements</a>
         </h3>
-<p id="section-2.5-1">Like the notification of submissions, the announcement of a verified (or held or rejected) erratum report varies by stream:<a href="#section-2.5-1" class="pilcrow">¶</a></p>
-<p id="section-2.5-2">Notifications are determined by stream and type of erratum report.<a href="#section-2.5-2" class="pilcrow">¶</a></p>
+<p id="section-2.5-1">Like the notification of submissions, the announcement of a verified (or held or rejected) erratum report varies by stream and type of erratum report.<a href="#section-2.5-1" class="pilcrow">¶</a></p>
 <div id="technical-erratum-reports-1">
 <section id="section-2.5.1">
           <h4 id="name-technical-erratum-reports-2">
@@ -1711,7 +1729,7 @@ access to the report that needs to be updated.<a href="#section-2.4-11" class="p
               <p id="section-2.5.1-3.2.1">CC: verifier, IESG, rfc-editor@rfc-editor.org<a href="#section-2.5.1-3.2.1" class="pilcrow">¶</a></p>
 </li>
           </ul>
-<p id="section-2.5.1-4">IETF Stream:<a href="#section-2.5.1-4" class="pilcrow">¶</a></p>
+<p id="section-2.5.1-4">IETF Stream (working group):<a href="#section-2.5.1-4" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-2.5.1-5.1">
               <p id="section-2.5.1-5.1.1">To: reporter, authors<a href="#section-2.5.1-5.1.1" class="pilcrow">¶</a></p>
@@ -1720,40 +1738,49 @@ access to the report that needs to be updated.<a href="#section-2.4-11" class="p
               <p id="section-2.5.1-5.2.1">CC: verifier, IESG, working group, IANA, rfc-editor@rfc-editor.org<a href="#section-2.5.1-5.2.1" class="pilcrow">¶</a></p>
 </li>
           </ul>
-<p id="section-2.5.1-6">IAB Stream:<a href="#section-2.5.1-6" class="pilcrow">¶</a></p>
+<p id="section-2.5.1-6">IETF Stream (non-working group):<a href="#section-2.5.1-6" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-2.5.1-7.1">
               <p id="section-2.5.1-7.1.1">To: reporter, authors<a href="#section-2.5.1-7.1.1" class="pilcrow">¶</a></p>
 </li>
             <li class="normal" id="section-2.5.1-7.2">
-              <p id="section-2.5.1-7.2.1">CC: verifier, IAB, IAB chair, rfc-editor@rfc-editor.org<a href="#section-2.5.1-7.2.1" class="pilcrow">¶</a></p>
+              <p id="section-2.5.1-7.2.1">CC: verifier, IESG, IANA, rfc-editor@rfc-editor.org<a href="#section-2.5.1-7.2.1" class="pilcrow">¶</a></p>
 </li>
           </ul>
-<p id="section-2.5.1-8">IRTF Stream:<a href="#section-2.5.1-8" class="pilcrow">¶</a></p>
+<p id="section-2.5.1-8">IAB Stream:<a href="#section-2.5.1-8" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-2.5.1-9.1">
               <p id="section-2.5.1-9.1.1">To: reporter, authors<a href="#section-2.5.1-9.1.1" class="pilcrow">¶</a></p>
 </li>
             <li class="normal" id="section-2.5.1-9.2">
-              <p id="section-2.5.1-9.2.1">CC: verifier, IRSG, research group, IANA, rfc-editor@rfc-editor.org<a href="#section-2.5.1-9.2.1" class="pilcrow">¶</a></p>
+              <p id="section-2.5.1-9.2.1">CC: verifier, IAB, IAB chair, rfc-editor@rfc-editor.org<a href="#section-2.5.1-9.2.1" class="pilcrow">¶</a></p>
 </li>
           </ul>
-<p id="section-2.5.1-10">Independent Submission Stream:<a href="#section-2.5.1-10" class="pilcrow">¶</a></p>
+<p id="section-2.5.1-10">IRTF Stream:<a href="#section-2.5.1-10" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-2.5.1-11.1">
               <p id="section-2.5.1-11.1.1">To: reporter, authors<a href="#section-2.5.1-11.1.1" class="pilcrow">¶</a></p>
 </li>
             <li class="normal" id="section-2.5.1-11.2">
-              <p id="section-2.5.1-11.2.1">CC: verifier, ISE, Document Shepherd, IANA, rfc-editor@rfc-editor.org<a href="#section-2.5.1-11.2.1" class="pilcrow">¶</a></p>
+              <p id="section-2.5.1-11.2.1">CC: verifier, IRSG, research group, IANA, rfc-editor@rfc-editor.org<a href="#section-2.5.1-11.2.1" class="pilcrow">¶</a></p>
 </li>
           </ul>
-<p id="section-2.5.1-12">Editorial Stream:<a href="#section-2.5.1-12" class="pilcrow">¶</a></p>
+<p id="section-2.5.1-12">Independent Submission Stream:<a href="#section-2.5.1-12" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-2.5.1-13.1">
               <p id="section-2.5.1-13.1.1">To: reporter, authors<a href="#section-2.5.1-13.1.1" class="pilcrow">¶</a></p>
 </li>
             <li class="normal" id="section-2.5.1-13.2">
-              <p id="section-2.5.1-13.2.1">CC: verifier, RSAB, RSWG, IANA, rfc-editor@rfc-editor.org<a href="#section-2.5.1-13.2.1" class="pilcrow">¶</a></p>
+              <p id="section-2.5.1-13.2.1">CC: verifier, ISE, Document Shepherd, IANA, rfc-editor@rfc-editor.org<a href="#section-2.5.1-13.2.1" class="pilcrow">¶</a></p>
+</li>
+          </ul>
+<p id="section-2.5.1-14">Editorial Stream:<a href="#section-2.5.1-14" class="pilcrow">¶</a></p>
+<ul class="normal">
+<li class="normal" id="section-2.5.1-15.1">
+              <p id="section-2.5.1-15.1.1">To: reporter, authors<a href="#section-2.5.1-15.1.1" class="pilcrow">¶</a></p>
+</li>
+            <li class="normal" id="section-2.5.1-15.2">
+              <p id="section-2.5.1-15.2.1">CC: verifier, RSAB, RSWG, IANA, rfc-editor@rfc-editor.org<a href="#section-2.5.1-15.2.1" class="pilcrow">¶</a></p>
 </li>
           </ul>
 </section>
@@ -1773,7 +1800,7 @@ access to the report that needs to be updated.<a href="#section-2.4-11" class="p
               <p id="section-2.5.2-3.2.1">CC: verifier, rfc-ed@rfc-editor.org, IESG, IANA<a href="#section-2.5.2-3.2.1" class="pilcrow">¶</a></p>
 </li>
           </ul>
-<p id="section-2.5.2-4">IETF Stream:<a href="#section-2.5.2-4" class="pilcrow">¶</a></p>
+<p id="section-2.5.2-4">IETF Stream (working group):<a href="#section-2.5.2-4" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-2.5.2-5.1">
               <p id="section-2.5.2-5.1.1">To: reporter, authors<a href="#section-2.5.2-5.1.1" class="pilcrow">¶</a></p>
@@ -1782,40 +1809,49 @@ access to the report that needs to be updated.<a href="#section-2.4-11" class="p
               <p id="section-2.5.2-5.2.1">CC: verifier, rfc-ed@rfc-editor.org, IESG, working group, IANA<a href="#section-2.5.2-5.2.1" class="pilcrow">¶</a></p>
 </li>
           </ul>
-<p id="section-2.5.2-6">IAB Stream:<a href="#section-2.5.2-6" class="pilcrow">¶</a></p>
+<p id="section-2.5.2-6">IETF Stream (non-working group):<a href="#section-2.5.2-6" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-2.5.2-7.1">
               <p id="section-2.5.2-7.1.1">To: reporter, authors<a href="#section-2.5.2-7.1.1" class="pilcrow">¶</a></p>
 </li>
             <li class="normal" id="section-2.5.2-7.2">
-              <p id="section-2.5.2-7.2.1">CC: verifier, rfc-ed@rfc-editor.org, IAB, IAB chair<a href="#section-2.5.2-7.2.1" class="pilcrow">¶</a></p>
+              <p id="section-2.5.2-7.2.1">CC: verifier, rfc-ed@rfc-editor.org, IESG, IANA<a href="#section-2.5.2-7.2.1" class="pilcrow">¶</a></p>
 </li>
           </ul>
-<p id="section-2.5.2-8">IRTF Stream:<a href="#section-2.5.2-8" class="pilcrow">¶</a></p>
+<p id="section-2.5.2-8">IAB Stream:<a href="#section-2.5.2-8" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-2.5.2-9.1">
               <p id="section-2.5.2-9.1.1">To: reporter, authors<a href="#section-2.5.2-9.1.1" class="pilcrow">¶</a></p>
 </li>
             <li class="normal" id="section-2.5.2-9.2">
-              <p id="section-2.5.2-9.2.1">CC: verifier, rfc-ed@rfc-editor.org, IRSG, research group, IANA<a href="#section-2.5.2-9.2.1" class="pilcrow">¶</a></p>
+              <p id="section-2.5.2-9.2.1">CC: verifier, rfc-ed@rfc-editor.org, IAB, IAB chair<a href="#section-2.5.2-9.2.1" class="pilcrow">¶</a></p>
 </li>
           </ul>
-<p id="section-2.5.2-10">Independent Submission Stream:<a href="#section-2.5.2-10" class="pilcrow">¶</a></p>
+<p id="section-2.5.2-10">IRTF Stream:<a href="#section-2.5.2-10" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-2.5.2-11.1">
               <p id="section-2.5.2-11.1.1">To: reporter, authors<a href="#section-2.5.2-11.1.1" class="pilcrow">¶</a></p>
 </li>
             <li class="normal" id="section-2.5.2-11.2">
-              <p id="section-2.5.2-11.2.1">CC: verifier, rfc-ed@rfc-editor.org, ISE, IANA<a href="#section-2.5.2-11.2.1" class="pilcrow">¶</a></p>
+              <p id="section-2.5.2-11.2.1">CC: verifier, rfc-ed@rfc-editor.org, IRSG, research group, IANA<a href="#section-2.5.2-11.2.1" class="pilcrow">¶</a></p>
 </li>
           </ul>
-<p id="section-2.5.2-12">Editorial Stream:<a href="#section-2.5.2-12" class="pilcrow">¶</a></p>
+<p id="section-2.5.2-12">Independent Submission Stream:<a href="#section-2.5.2-12" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-2.5.2-13.1">
               <p id="section-2.5.2-13.1.1">To: reporter, authors<a href="#section-2.5.2-13.1.1" class="pilcrow">¶</a></p>
 </li>
             <li class="normal" id="section-2.5.2-13.2">
-              <p id="section-2.5.2-13.2.1">CC: verifier, RSAB, RSWG, IANA, rfc-ed@rfc-editor.org<a href="#section-2.5.2-13.2.1" class="pilcrow">¶</a></p>
+              <p id="section-2.5.2-13.2.1">CC: verifier, rfc-ed@rfc-editor.org, ISE, IANA<a href="#section-2.5.2-13.2.1" class="pilcrow">¶</a></p>
+</li>
+          </ul>
+<p id="section-2.5.2-14">Editorial Stream:<a href="#section-2.5.2-14" class="pilcrow">¶</a></p>
+<ul class="normal">
+<li class="normal" id="section-2.5.2-15.1">
+              <p id="section-2.5.2-15.1.1">To: reporter, authors<a href="#section-2.5.2-15.1.1" class="pilcrow">¶</a></p>
+</li>
+            <li class="normal" id="section-2.5.2-15.2">
+              <p id="section-2.5.2-15.2.1">CC: verifier, RSAB, RSWG, IANA, rfc-ed@rfc-editor.org<a href="#section-2.5.2-15.2.1" class="pilcrow">¶</a></p>
 </li>
           </ul>
 </section>
