@@ -134,9 +134,8 @@ avoid hard choices.  For the IETF Stream, these choices are
 made by the IESG and are discussed in their guidelines on
 errata processing {{IESG-Err-Proc}}.
 
-After consulting with the RPC, the IESG requested in 2021 that RPC
-perform the initial review of new editorial errata reports and also review
-the backlog of open editorial reports, and handle those that are clearly editorial
+After consulting with the RPC in 2021, the IESG requested that RPC
+perform the initial review of editorial errata reports (including the backlog of open editorial reports) and resolve those that are clearly editorial
 in nature {{IESG-Err-Proc}}. The other streams adopted the same processing
 for editorial reports.
 
