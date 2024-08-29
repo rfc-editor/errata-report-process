@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-08-27T01:10:46.016432+00:00",
+  "timestamp": "2024-08-29T01:11:56.903278+00:00",
   "repo": "rfc-editor/errata-report-process",
   "labels": [
     {
@@ -135,15 +135,15 @@
       "id": "I_kwDOKaCsxc6HyoaV",
       "title": "add info on reports for non-WG RFCs",
       "url": "https://github.com/rfc-editor/errata-report-process/issues/8",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "ajeanmahoney",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "Reports go to iesg@ietf.org and authors, and rfc-editor is cc:ed.",
       "createdAt": "2024-05-03T18:19:16Z",
-      "updatedAt": "2024-05-13T19:24:36Z",
-      "closedAt": null,
+      "updatedAt": "2024-08-27T21:23:24Z",
+      "closedAt": "2024-08-27T21:23:24Z",
       "comments": [
         {
           "author": "rvanrheenen",
@@ -425,26 +425,42 @@
       "id": "PR_kwDOKaCsxc55fCD3",
       "title": "Added info for non-WG errata",
       "url": "https://github.com/rfc-editor/errata-report-process/pull/13",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "ajeanmahoney",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "Fixes #8 ",
       "createdAt": "2024-08-26T20:15:42Z",
-      "updatedAt": "2024-08-26T20:16:00Z",
+      "updatedAt": "2024-08-27T21:23:33Z",
       "baseRepository": "rfc-editor/errata-report-process",
       "baseRefName": "main",
       "baseRefOid": "32e84b32285b92b5aaa7f166e526d8a8e568f875",
       "headRepository": "rfc-editor/errata-report-process",
       "headRefName": "non-wg-errata",
       "headRefOid": "92cf82e0a00b83f6dc1a7fb9b14a75013e0a9412",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2024-08-27T21:23:23Z",
+      "mergedAt": "2024-08-27T21:23:23Z",
+      "mergedBy": "ajeanmahoney",
+      "mergeCommit": {
+        "oid": "5dcc4d04c7cb354baca66fc20bf0c64b7b7a3ca2"
+      },
       "comments": [],
-      "reviews": []
+      "reviews": [
+        {
+          "id": "PRR_kwDOKaCsxc6G92uI",
+          "commit": {
+            "abbreviatedOid": "92cf82e"
+          },
+          "author": "rvanrheenen",
+          "authorAssociation": "NONE",
+          "state": "APPROVED",
+          "body": "These changes all look good to me.",
+          "createdAt": "2024-08-27T20:14:01Z",
+          "updatedAt": "2024-08-27T20:14:01Z",
+          "comments": []
+        }
+      ]
     },
     {
       "number": 14,
