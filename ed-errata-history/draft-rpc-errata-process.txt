@@ -5,7 +5,7 @@
 RSWG                                                            A. Russo
 Internet-Draft                                                J. Mahoney
 Intended status: Informational                     RFC Production Center
-Expires: 27 February 2025                                 26 August 2024
+Expires: 2 March 2025                                     29 August 2024
 
 
             Current Process for Handling RFC Errata Reports
@@ -47,7 +47,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 27 February 2025.
+   This Internet-Draft will expire on 2 March 2025.
 
 Copyright Notice
 
@@ -160,11 +160,11 @@ Table of Contents
    the IESG and are discussed in their guidelines on errata processing
    [IESG-Err-Proc].
 
-   After consulting with the RPC, the IESG requested in 2021 that RPC
-   perform the initial review of new editorial errata reports and also
-   review the backlog of open editorial reports, and handle those that
-   are clearly editorial in nature [IESG-Err-Proc].  The other streams
-   adopted the same processing for editorial reports.
+   After consulting with the RPC in 2021, the IESG requested that RPC
+   perform the initial review of editorial errata reports (including the
+   backlog of open editorial reports) and resolve those that are clearly
+   editorial in nature [IESG-Err-Proc].  The other streams adopted the
+   same processing for editorial reports.
 
 2.  Current Errata Process Using the Web Portal
 
