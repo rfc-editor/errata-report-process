@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-08-29T01:11:56.903278+00:00",
+  "timestamp": "2024-09-01T01:23:14.266468+00:00",
   "repo": "rfc-editor/errata-report-process",
   "labels": [
     {
@@ -103,15 +103,15 @@
       "id": "I_kwDOKaCsxc6EZTAv",
       "title": "add some history regarding editorial errata?",
       "url": "https://github.com/rfc-editor/errata-report-process/issues/6",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "ajeanmahoney",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "All errata was transitioned into the new system in 2007.\r\nIn 2021, the IESG put out [statement on errata](https://www.ietf.org/about/groups/iesg/statements/processing-errata-ietf-stream/) (after consulting with the RPC) indicating that the RFC Editor would field editorial errata. The other streams adopted the same handling. ",
       "createdAt": "2024-04-02T19:00:26Z",
-      "updatedAt": "2024-04-02T19:00:26Z",
-      "closedAt": null,
+      "updatedAt": "2024-08-29T22:23:49Z",
+      "closedAt": "2024-08-29T22:23:49Z",
       "comments": []
     },
     {
@@ -467,26 +467,42 @@
       "id": "PR_kwDOKaCsxc55fPC1",
       "title": "added history of RPC processing of editorial errata",
       "url": "https://github.com/rfc-editor/errata-report-process/pull/14",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "ajeanmahoney",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "Fixes #6",
       "createdAt": "2024-08-26T20:46:09Z",
-      "updatedAt": "2024-08-26T20:47:04Z",
+      "updatedAt": "2024-08-29T22:23:53Z",
       "baseRepository": "rfc-editor/errata-report-process",
       "baseRefName": "main",
       "baseRefOid": "32e84b32285b92b5aaa7f166e526d8a8e568f875",
       "headRepository": "rfc-editor/errata-report-process",
       "headRefName": "ed-errata-history",
-      "headRefOid": "3c97028dc2b98a0766ecd6961ce28cd00da56358",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "headRefOid": "6dab2b12159de9a904e657d9b4b839593955b6a5",
+      "closedAt": "2024-08-29T22:23:48Z",
+      "mergedAt": "2024-08-29T22:23:48Z",
+      "mergedBy": "ajeanmahoney",
+      "mergeCommit": {
+        "oid": "20c66bf0e84b8916d1c955d9e73bb0c90bb22f8c"
+      },
       "comments": [],
-      "reviews": []
+      "reviews": [
+        {
+          "id": "PRR_kwDOKaCsxc6HUn79",
+          "commit": {
+            "abbreviatedOid": "d6e01fb"
+          },
+          "author": "sginoza",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2024-08-29T22:13:41Z",
+          "updatedAt": "2024-08-29T22:13:41Z",
+          "comments": []
+        }
+      ]
     }
   ]
 }
