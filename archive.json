@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-12-15T01:36:45.718528+00:00",
+  "timestamp": "2024-12-17T01:23:42.975629+00:00",
   "repo": "rfc-editor/errata-report-process",
   "labels": [
     {
@@ -183,6 +183,22 @@
       "body": "Is it worth capturing the following in the I-D?\r\n\r\n- IANA was added to the CC of verification messages (both tech and ed) in Jan 2022\r\n- When were WG MLs added to the CC?",
       "createdAt": "2024-10-25T13:49:07Z",
       "updatedAt": "2024-10-25T13:49:07Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 17,
+      "id": "I_kwDOKaCsxc6jgiG4",
+      "title": "add a description of monthly reports",
+      "url": "https://github.com/rfc-editor/errata-report-process/issues/17",
+      "state": "OPEN",
+      "author": "ajeanmahoney",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "There is now an automated message that is sent to the IESG, IRSG, IAB, and ISE regarding open reports.",
+      "createdAt": "2024-12-16T19:30:32Z",
+      "updatedAt": "2024-12-16T19:30:32Z",
       "closedAt": null,
       "comments": []
     }
