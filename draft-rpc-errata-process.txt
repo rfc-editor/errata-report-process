@@ -5,7 +5,7 @@
 RSWG                                                            A. Russo
 Internet-Draft                                                J. Mahoney
 Intended status: Informational                     RFC Production Center
-Expires: 2 March 2025                                     29 August 2024
+Expires: 7 July 2025                                      3 January 2025
 
 
             Current Process for Handling RFC Errata Reports
@@ -30,7 +30,7 @@ Discussion Venues
    This note is to be removed before publishing as an RFC.
 
    Source for this draft and an issue tracker can be found at
-   https://github.com/ajeanmahoney/errata-report-process.
+   https://github.com/rfc-editor/errata-report-process.
 
 Status of This Memo
 
@@ -47,11 +47,11 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 2 March 2025.
+   This Internet-Draft will expire on 7 July 2025.
 
 Copyright Notice
 
-   Copyright (c) 2024 IETF Trust and the persons identified as the
+   Copyright (c) 2025 IETF Trust and the persons identified as the
    document authors.  All rights reserved.
 
    This document is subject to BCP 78 and the IETF Trust's Legal
