@@ -5,7 +5,7 @@
 RSWG                                                            A. Russo
 Internet-Draft                                                J. Mahoney
 Intended status: Informational                     RFC Production Center
-Expires: 2 March 2025                                     29 August 2024
+Expires: 7 July 2025                                      3 January 2025
 
 
             Current Process for Handling RFC Errata Reports
@@ -30,7 +30,7 @@ Discussion Venues
    This note is to be removed before publishing as an RFC.
 
    Source for this draft and an issue tracker can be found at
-   https://github.com/ajeanmahoney/errata-report-process.
+   https://github.com/rfc-editor/errata-report-process.
 
 Status of This Memo
 
@@ -47,11 +47,11 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 2 March 2025.
+   This Internet-Draft will expire on 7 July 2025.
 
 Copyright Notice
 
-   Copyright (c) 2024 IETF Trust and the persons identified as the
+   Copyright (c) 2025 IETF Trust and the persons identified as the
    document authors.  All rights reserved.
 
    This document is subject to BCP 78 and the IETF Trust's Legal
@@ -94,7 +94,8 @@ Table of Contents
 
    This process assumes the organization of RFC publication into five
    document streams [RFC8729]: (1) the IETF Stream, which includes both
-   working group and individual submissions plus all RFCs that were
+   working group and individual submissions (also known as "AD
+   Sponsored" or "non-working group" documents) plus all RFCs that were
    published before a formal source (e.g., working group or stream)
    existed or was recorded (known as legacy RFCs), (2) the IAB Stream,
    (3) the IRTF Stream, (4) the Independent Submission Stream, and (5)
@@ -286,7 +287,8 @@ Table of Contents
 
    *  Category ("status") of RFC
 
-   *  Source (Working Group Name, IAB, IRTF, INDEPENDENT, or Editorial)
+   *  Source (working group name, IETF - NON WORKING GROUP, IAB, IRTF,
+      INDEPENDENT, or Editorial)
 
    *  Area (for IETF Stream)
 
@@ -328,12 +330,18 @@ Table of Contents
 
    *  CC: reporter, rfc-editor@rfc-editor.org
 
-   IETF Stream:
+   IETF Stream (working group):
 
    *  To: authors, ADs of the area from which the document came,
       document shepherd
 
    *  CC: reporter, working group, rfc-editor@rfc-editor.org
+
+   IETF Stream (non-working group):
+
+   *  To: IESG, authors
+
+   *  CC: reporter, rfc-editor@rfc-editor.org
 
    IAB Stream:
 
@@ -370,11 +378,17 @@ Table of Contents
 
    *  CC: reporter
 
-   IETF Stream:
+   IETF Stream (working group):
 
    *  To: rfc-editor@rfc-editor.org
 
    *  CC: reporter, authors, working group
+
+   IETF Stream (non-working group):
+
+   *  To: rfc-editor@rfc-editor.org
+
+   *  CC: reporter, authors
 
    IAB Stream:
 
@@ -520,9 +534,8 @@ Table of Contents
 2.5.  Erratum Report Announcements
 
    Like the notification of submissions, the announcement of a verified
-   (or held or rejected) erratum report varies by stream:
-
-   Notifications are determined by stream and type of erratum report.
+   (or held or rejected) erratum report varies by stream and type of
+   erratum report.
 
 2.5.1.  Technical Erratum Reports
 
@@ -535,11 +548,17 @@ Table of Contents
 
    *  CC: verifier, IESG, rfc-editor@rfc-editor.org
 
-   IETF Stream:
+   IETF Stream (working group):
 
    *  To: reporter, authors
 
    *  CC: verifier, IESG, working group, IANA, rfc-editor@rfc-editor.org
+
+   IETF Stream (non-working group):
+
+   *  To: reporter, authors
+
+   *  CC: verifier, IESG, IANA, rfc-editor@rfc-editor.org
 
    IAB Stream:
 
@@ -578,11 +597,17 @@ Table of Contents
 
    *  CC: verifier, rfc-ed@rfc-editor.org, IESG, IANA
 
-   IETF Stream:
+   IETF Stream (working group):
 
    *  To: reporter, authors
 
    *  CC: verifier, rfc-ed@rfc-editor.org, IESG, working group, IANA
+
+   IETF Stream (non-working group):
+
+   *  To: reporter, authors
+
+   *  CC: verifier, rfc-ed@rfc-editor.org, IESG, IANA
 
    IAB Stream:
 
