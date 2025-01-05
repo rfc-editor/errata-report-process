@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-01-02T01:16:21.900044+00:00",
+  "timestamp": "2025-01-05T01:22:59.226511+00:00",
   "repo": "rfc-editor/errata-report-process",
   "labels": [
     {
@@ -201,6 +201,30 @@
       "updatedAt": "2024-12-16T19:30:32Z",
       "closedAt": null,
       "comments": []
+    },
+    {
+      "number": 18,
+      "id": "I_kwDOKaCsxc6k96Xg",
+      "title": "History of the system via the Wayback Machine",
+      "url": "https://github.com/rfc-editor/errata-report-process/issues/18",
+      "state": "OPEN",
+      "author": "ajeanmahoney",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "To show what errata looked like when they were first published to the website in 2000:\r\nhttps://web.archive.org/web/20001029084225/http://www.rfc-editor.org/errata.html",
+      "createdAt": "2025-01-03T14:43:19Z",
+      "updatedAt": "2025-01-03T15:32:03Z",
+      "closedAt": null,
+      "comments": [
+        {
+          "author": "ajeanmahoney",
+          "authorAssociation": "COLLABORATOR",
+          "body": "Somewhere between Feb and Sept 2002, technical errata became a separate category and an overview of the process of reviewing them was added. See:\r\nhttps://web.archive.org/web/20020202003622/http://www.rfc-editor.org/errata.html\r\nAnd \r\nhttps://web.archive.org/web/20020914080107/http://www.rfc-editor.org/errata.html\r\n\r\nThe earliest instance of cgi-bin/errata.pl is here (todo provide more info about this software?):\r\nhttps://web.archive.org/web/20031202151009/http://www.rfc-editor.org/cgi-bin/errata.pl",
+          "createdAt": "2025-01-03T15:31:25Z",
+          "updatedAt": "2025-01-03T15:31:25Z"
+        }
+      ]
     }
   ],
   "pulls": [
@@ -551,6 +575,34 @@
           "comments": []
         }
       ]
+    },
+    {
+      "number": 19,
+      "id": "PR_kwDOKaCsxc6Grki8",
+      "title": "Updating files because the repo is now at rfc-editor",
+      "url": "https://github.com/rfc-editor/errata-report-process/pull/19",
+      "state": "MERGED",
+      "author": "ajeanmahoney",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Updated .note.xml",
+      "createdAt": "2025-01-03T17:26:32Z",
+      "updatedAt": "2025-01-03T17:31:02Z",
+      "baseRepository": "rfc-editor/errata-report-process",
+      "baseRefName": "main",
+      "baseRefOid": "20c66bf0e84b8916d1c955d9e73bb0c90bb22f8c",
+      "headRepository": "rfc-editor/errata-report-process",
+      "headRefName": "repo-move",
+      "headRefOid": "e6c8e9facbd50fb554ebfb889d782c5107fbeb44",
+      "closedAt": "2025-01-03T17:30:56Z",
+      "mergedAt": "2025-01-03T17:30:56Z",
+      "mergedBy": "ajeanmahoney",
+      "mergeCommit": {
+        "oid": "56a051b9482106d3247a9e86de4bb47ca9963055"
+      },
+      "comments": [],
+      "reviews": []
     }
   ]
 }
