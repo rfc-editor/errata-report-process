@@ -2,7 +2,7 @@
 stand_alone: true
 ipr: trust200902
 cat: info
-submissiontype: IETF
+submissiontype: Editorial
 wg: RSWG
 
 docname: draft-rpc-errata-process-latest
@@ -20,12 +20,12 @@ author:
     ins: A. Russo
     name: Alice Russo
     org: RFC Production Center
-    email: arusso@amsl.com
+    email: arusso@staff.rfc-editor.org
   -
     ins: J. Mahoney
     name: Jean Mahoney
     org: RFC Production Center
-    email: jmahoney@amsl.com
+    email: jmahoney@staff.rfc-editor.org
 
 informative:
   RFC8729:
@@ -41,7 +41,13 @@ informative:
     author:
     - org: RFC Editor
     date: false
-  IESG-Err-Proc:
+IESG-Err-Proc-2008:
+    target: https://datatracker.ietf.org/doc/statement-iesg-iesg-processing-of-rfc-errata-for-the-ietf-stream-20080730/
+    title: IESG Processing of RFC Errata for the IETF Stream
+    author:
+    - org: IESG
+    date: 2008-07-30
+  IESG-Err-Proc-2021:
     target: https://www.ietf.org/about/groups/iesg/statements/processing-errata-ietf-stream/
     title: IESG Processing of RFC Errata for the IETF Stream
     author:
@@ -94,14 +100,19 @@ At the organizational level, the SSPs are:
    *  Independent Submissions Editor for Independent Submission Stream documents
    *  RFC Series Approval Board for Editorial Stream documents
 
-In addition, the RFC Production Center reviews editorial errata reports from all streams and marks them as verified when possible, as per {{IESG-Err-Proc}}.
+In addition, the RFC Production Center reviews editorial errata reports from all streams and marks them as verified when possible, as per {{IESG-Err-Proc-2021}}.
 
 ##  Background on RFC Errata {#background}
 
-The RFC Production Center (RPC) began to collect and post RFC errata in 2000.  The
+The RFC Production Center (RPC) began to collect and post RFC errata in 2000. A 
+[very early snapshot](https://web.archive.org/web/20001029084225/http://www.rfc-editor.org/errata.html)
+can be seen at the Wayback Machine. The
 idea was to discourage readers from repeatedly pointing out the same
-typos in published RFCs.  This evolved into an errata verification
+typos in published RFCs.  Initially, errata were not separated into technical and
+editorial errata. This classification started in 2002. This evolved into an errata verification
 and posting process that was a manually operated, email-based task.
+Errata were listed on one page and grouped by RFC number. See this
+[snapshot from 2003](https://web.archive.org/web/20031202151009/http://www.rfc-editor.org/cgi-bin/errata.pl).
 Errata from this period have been made available in the current system
 and marked as Reported or Verified, as appropriate. Generally,
 the name of the verifier is not given as this information was not
@@ -114,11 +125,8 @@ and posting required more human resources, a web-based process {{ERRATA_SYS_PROP
 and launched in November 2007.
 
 Another reason for the current, web-based approach to handling erratum reports
-is that about half the reports are not
-simply editorial, but rather apply to the technical contents of RFCs.  A
-savvy implementer of the specification can often, but not always,
-determine what was intended by the RFC as published, but technical
-errors should be announced somehow.  Furthermore, the posting of technical
+is that about half the reports apply to the technical contents of RFCs,
+and the posting of technical
 errata for Standards Track documents should always involve the IESG,
 as a matter of correct process.  Technical errata may require much
 review and discussion among the author(s), Area Directors, and other
@@ -133,12 +141,36 @@ rather than an error in the design of the protocol or other entity
 defined in the document, but this distinction may be too imprecise to
 avoid hard choices.  For the IETF Stream, these choices are
 made by the IESG and are discussed in their guidelines on
-errata processing {{IESG-Err-Proc}}.
+errata processing {{IESG-Err-Proc-2021}}.
 
 After consulting with the RPC in 2021, the IESG requested that the RPC
-perform the initial review of editorial errata reports (including the backlog of open editorial reports) and resolve those that are clearly editorial
-in nature {{IESG-Err-Proc}}. The other streams adopted the same processing
+perform the initial review of editorial errata reports (including the backlog of
+openeditorial reports) and resolve those that are clearly editorial
+in nature {{IESG-Err-Proc-2021}}. The other streams adopted the same processing
 for editorial reports.
+
+### The Creation of the 'Hold For Document Update' State
+
+When errata reports started to be collected and posted, there were only two states:
+Verified and Rejected.
+
+The IESG proposed the "Held for Document Update" (HFDU) state in 2008. See {{IESG-Err-Proc-2008}}.
+HFDU initially applied to the following:
+
+* Things that are clearly wrong but could not cause an implementation or deployment problem
+* Trivial grammar corrections
+* Typographical errors which would not cause any confusions to implementation or deployments
+* Changes which are simply stylistic issues or simply make things read better
+* Changes that modify the working of a protocol to something that might be different from the
+intended consensus when the document was approved should be either Hold for Document Update or
+Rejected. Deciding between these two depends on judgment. In unclear situations, small changes
+can be Hold for Document Update.
+
+The application of HFDU changed when the IESG updated their guidelines in 2021 (see {{IESG-Err-Proc-2021}}).
+The first three items above were moved from HFDU to Verified. Currently, HFDU applies to the following:
+
+- Changes that are stylistic issues or simply make things read better
+- Clearly wrong technical items that do not have a clear resolution or requires further discussion
 
 #  Current Errata Process Using the Web Portal {#current-process}
 
@@ -161,7 +193,7 @@ for more details).
 
 For more information on the states and their definitions, and the
 guidelines by which the IESG classifies erratum reports into the
-above states, see {{IESG-Err-Proc}}.
+above states, see {{IESG-Err-Proc-2021}}.
 
 The Web interface supports the following functions:
 
