@@ -2,7 +2,7 @@
 stand_alone: true
 ipr: trust200902
 cat: info
-submissiontype: Editorial
+submissiontype: IETF
 wg: RSWG
 
 docname: draft-rpc-errata-process-latest
@@ -41,7 +41,7 @@ informative:
     author:
     - org: RFC Editor
     date: false
-IESG-Err-Proc-2008:
+  IESG-Err-Proc-2008:
     target: https://datatracker.ietf.org/doc/statement-iesg-iesg-processing-of-rfc-errata-for-the-ietf-stream-20080730/
     title: IESG Processing of RFC Errata for the IETF Stream
     author:
