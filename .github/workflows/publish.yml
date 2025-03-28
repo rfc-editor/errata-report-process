@@ -4,7 +4,13 @@ on:
   push:
     tags:
       - "draft-*"
-
+  workflow_dispatch:
+    inputs:
+      email:
+        description: "Submitter email"
+        default: ""
+        type: string
+        
 jobs:
   build:
     name: "Publish New Draft Version"
@@ -22,7 +28,7 @@ jobs:
       run: date -u "+date=%FT%T" >>"$GITHUB_OUTPUT"
 
     - name: "Caching"
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: |
           .refcache
