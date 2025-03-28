@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-01-30T01:14:17.389024+00:00",
+  "timestamp": "2025-03-28T20:23:16.483713+00:00",
   "repo": "rfc-editor/errata-report-process",
   "labels": [
     {
@@ -207,15 +207,15 @@
       "id": "I_kwDOKaCsxc6k96Xg",
       "title": "History of the system via the Wayback Machine",
       "url": "https://github.com/rfc-editor/errata-report-process/issues/18",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "ajeanmahoney",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "To show what errata looked like when they were first published to the website in 2000:\r\nhttps://web.archive.org/web/20001029084225/http://www.rfc-editor.org/errata.html",
       "createdAt": "2025-01-03T14:43:19Z",
-      "updatedAt": "2025-01-03T15:32:03Z",
-      "closedAt": null,
+      "updatedAt": "2025-03-28T19:56:59Z",
+      "closedAt": "2025-03-28T19:56:59Z",
       "comments": [
         {
           "author": "ajeanmahoney",
@@ -602,6 +602,42 @@
         "oid": "56a051b9482106d3247a9e86de4bb47ca9963055"
       },
       "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 20,
+      "id": "PR_kwDOKaCsxc6NEhma",
+      "title": "History updates",
+      "url": "https://github.com/rfc-editor/errata-report-process/pull/20",
+      "state": "MERGED",
+      "author": "ajeanmahoney",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Added more history with Wayback Machine snapshots and a section on the evolution of HFDU.\r\n\r\nFixes #18 and #15 ",
+      "createdAt": "2025-03-02T17:54:05Z",
+      "updatedAt": "2025-03-28T20:08:57Z",
+      "baseRepository": "rfc-editor/errata-report-process",
+      "baseRefName": "main",
+      "baseRefOid": "56a051b9482106d3247a9e86de4bb47ca9963055",
+      "headRepository": "rfc-editor/errata-report-process",
+      "headRefName": "03-updates",
+      "headRefOid": "ec7bbe7750d7327fdd4851319969dfac1ac33363",
+      "closedAt": "2025-03-28T19:56:58Z",
+      "mergedAt": "2025-03-28T19:56:58Z",
+      "mergedBy": "ajeanmahoney",
+      "mergeCommit": {
+        "oid": "3e3d4792dbfa8f5d401dfc5095533d90f2a6b6d7"
+      },
+      "comments": [
+        {
+          "author": "ajeanmahoney",
+          "authorAssociation": "COLLABORATOR",
+          "body": "I submitted this version to datatracker anyway because of the I-D deadline. Will fix the actions later.",
+          "createdAt": "2025-03-02T18:03:19Z",
+          "updatedAt": "2025-03-02T18:03:19Z"
+        }
+      ],
       "reviews": []
     }
   ]
