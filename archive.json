@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-08-17T01:47:02.477634+00:00",
+  "timestamp": "2025-08-26T01:27:09.475568+00:00",
   "repo": "rfc-editor/errata-report-process",
   "labels": [
     {
@@ -159,16 +159,24 @@
       "id": "I_kwDOKaCsxc6YC3TL",
       "title": "The addition of HFDU state",
       "url": "https://github.com/rfc-editor/errata-report-process/issues/15",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "ajeanmahoney",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "When errata reports started to be collected and posted, there were only two states: Verified and Rejected. \r\n\r\nThe IESG proposed the \"Held for Document Update\" (HFDU) state in 2008. See [2008 IESG errata processing guidelines](https://datatracker.ietf.org/doc/statement-iesg-iesg-processing-of-rfc-errata-for-the-ietf-stream-20080730/). HFDU initially applied to the following:\r\n\r\n- Things that are clearly wrong but could not cause an implementation or deployment problem\r\n- Trivial grammar corrections\r\n- Typographical errors which would not cause any confusions to implementation or deployments\r\n- Changes which are simply stylistic issues or simply make things read better\r\n- Changes that modify the working of a protocol to something that might be different from the intended consensus when the document was approved should be either Hold for Document Update or Rejected. Deciding between these two depends on judgment. In unclear situations, small changes can be Hold for Document Update.\r\n\r\nThe application of HFDU changed when the IESG updated their guidelines in 2021 (see [2021 IESG errata processing guidelines](https://datatracker.ietf.org/doc/statement-iesg-iesg-processing-of-rfc-errata-for-the-ietf-stream-20210507/)). The first three items above were moved from HFDU to Verified. Currently, HFDU applies to the following:\r\n\r\n- Changes that are stylistic issues or simply make things read better\r\n- Clearly wrong technical items that do not have a clear resolution or requires further discussion\r\n\r\n",
       "createdAt": "2024-09-26T15:11:49Z",
-      "updatedAt": "2024-09-26T15:11:49Z",
-      "closedAt": null,
-      "comments": []
+      "updatedAt": "2025-08-25T15:30:56Z",
+      "closedAt": "2025-08-25T15:30:56Z",
+      "comments": [
+        {
+          "author": "ajeanmahoney",
+          "authorAssociation": "COLLABORATOR",
+          "body": "This info was added to version -03\n",
+          "createdAt": "2025-08-25T15:30:56Z",
+          "updatedAt": "2025-08-25T15:30:56Z"
+        }
+      ]
     },
     {
       "number": 16,
