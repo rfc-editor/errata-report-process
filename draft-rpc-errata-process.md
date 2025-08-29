@@ -2,7 +2,7 @@
 stand_alone: true
 ipr: trust200902
 cat: info
-submissiontype: IETF
+submissiontype: editorial
 wg: RSWG
 
 docname: draft-rpc-errata-process-latest
@@ -104,7 +104,7 @@ In addition, the RFC Production Center reviews editorial errata reports from all
 
 ##  Background on RFC Errata {#background}
 
-The RFC Production Center (RPC) began to collect and post RFC errata in 2000. A 
+The RFC Production Center (RPC) began to collect and post RFC errata in 2000. A
 [very early snapshot](https://web.archive.org/web/20001029084225/http://www.rfc-editor.org/errata.html)
 can be seen at the Wayback Machine. The
 idea was to discourage readers from repeatedly pointing out the same
@@ -275,7 +275,7 @@ When a report is successfully submitted, a notification is sent via email
 (see {{initial-notification-message}}), and the report is posted to the rfc-editor.org website
 (see {{posting-erratum-reports}}).
 
-##  Initial Notification Message {#initial-notification-message}
+##  Notification of Open Reports {#initial-notification-message}
 
 Submitting the report triggers an email notification message to
 multiple parties; see the notification lists below.  Including
@@ -331,6 +331,14 @@ Editorial Stream:
 
 * To: authors, RSAB
 * CC: reporter, rfc-editor@rfc-editor.org, RSWG
+
+#### Monthly Summary Messages
+At the beginning of each month, an email message is sent to all SSPs
+that has the following information organized by Stream and Area:
+
+* Counts of open technical reports
+* Links to verifier pages
+* Links to the public lists of open technical reports
 
 ### Editorial Erratum Reports
 
