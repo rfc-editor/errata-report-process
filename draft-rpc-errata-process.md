@@ -104,7 +104,7 @@ In addition, the RFC Production Center reviews editorial errata reports from all
 
 ##  Background on RFC Errata {#background}
 
-The RFC Production Center (RPC) began to collect and post RFC errata in 2000. A 
+The RFC Production Center (RPC) began to collect and post RFC errata in 2000. A
 [very early snapshot](https://web.archive.org/web/20001029084225/http://www.rfc-editor.org/errata.html)
 can be seen at the Wayback Machine. The
 idea was to discourage readers from repeatedly pointing out the same
