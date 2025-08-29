@@ -16,22 +16,22 @@ person for each RFC stream, and (2) using a Web portal to automate
 the processing of erratum reports. This system was launched in November 2007. 
        This draft documents the existing system as a means to facilitate discussion to revamp how errata are reported, reviewed, and publicized. 
     " name="description">
-<meta content="xml2rfc 3.25.0" name="generator">
+<meta content="xml2rfc 3.30.0" name="generator">
 <meta content="errata system" name="keyword">
 <meta content="draft-rpc-errata-process-latest" name="ietf.draft">
 <!-- Generator version information:
-  xml2rfc 3.25.0
-    Python 3.12.8
+  xml2rfc 3.30.0
+    Python 3.12.11
     ConfigArgParse 1.7
     google-i18n-address 3.1.1
     intervaltree 3.1.0
-    Jinja2 3.1.5
-    lxml 5.3.0
-    platformdirs 4.3.6
+    Jinja2 3.1.6
+    lxml 5.3.1
+    platformdirs 4.3.8
     pycountry 24.6.1
     PyYAML 6.0.2
-    requests 2.32.3
-    setuptools 70.3.0
+    requests 2.32.4
+    setuptools 80.9.0
     wcwidth 0.2.13
 -->
 <link href="draft-rpc-errata-process.xml" rel="alternate" type="application/rfc+xml">
@@ -442,7 +442,7 @@ dl {
     margin-bottom: 0;
   }
 }
-dl > dt {
+dl:not(.dlNewline) > dt {
   float: left;
   margin-right: 2ch;
   min-width: 8ch;
@@ -1051,11 +1051,11 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <thead><tr>
 <td class="left">Internet-Draft</td>
 <td class="center">Handling Errata Reports</td>
-<td class="right">January 2025</td>
+<td class="right">August 2025</td>
 </tr></thead>
 <tfoot><tr>
 <td class="left">Russo &amp; Mahoney</td>
-<td class="center">Expires 7 July 2025</td>
+<td class="center">Expires 2 March 2026</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1068,12 +1068,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <dd class="internet-draft">draft-rpc-errata-process-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2025-01-03" class="published">3 January 2025</time>
+<time datetime="2025-08-29" class="published">29 August 2025</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Informational</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2025-07-07">7 July 2025</time></dd>
+<dd class="expires"><time datetime="2026-03-02">2 March 2026</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -1125,7 +1125,7 @@ the processing of erratum reports. This system was launched in November 2007.<a 
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 7 July 2025.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 2 March 2026.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1142,10 +1142,7 @@ the processing of erratum reports. This system was launched in November 2007.<a 
             (<span><a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a></span>) in effect on the date of
             publication of this document. Please review these documents
             carefully, as they describe your rights and restrictions with
-            respect to this document. Code Components extracted from this
-            document must include Revised BSD License text as described in
-            Section 4.e of the Trust Legal Provisions and are provided without
-            warranty as described in the Revised BSD License.<a href="#section-boilerplate.2-2" class="pilcrow">¶</a></p>
+            respect to this document.<a href="#section-boilerplate.2-2" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="toc">
@@ -1159,6 +1156,11 @@ the processing of erratum reports. This system was launched in November 2007.<a 
 <ul class="compact toc ulBare ulEmpty">
 <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.1.2.1">
                 <p id="section-toc.1-1.1.2.1.1" class="keepWithNext"><a href="#section-1.1" class="auto internal xref">1.1</a>.  <a href="#name-background-on-rfc-errata" class="internal xref">Background on RFC Errata</a></p>
+<ul class="compact toc ulBare ulEmpty">
+<li class="compact toc ulBare ulEmpty" id="section-toc.1-1.1.2.1.2.1">
+                    <p id="section-toc.1-1.1.2.1.2.1.1" class="keepWithNext"><a href="#section-1.1.1" class="auto internal xref">1.1.1</a>.  <a href="#name-the-creation-of-the-hold-fo" class="internal xref">The Creation of the 'Hold For Document Update' State</a></p>
+</li>
+                </ul>
 </li>
             </ul>
 </li>
@@ -1166,10 +1168,10 @@ the processing of erratum reports. This system was launched in November 2007.<a 
             <p id="section-toc.1-1.2.1"><a href="#section-2" class="auto internal xref">2</a>.  <a href="#name-current-errata-process-usin" class="internal xref">Current Errata Process Using the Web Portal</a></p>
 <ul class="compact toc ulBare ulEmpty">
 <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.2.2.1">
-                <p id="section-toc.1-1.2.2.1.1" class="keepWithNext"><a href="#section-2.1" class="auto internal xref">2.1</a>.  <a href="#name-reporting-errata" class="internal xref">Reporting Errata</a></p>
+                <p id="section-toc.1-1.2.2.1.1"><a href="#section-2.1" class="auto internal xref">2.1</a>.  <a href="#name-reporting-errata" class="internal xref">Reporting Errata</a></p>
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.2.2.2">
-                <p id="section-toc.1-1.2.2.2.1"><a href="#section-2.2" class="auto internal xref">2.2</a>.  <a href="#name-initial-notification-messag" class="internal xref">Initial Notification Message</a></p>
+                <p id="section-toc.1-1.2.2.2.1"><a href="#section-2.2" class="auto internal xref">2.2</a>.  <a href="#name-notification-of-open-report" class="internal xref">Notification of Open Reports</a></p>
 <ul class="compact toc ulBare ulEmpty">
 <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.2.2.2.2.1">
                     <p id="section-toc.1-1.2.2.2.2.1.1"><a href="#section-2.2.1" class="auto internal xref">2.2.1</a>.  <a href="#name-technical-erratum-reports" class="internal xref">Technical Erratum Reports</a></p>
@@ -1260,16 +1262,21 @@ verifying the erratum reports for that stream's RFCs.<a href="#section-1-2" clas
           <p id="section-1-4.6.1">RFC Series Approval Board for Editorial Stream documents<a href="#section-1-4.6.1" class="pilcrow">¶</a></p>
 </li>
       </ul>
-<p id="section-1-5">In addition, the RFC Production Center reviews editorial errata reports from all streams and marks them as verified when possible, as per <span>[<a href="#IESG-Err-Proc" class="cite xref">IESG-Err-Proc</a>]</span>.<a href="#section-1-5" class="pilcrow">¶</a></p>
+<p id="section-1-5">In addition, the RFC Production Center reviews editorial errata reports from all streams and marks them as verified when possible, as per <span>[<a href="#IESG-Err-Proc-2021" class="cite xref">IESG-Err-Proc-2021</a>]</span>.<a href="#section-1-5" class="pilcrow">¶</a></p>
 <div id="background">
 <section id="section-1.1">
         <h3 id="name-background-on-rfc-errata">
 <a href="#section-1.1" class="section-number selfRef">1.1. </a><a href="#name-background-on-rfc-errata" class="section-name selfRef">Background on RFC Errata</a>
         </h3>
-<p id="section-1.1-1">The RFC Production Center (RPC) began to collect and post RFC errata in 2000.  The
+<p id="section-1.1-1">The RFC Production Center (RPC) began to collect and post RFC errata in 2000. A
+<a href="https://web.archive.org/web/20001029084225/http://www.rfc-editor.org/errata.html">very early snapshot</a>
+can be seen at the Wayback Machine. The
 idea was to discourage readers from repeatedly pointing out the same
-typos in published RFCs.  This evolved into an errata verification
+typos in published RFCs.  Initially, errata were not separated into technical and
+editorial errata. This classification started in 2002. This evolved into an errata verification
 and posting process that was a manually operated, email-based task.
+Errata were listed on one page and grouped by RFC number. See this
+<a href="https://web.archive.org/web/20031202151009/http://www.rfc-editor.org/cgi-bin/errata.pl">snapshot from 2003</a>.
 Errata from this period have been made available in the current system
 and marked as Reported or Verified, as appropriate. Generally,
 the name of the verifier is not given as this information was not
@@ -1280,11 +1287,8 @@ greater than anticipated, and the process of vetting
 and posting required more human resources, a web-based process <span>[<a href="#ERRATA_SYS_PROPOSAL" class="cite xref">ERRATA_SYS_PROPOSAL</a>]</span> was created
 and launched in November 2007.<a href="#section-1.1-2" class="pilcrow">¶</a></p>
 <p id="section-1.1-3">Another reason for the current, web-based approach to handling erratum reports
-is that about half the reports are not
-simply editorial, but rather apply to the technical contents of RFCs.  A
-savvy implementer of the specification can often, but not always,
-determine what was intended by the RFC as published, but technical
-errors should be announced somehow.  Furthermore, the posting of technical
+is that about half the reports apply to the technical contents of RFCs,
+and the posting of technical
 errata for Standards Track documents should always involve the IESG,
 as a matter of correct process.  Technical errata may require much
 review and discussion among the author(s), Area Directors, and other
@@ -1298,11 +1302,53 @@ rather than an error in the design of the protocol or other entity
 defined in the document, but this distinction may be too imprecise to
 avoid hard choices.  For the IETF Stream, these choices are
 made by the IESG and are discussed in their guidelines on
-errata processing <span>[<a href="#IESG-Err-Proc" class="cite xref">IESG-Err-Proc</a>]</span>.<a href="#section-1.1-4" class="pilcrow">¶</a></p>
+errata processing <span>[<a href="#IESG-Err-Proc-2021" class="cite xref">IESG-Err-Proc-2021</a>]</span>.<a href="#section-1.1-4" class="pilcrow">¶</a></p>
 <p id="section-1.1-5">After consulting with the RPC in 2021, the IESG requested that the RPC
-perform the initial review of editorial errata reports (including the backlog of open editorial reports) and resolve those that are clearly editorial
-in nature <span>[<a href="#IESG-Err-Proc" class="cite xref">IESG-Err-Proc</a>]</span>. The other streams adopted the same processing
+perform the initial review of editorial errata reports (including the backlog of
+openeditorial reports) and resolve those that are clearly editorial
+in nature <span>[<a href="#IESG-Err-Proc-2021" class="cite xref">IESG-Err-Proc-2021</a>]</span>. The other streams adopted the same processing
 for editorial reports.<a href="#section-1.1-5" class="pilcrow">¶</a></p>
+<div id="the-creation-of-the-hold-for-document-update-state">
+<section id="section-1.1.1">
+          <h4 id="name-the-creation-of-the-hold-fo">
+<a href="#section-1.1.1" class="section-number selfRef">1.1.1. </a><a href="#name-the-creation-of-the-hold-fo" class="section-name selfRef">The Creation of the 'Hold For Document Update' State</a>
+          </h4>
+<p id="section-1.1.1-1">When errata reports started to be collected and posted, there were only two states:
+Verified and Rejected.<a href="#section-1.1.1-1" class="pilcrow">¶</a></p>
+<p id="section-1.1.1-2">The IESG proposed the "Held for Document Update" (HFDU) state in 2008. See <span>[<a href="#IESG-Err-Proc-2008" class="cite xref">IESG-Err-Proc-2008</a>]</span>.
+HFDU initially applied to the following:<a href="#section-1.1.1-2" class="pilcrow">¶</a></p>
+<ul class="normal">
+<li class="normal" id="section-1.1.1-3.1">
+              <p id="section-1.1.1-3.1.1">Things that are clearly wrong but could not cause an implementation or deployment problem<a href="#section-1.1.1-3.1.1" class="pilcrow">¶</a></p>
+</li>
+            <li class="normal" id="section-1.1.1-3.2">
+              <p id="section-1.1.1-3.2.1">Trivial grammar corrections<a href="#section-1.1.1-3.2.1" class="pilcrow">¶</a></p>
+</li>
+            <li class="normal" id="section-1.1.1-3.3">
+              <p id="section-1.1.1-3.3.1">Typographical errors which would not cause any confusions to implementation or deployments<a href="#section-1.1.1-3.3.1" class="pilcrow">¶</a></p>
+</li>
+            <li class="normal" id="section-1.1.1-3.4">
+              <p id="section-1.1.1-3.4.1">Changes which are simply stylistic issues or simply make things read better<a href="#section-1.1.1-3.4.1" class="pilcrow">¶</a></p>
+</li>
+            <li class="normal" id="section-1.1.1-3.5">
+              <p id="section-1.1.1-3.5.1">Changes that modify the working of a protocol to something that might be different from the
+intended consensus when the document was approved should be either Hold for Document Update or
+Rejected. Deciding between these two depends on judgment. In unclear situations, small changes
+can be Hold for Document Update.<a href="#section-1.1.1-3.5.1" class="pilcrow">¶</a></p>
+</li>
+          </ul>
+<p id="section-1.1.1-4">The application of HFDU changed when the IESG updated their guidelines in 2021 (see <span>[<a href="#IESG-Err-Proc-2021" class="cite xref">IESG-Err-Proc-2021</a>]</span>).
+The first three items above were moved from HFDU to Verified. Currently, HFDU applies to the following:<a href="#section-1.1.1-4" class="pilcrow">¶</a></p>
+<ul class="normal">
+<li class="normal" id="section-1.1.1-5.1">
+              <p id="section-1.1.1-5.1.1">Changes that are stylistic issues or simply make things read better<a href="#section-1.1.1-5.1.1" class="pilcrow">¶</a></p>
+</li>
+            <li class="normal" id="section-1.1.1-5.2">
+              <p id="section-1.1.1-5.2.1">Clearly wrong technical items that do not have a clear resolution or requires further discussion<a href="#section-1.1.1-5.2.1" class="pilcrow">¶</a></p>
+</li>
+          </ul>
+</section>
+</div>
 </section>
 </div>
 </section>
@@ -1337,7 +1383,7 @@ reported.<a href="#section-2-1" class="pilcrow">¶</a></p>
 for more details).<a href="#section-2-4" class="pilcrow">¶</a></p>
 <p id="section-2-5">For more information on the states and their definitions, and the
 guidelines by which the IESG classifies erratum reports into the
-above states, see <span>[<a href="#IESG-Err-Proc" class="cite xref">IESG-Err-Proc</a>]</span>.<a href="#section-2-5" class="pilcrow">¶</a></p>
+above states, see <span>[<a href="#IESG-Err-Proc-2021" class="cite xref">IESG-Err-Proc-2021</a>]</span>.<a href="#section-2-5" class="pilcrow">¶</a></p>
 <p id="section-2-6">The Web interface supports the following functions:<a href="#section-2-6" class="pilcrow">¶</a></p>
 <ol start="1" type="1" class="normal type-1" id="section-2-7">
 <li id="section-2-7.1">
@@ -1459,8 +1505,8 @@ database:<a href="#section-2.1-9" class="pilcrow">¶</a></p>
 </div>
 <div id="initial-notification-message">
 <section id="section-2.2">
-        <h3 id="name-initial-notification-messag">
-<a href="#section-2.2" class="section-number selfRef">2.2. </a><a href="#name-initial-notification-messag" class="section-name selfRef">Initial Notification Message</a>
+        <h3 id="name-notification-of-open-report">
+<a href="#section-2.2" class="section-number selfRef">2.2. </a><a href="#name-notification-of-open-report" class="section-name selfRef">Notification of Open Reports</a>
         </h3>
 <p id="section-2.2-1">Submitting the report triggers an email notification message to
 multiple parties; see the notification lists below.  Including
@@ -1544,6 +1590,26 @@ rfc-editor@rfc-editor.org are CCed.<a href="#section-2.2.1-1" class="pilcrow">¶
               <p id="section-2.2.1-15.2.1">CC: reporter, rfc-editor@rfc-editor.org, RSWG<a href="#section-2.2.1-15.2.1" class="pilcrow">¶</a></p>
 </li>
           </ul>
+<div id="monthly-summary-messages">
+<section id="section-2.2.1.1">
+            <h5 id="name-monthly-summary-messages">
+<a href="#section-2.2.1.1" class="section-number selfRef">2.2.1.1. </a><a href="#name-monthly-summary-messages" class="section-name selfRef">Monthly Summary Messages</a>
+            </h5>
+<p id="section-2.2.1.1-1">At the beginning of each month, an email message is sent to all SSPs
+that has the following information organized by Stream and Area:<a href="#section-2.2.1.1-1" class="pilcrow">¶</a></p>
+<ul class="normal">
+<li class="normal" id="section-2.2.1.1-2.1">
+                <p id="section-2.2.1.1-2.1.1">Counts of open technical reports<a href="#section-2.2.1.1-2.1.1" class="pilcrow">¶</a></p>
+</li>
+              <li class="normal" id="section-2.2.1.1-2.2">
+                <p id="section-2.2.1.1-2.2.1">Links to verifier pages<a href="#section-2.2.1.1-2.2.1" class="pilcrow">¶</a></p>
+</li>
+              <li class="normal" id="section-2.2.1.1-2.3">
+                <p id="section-2.2.1.1-2.3.1">Links to the public lists of open technical reports<a href="#section-2.2.1.1-2.3.1" class="pilcrow">¶</a></p>
+</li>
+            </ul>
+</section>
+</div>
 </section>
 </div>
 <div id="editorial-erratum-reports">
@@ -1959,7 +2025,11 @@ confidence that they are logging into the rfc-editor.org website.<a href="#secti
       <dd>
 <span class="refAuthor">RFC Editor</span>, <span class="refTitle">"How to Report Errata"</span>, <span>&lt;<a href="https://www.rfc-editor.org/how_to_report.html">https://www.rfc-editor.org/how_to_report.html</a>&gt;</span>. </dd>
 <dd class="break"></dd>
-<dt id="IESG-Err-Proc">[IESG-Err-Proc]</dt>
+<dt id="IESG-Err-Proc-2008">[IESG-Err-Proc-2008]</dt>
+      <dd>
+<span class="refAuthor">IESG</span>, <span class="refTitle">"IESG Processing of RFC Errata for the IETF Stream"</span>, <time datetime="2008-07-30" class="refDate">30 July 2008</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/statement-iesg-iesg-processing-of-rfc-errata-for-the-ietf-stream-20080730/">https://datatracker.ietf.org/doc/statement-iesg-iesg-processing-of-rfc-errata-for-the-ietf-stream-20080730/</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="IESG-Err-Proc-2021">[IESG-Err-Proc-2021]</dt>
       <dd>
 <span class="refAuthor">IESG</span>, <span class="refTitle">"IESG Processing of RFC Errata for the IETF Stream"</span>, <time datetime="2021-05-07" class="refDate">7 May 2021</time>, <span>&lt;<a href="https://www.ietf.org/about/groups/iesg/statements/processing-errata-ietf-stream/">https://www.ietf.org/about/groups/iesg/statements/processing-errata-ietf-stream/</a>&gt;</span>. </dd>
 <dd class="break"></dd>
@@ -1990,7 +2060,7 @@ received helpful feedback from Sandy Ginoza, TBD...<a href="#appendix-A-1" class
 <div dir="auto" class="left"><span class="org">RFC Production Center</span></div>
 <div class="email">
 <span>Email:</span>
-<a href="mailto:arusso@amsl.com" class="email">arusso@amsl.com</a>
+<a href="mailto:arusso@staff.rfc-editor.org" class="email">arusso@staff.rfc-editor.org</a>
 </div>
 </address>
 <address class="vcard">
@@ -1998,7 +2068,7 @@ received helpful feedback from Sandy Ginoza, TBD...<a href="#appendix-A-1" class
 <div dir="auto" class="left"><span class="org">RFC Production Center</span></div>
 <div class="email">
 <span>Email:</span>
-<a href="mailto:jmahoney@amsl.com" class="email">jmahoney@amsl.com</a>
+<a href="mailto:jmahoney@staff.rfc-editor.org" class="email">jmahoney@staff.rfc-editor.org</a>
 </div>
 </address>
 </section>
